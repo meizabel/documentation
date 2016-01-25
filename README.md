@@ -1,6 +1,6 @@
 #Getting started
 
-<p class="lead">Welcome to the developer documentation for Spine Event Engine, a multi-language, open-source, event sourcing framework.</p>
+Welcome to the developer documentation for Spine Event Engine, a multi-language, open-source, event sourcing framework.
 
 This document introduces you to Spine Event Engine. You'll find more <a href="/docs/tutorials/principles.html/">tutorials</a> and <a href="/docs/reference/">reference docs</a> in this site - more documentation is coming soon!
 
