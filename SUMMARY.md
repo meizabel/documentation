@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-   * Concepts
+   * [Concepts](concepts.md)
 * [FAQ](faq.md)
 
