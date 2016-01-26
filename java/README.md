@@ -1,4 +1,4 @@
-# Spine Event Engine Basics: Java<
+# Spine Event Engine Basics: Java
 
 <p class="lead">This tutorial provides a basic Java programmer's introduction to working with Spine. </p>
 
