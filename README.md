@@ -11,8 +11,7 @@ Spine Event Engine is the framework that helps developers to build Command Query
 
 Spine is built on top of [Protocol Buffers] (https://developers.google.com/protocol-buffers/docs/overview) and [GRPS](http://www.grpc.io/docs/) to bring easiness and efficiency into development of the applications with a microservice-oriented architecture. All this allows you to focus on your business logic, instead of the plumbing.
 
-<img src="../img/SpineEventEngine-diagram.svg" class="img-responsive" alt="Spine Event Engine diagram">
-
+![Spine Event Engine Diargram](Grey-Blue-SpineEventEngine.svg)
 
 The Framework provides implementations of the most important building blocks, such as aggregates, repositories, command dispatchers, event buses and stream projections. 
 You can find out more about Spine key concepts [here](/docs/guides/concepts.html).
