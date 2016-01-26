@@ -3,6 +3,5 @@
 * [Introduction](README.md)
 * [Concepts](concepts.md)
 * [FAQ](faq.md)
-* [Java](java/basic.md)
-
+* [Java](java/basicmd.md)
 
