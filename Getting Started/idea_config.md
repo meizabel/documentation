@@ -21,8 +21,8 @@ For Mac OS X:
 ``````
 
 For Linux and the Other UNIX Systems:
-<pre>
+``````
 ~/.<PRODUCT><VERSION>/config/filetypes
-</pre>
-Where PRODUCT is IntelliJIdea or IdeaIC, VERSION is IntelliJ IDEA version (14, 15, etc).
+``````
+Where PRODUCT is ``````IntelliJIdea`````` or ``````IdeaIC``````, ``````VERSION`````` is IntelliJ IDEA version (14, 15, etc).
 
