@@ -9,4 +9,5 @@
    * [Aggregate](aggregate.md)
    * [Command Handler](Command Handler.md)
 * [FAQ](faq.md)
+* [Samples](Samples/README.md)
 
