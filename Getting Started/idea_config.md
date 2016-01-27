@@ -11,14 +11,14 @@ To enable IntelliJ IDEA to decide how to treat a .proto file, you need to:
 
 For Windows:
 
-<pre>
+``````
 <SYSTEM DRIVE>\Users\<USER ACCOUNT NAME>\.<PRODUCT><VERSION>\config\filetypes
-</pre>
+``````
 
 For Mac OS X:
-<pre>
+``````
 ~/Library/Preferences/<PRODUCT><VERSION>/filetypes
-</pre>
+``````
 
 For Linux and the Other UNIX Systems:
 <pre>
