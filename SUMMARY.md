@@ -11,5 +11,5 @@
 * [FAQ](faq.md)
 * [Samples](Samples/README.md)
 * [Contribute](contribute/README.md)
-   * [[Spine Developer Starter Guide]](contribute/spine_developer_starter_guide.md)
+   * [Spine Developer Starter Guide](contribute/spine_developer_starter_guide.md)
 
