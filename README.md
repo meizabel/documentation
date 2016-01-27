@@ -16,14 +16,7 @@ The Framework provides implementations of the most important building blocks, su
 You can find out more about Spine key concepts [here](concepts.md).
  
 #### Name Background 
-Find out how following !!! [leading industry trends](/docs/guides/priorart.html) we were !!! [inspired](/docs/guides/motivation.html) to create Spine. 
-
-## Read more!
-
-- Find out how to install Spine and get started in each language's [quick start](/docs/guides/start.html).
-- Follow the [tutorial(s)](/docs/tutorials/principles.html) for your favorite language(s).
-- Discover about <a href = "http://www.grpc.io/docs/">gRPC</a>.
-- Read a detailed description of the <a href ="http://www.grpc.io/docs/guides/wire.html">gRPC over HTTP2 protocol</a>.
+Find out how following !!! [leading industry trends](/docs/guides/priorart.html) we were !!! [inspired](/docs/guides/motivation.html) to create Spine.
 
 
 
