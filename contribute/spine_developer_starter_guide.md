@@ -1,2 +1,2 @@
-# [Spine Developer Starter Guide]
+# Spine Developer Starter Guide
 
