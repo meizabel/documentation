@@ -2,7 +2,8 @@
 
 * [Introduction](README.md)
 * [Concepts](concepts.md)
-* [Getting Started](
+* [Getting Started](Getting Started/README.md)
+    * [Installation](Getting Started/installation.md)
 * [FAQ](faq.md)
 * [Java](java/README.md)
    * [Aggregate](aggregate.md)
