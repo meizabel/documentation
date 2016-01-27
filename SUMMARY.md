@@ -4,6 +4,8 @@
 * [Concepts](concepts.md)
 * [Prior Art](prior_art.md)
 * [Getting Started](Getting Started/README.md)
+* Name-TBD
+    * Principles
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](Command Handler.md)
