@@ -15,7 +15,7 @@ Spine is built on top of [Protocol Buffers](https://developers.google.com/protoc
 The Framework provides implementations of the most important building blocks, such as aggregates, repositories, command dispatchers, event buses and stream projections. 
 You can find out more about Spine key concepts [here](concepts.md).
  
-Find out how following [leading industry trends](prior_art.md) we were !!! [inspired](/docs/guides/motivation.html) to create Spine.
+Find out how following [leading industry trends](prior_art.md) inspired create Spine.
 
 
 ### Learn More about Using Spine
