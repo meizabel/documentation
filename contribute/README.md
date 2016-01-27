@@ -4,4 +4,4 @@ If you plan to contribute to Spine development, please read the [Starter Guide P
 
 To contribute to Spine Event Engine, please fork the GitHub Spine Event Repository.
 
-Email: spine-developers@teamdev.com
+Email: [spine-developers@teamdev.com](spine-developers@teamdev.com)
