@@ -6,7 +6,7 @@
 * [Getting Started](Getting Started/README.md)
    * [Installation](Getting Started/installation.md)
 * [Java](java/README.md)
-   * [Aggregate](aggregate.md)
+   * [Aggregate](java.aggregate/aggregate.md)
    * [Command Handler](Command Handler.md)
 * [FAQ](faq.md)
 * [Samples](Samples/README.md)
