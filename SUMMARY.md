@@ -8,7 +8,7 @@
    * [Aggregate](java/aggregate.md)
    * [Command Handler](Command Handler.md)
 * [FAQ](faq.md)
-* [Samples](Samples/README.md)
+* [Sample Projects](Samples/README.md)
 * [Contribute](contribute/README.md)
    * [Spine Developer Starter Guide](contribute/spine_developer_starter_guide.md)
    * [Coding Conventions](contribute/coding_conventions.md)
