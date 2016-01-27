@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Concepts](concepts.md)
+* [Getting Started](
 * [FAQ](faq.md)
 * [Java](java/README.md)
    * [Aggregate](aggregate.md)
