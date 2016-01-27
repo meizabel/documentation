@@ -14,11 +14,10 @@ Spine is built on top of [Protocol Buffers](https://developers.google.com/protoc
 ![Spine Event Engine Diargram](Grey-Blue-SpineEventEngine.svg)
 
 The Framework provides implementations of the most important building blocks, such as aggregates, repositories, command dispatchers, event buses and stream projections. 
-You can find out more about Spine key concepts [here](/docs/guides/concepts.html).
+You can find out more about Spine key concepts [here](concepts.md).
  
 #### Name Background 
- We want to be a framework that provides an infrastructure and connects so to say “service” parts of applications with their “brains” — business logic. 
- Find out how following [leading industry trends](/docs/guides/priorart.html) we were [inspired](/docs/guides/motivation.html) to create Spine. 
+Find out how following !!! [leading industry trends](/docs/guides/priorart.html) we were !!! [inspired](/docs/guides/motivation.html) to create Spine. 
 
 ## Read more!
 
