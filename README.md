@@ -16,6 +16,8 @@ You can find out more about Spine key concepts [here](concepts.md).
  
 Find more about Industry [experience](prior_art.md) that inspired us to create Spine.
 
+### Get Started Quickly
+
 
 ### Learn More about Using Spine
 
