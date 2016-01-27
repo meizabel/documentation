@@ -13,4 +13,5 @@
    * [Spine Developer Starter Guide](contribute/spine_developer_starter_guide.md)
    * [Coding Conventions](contribute/coding_conventions.md)
    * [IntelliJ Idea Configuration](Getting Started/idea_config.md)
+   * [Using Gradle Snapshots]
 
