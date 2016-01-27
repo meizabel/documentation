@@ -14,5 +14,5 @@
    * [Coding Conventions](contribute/coding_conventions.md)
    * [IntelliJ Idea Configuration](Getting Started/idea_config.md)
    * [Using Gradle Snapshots](contribute/using_gradle_snapshots.md)
-   * Configuring Local Datastore Environment
+   * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
 
