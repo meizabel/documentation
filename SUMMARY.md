@@ -11,5 +11,5 @@
 * [FAQ](faq.md)
 * [Samples](Samples/README.md)
 * [Contribute](contribute/README.md)
-   * [Spine Developer Starter Guide](Contribute./spine-dev-starter-quide.md)
+   * [Spine Developer Starter Guide](contribute./spine-dev-starter-quide.md)
 
