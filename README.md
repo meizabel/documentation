@@ -1,8 +1,7 @@
 # Welcome to Spine Event Engine
 
 Spine Event Engine is a multi-language, open-source, event sourcing framework.
-
-Spine helps developers to build Command Query Responsibility Segregation (CQRS) and Event Sourcing applications. 
+It helps developers to build Command Query Responsibility Segregation (CQRS) and Event Sourcing applications. 
 
 Spine champions the idea of living/executable documentation
 
