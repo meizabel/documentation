@@ -1,8 +1,7 @@
 # Welcome to Spine Event Engine
 
-Welcome to the developer documentation for Spine Event Engine, a multi-language, open-source, event sourcing framework.
+Spine Event Engine is a multi-language, open-source, event sourcing framework.
 
-This document introduces you to Spine Event Engine. You'll find more <a href="/docs/tutorials/principles.html/">tutorials</a> and <a href="/docs/reference/">reference docs</a> in this site - more documentation is coming soon!
 
 
 ## What is Spine Event Engine
@@ -27,3 +26,5 @@ Find out how following !!! [leading industry trends](/docs/guides/priorart.html)
 - Read a detailed description of the <a href ="http://www.grpc.io/docs/guides/wire.html">gRPC over HTTP2 protocol</a>.
 
 
+
+This document introduces you to Spine Event Engine. You'll find more <a href="/docs/tutorials/principles.html/">tutorials</a> and <a href="/docs/reference/">reference docs</a> in this site - more documentation is coming soon!
