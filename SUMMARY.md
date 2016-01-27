@@ -5,7 +5,7 @@
 * [Prior Art](prior_art.md)
 * [Getting Started](Getting Started/README.md)
 * Name-TBD
-    * Principles
+   * [Principles](princeiples/principles.md)
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](Command Handler.md)
@@ -16,8 +16,7 @@
    * [Coding Conventions](contribute/coding_conventions.md)
    * [IntelliJ Idea Configuration](Getting Started/idea_config.md)
    * [Using Gradle Snapshots](contribute/using_gradle_snapshots.md)
-   
 * [Working with Data Storages](data_storage/README.md)
-    * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
+   * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
 * [Motivation to rewrite](Motivation_to_rewrite.md)
 
