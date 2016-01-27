@@ -4,7 +4,6 @@
 * [Concepts](concepts.md)
 * [Prior Art](prior_art.md)
 * [Getting Started](Getting Started/README.md)
-   * [Installation](Getting Started/installation.md)
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](Command Handler.md)
@@ -12,5 +11,6 @@
 * [Samples](Samples/README.md)
 * [Contribute](contribute/README.md)
    * [Spine Developer Starter Guide](contribute/spine_developer_starter_guide.md)
+   * [Installation](Getting Started/installation.md)
    * [Coding Conventions](contribute/coding_conventions.md)
 
