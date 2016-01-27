@@ -15,10 +15,9 @@ Spine is built on top of [Protocol Buffers](https://developers.google.com/protoc
 The Framework provides implementations of the most important building blocks, such as aggregates, repositories, command dispatchers, event buses and stream projections. 
 You can find out more about Spine key concepts [here](concepts.md).
  
-#### Name Background 
-Find out how following !!! [leading industry trends](/docs/guides/priorart.html) we were !!! [inspired](/docs/guides/motivation.html) to create Spine.
+Find out how following [leading industry trends](prior_art.md) we were !!! [inspired](/docs/guides/motivation.html) to create Spine.
 
 
-### Learn More 
+### Learn More about Using Spine
 
 This document introduces you to Spine Event Engine. You'll find more <a href="/docs/tutorials/principles.html/">tutorials</a> and <a href="/docs/reference/">reference docs</a> in this site - more documentation is coming soon!
