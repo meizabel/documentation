@@ -19,5 +19,6 @@ You can find out more about Spine key concepts [here](concepts.md).
 Find out how following !!! [leading industry trends](/docs/guides/priorart.html) we were !!! [inspired](/docs/guides/motivation.html) to create Spine.
 
 
+### Learn More 
 
 This document introduces you to Spine Event Engine. You'll find more <a href="/docs/tutorials/principles.html/">tutorials</a> and <a href="/docs/reference/">reference docs</a> in this site - more documentation is coming soon!
