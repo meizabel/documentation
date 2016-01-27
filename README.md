@@ -1,4 +1,4 @@
-#Getting started
+# Welcome to Spine Event Engine
 
 Welcome to the developer documentation for Spine Event Engine, a multi-language, open-source, event sourcing framework.
 
