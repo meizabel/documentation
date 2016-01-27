@@ -2,7 +2,7 @@
 
 <p class="lead"> This document introduces some key Spine architecture concepts and terms usage specifics.</p> It assumes that you've read the [Overview](/docs/index.html). For language-specific details, see the [Quick Start](/docs/guides/start), [tutorial](/docs/tutorials/basic/java.html), and reference documentation for your chosen language(s).
 
-![Spine Event Engine Diargram](Grey-Blue-SpineEventEngine.svg)
+![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
 
 **Command** is an instruction to do something. 
 Command is any method that mutates state. In Spine [command](/docs/tutorials/basic/java.html) is as protobuf message. 
