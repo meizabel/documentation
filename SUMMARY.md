@@ -12,5 +12,5 @@
 * [Contribute](contribute/README.md)
    * [Spine Developer Starter Guide](contribute/spine_developer_starter_guide.md)
    * [Coding Conventions](contribute/coding_conventions.md)
-   * [Installation](Getting Started/installation.md)
+   * [Installation](Getting Started/idea_config.md)
 
