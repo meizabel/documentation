@@ -5,3 +5,5 @@
 
 
 
+You can find out about the Spine Event Engine source code repositories in
+[Spine](https://github.com/SpineEventEngine).
