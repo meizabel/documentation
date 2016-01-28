@@ -18,7 +18,7 @@ Capture all changes to an application state as a sequence of events. In Spine ev
 **Aggregate** is a pattern in Domain-Driven Design. According to  [Martin Fowler](http://martinfowler.com/bliki/DDD_Aggregate.html), a DDD aggregate is a cluster of domain objects that can be treated as a single unit. 
 
 Specifically, an aggregate will handle commands, apply events, and have a state model encapsulated within it that allows it to implement the required command validation, thus upholding the invariants (business rules) of the aggregate.
-Read more on [Aggregate definition](/docs/tutorials/basic/java.html) in Spine.
+Read more on [Aggregate definition](/java/aggregate.md)) in Spine.
 
 **Aggregate State** - each aggregate has a state, which represents Aggregate structure. Aggregate State is defined as protobuf message in Spine. 
 
