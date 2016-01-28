@@ -9,7 +9,7 @@
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](Command Handler.md)
-   * Code Generation
+   * [Code Generation](java/code_generation.md)
 * [FAQ](faq.md)
 * [Sample Projects](Samples/README.md)
 * [Contribute](contribute/README.md)
