@@ -1,6 +1,6 @@
 # Spine Event Engine Concepts
 
-<p class="lead"> This document introduces some key Spine architecture concepts.</p> It assumes that you've read the [Introduction](README.md). For language-specific details, see the [Getting Started](/docs/guides/start), [tutorial](/docs/tutorials/basic/java.html), and reference documentation for your chosen language(s).
+<p class="lead"> This document introduces some key Spine architecture concepts.</p> It assumes that you've read the [Introduction](README.md). For language-specific details, see the [Getting Started](/), [tutorial](/docs/tutorials/basic/java.html), and reference documentation for your chosen language(s).
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
 
