@@ -13,7 +13,7 @@ Spine provides realization for most important building blocks of the CQRS orient
 Command focuses on what the user considers as an operation. In Spine [command](/java) is as protobuf message. 
 
 **Event** is something that happened in the past.
-Capture all changes to an application state as a sequence of events. In Spine events are defined as prorobuf messages. Find out more about [Writing an Event](/docs/tutorials/basic/java.html).
+Capture all changes to an application state as a sequence of events. In Spine events are defined as prorobuf messages. Find out more about [Writing an Event] .
 
 **Aggregate** is a pattern in Domain-Driven Design. According to  [Martin Fowler](http://martinfowler.com/bliki/DDD_Aggregate.html), a DDD aggregate is a cluster of domain objects that can be treated as a single unit. 
 
