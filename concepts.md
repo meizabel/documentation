@@ -10,7 +10,7 @@ Spine provides realization for most important building blocks of the CQRS orient
 
 
 **Command** is an instruction to do something. 
-Command focuses on what the user considers as an operation. In Spine [command](/java) is as protobuf message. 
+Command focuses on what the user considers as an operation. In Spine [command](/java) is defined as a protobuf message. 
 
 **Event** is something that happened in the past.
 Capture all changes to an application state as a sequence of events. In Spine events are defined as prorobuf messages. Find out more about [Writing an Event] .
