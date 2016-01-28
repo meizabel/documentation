@@ -15,7 +15,7 @@ Command focuses on what the user considers as an operation. They are named with 
 **Event** is something that happened in the past.
 Capture all changes to an application state as a sequence of events. In Spine events are defined as protobuf messages. Find out more about [Writing an Event] .
 
-**Aggregate** is a pattern in Domain-Driven Design. According to  [Martin Fowler](http://martinfowler.com/bliki/DDD_Aggregate.html), a DDD aggregate is a cluster of domain objects that can be treated as a single unit. 
+**Aggregate** , a DDD aggregate is a cluster of domain objects that can be treated as a single unit. 
 
 Specifically, an aggregate will handle commands, apply events, and have a state model encapsulated within it that allows it to implement the required command validation, thus upholding the invariants (business rules) of the aggregate.
 Read more on declaring an [Aggregate](/java/aggregate.md)) in Spine.
