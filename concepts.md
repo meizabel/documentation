@@ -1,11 +1,16 @@
 # Spine Event Engine Concepts
 
-<p class="lead"> This document introduces some key Spine architecture concepts.</p> It assumes that you've read the [Introduction](README.md). For language-specific details, see the [Getting Started](/), [tutorial](/docs/tutorials/basic/java.html), and reference documentation for your chosen language(s).
+<p class="lead"> This document introduces some key Spine architecture concepts.</p> It assumes that you've read the [Introduction](README.md). For language-specific details, see the [Getting Started](/Getting Started/README.md).
+The Diagram below represents architecture of the application build using Spine.
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
 
+
+Spine provides realization for most important building blocks of the CQRS oriented application.
+
+
 **Command** is an instruction to do something. 
-Command is any method that mutates state. In Spine [command](/docs/tutorials/basic/java.html) is as protobuf message. 
+Command focuses on what the user considers as an operation. In Spine [command](/java) is as protobuf message. 
 
 **Event** is something that happened in the past.
 Capture all changes to an application state as a sequence of events. In Spine events are defined as prorobuf messages. Find out more about [Writing an Event](/docs/tutorials/basic/java.html).
