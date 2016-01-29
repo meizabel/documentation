@@ -8,7 +8,7 @@
    * [Principles](princeiples/principles.md)
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
-   * [Command Handler](Command Handler.md)
+   * [Command Handler](java/command_handler.md)
    * [Code Generation](java/code_generation.md)
 * [FAQ](faq.md)
 * [Sample Projects](Samples/README.md)
