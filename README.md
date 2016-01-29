@@ -20,7 +20,9 @@ While working on Spine we followed great industry [experience](prior_art.md) and
 ### Get Started
 
 At the moment Spine supports application with backend part written on Java and any UI realization. 
-Spine supports application clients on Java, JavaScript, Android and iOS (Swift))
+Spine allows building client applications on Java, JavaScript, Android and iOS (Swift. 
+
+To get up and running with Spine, check the following articles:
 * Quick Start - TBD
 * Tutorials for Java Projects - TBD
 
