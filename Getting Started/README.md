@@ -5,10 +5,11 @@
 
 
 Core grade dependency:
-
-````dependencies {
-[1/29/16, 4:18 PM] Oleksii Tymchenko (oleksii.tymchenko@teamdev.com):   compile group: 'org.spine3', name: 'core-java', version: '0.2', changing: true
-}````
+<pre>
+dependencies {
+compile group: 'org.spine3', name: 'core-java', version: '0.2', changing: true
+}
+</pre>
 
 [1/29/16, 4:18 PM] Oleksii Tymchenko (oleksii.tymchenko@teamdev.com): //version is to be changed
 [1/29/16, 4:19 PM] Oleksii Tymchenko (oleksii.tymchenko@teamdev.com): //to dependencies:
