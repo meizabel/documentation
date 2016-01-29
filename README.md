@@ -8,13 +8,14 @@ Spine aims to free up developers from creating boilerplate code as much as possi
 
 ### Why Spine?
 TBD
+
 It is built on top of [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) (a.k.a. protobuf) and [gRPS](http://www.grpc.io/docs/) to bring easiness and efficiency into development of the applications with a microservice-oriented architecture. All this allows you to focus on your business logic, instead of the plumbing.
 
 
 The Framework provides implementations of the most important CQRS/ES building blocks. 
 You can find out more about Spine key concepts [here](concepts.md).
  
-Find more about Industry [experience](prior_art.md) that inspired us to create Spine.
+While working on Spine we followed great industry [experience](prior_art.md) and inspired by many modern works in this field.
 
 ### Get Started Quickly
 * tbd
@@ -25,5 +26,5 @@ Find more about Industry [experience](prior_art.md) that inspired us to create S
 ### Learn More about Using Spine
 
 
-* <a href="/docs/tutorials/principles.html/">tutorials</a> 
-* <a href="/docs/reference/">reference docs</a> 
+* TBD
+* TBD
