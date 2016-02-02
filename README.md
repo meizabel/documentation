@@ -1,30 +1,35 @@
 # Welcome to Spine Event Engine
 
-Welcome to the developer documentation for Spine Event Engine, a multi-language, open-source, event sourcing framework.
+Spine Event Engine is a multi-language, open-source, event sourcing framework.
+It helps developers to build Command Query Responsibility Segregation (CQRS) and Event Sourcing (ES) applications. 
 
-This document introduces you to Spine Event Engine. You'll find more <a href="/docs/tutorials/principles.html/">tutorials</a> and <a href="/docs/reference/">reference docs</a> in this site - more documentation is coming soon!
+Spine aims to free up developers from creating boilerplate code as much as possible.
 
 
-## What is Spine Event Engine
+### Why Spine?
+TBD
 
-Spine Event Engine is the framework that helps developers to build Command Query Responsibility Segregation (CQRS) and Event Sourcing applications. 
+It is built on top of [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) (a.k.a. protobuf) and [gRPS](http://www.grpc.io/docs/) to bring easiness and efficiency into development of the applications with a microservice-oriented architecture. All this allows you to focus on your business logic, instead of the plumbing.
 
-Spine is built on top of [Protocol Buffers] (https://developers.google.com/protocol-buffers/docs/overview) and [GRPS](http://www.grpc.io/docs/) to bring easiness and efficiency into development of the applications with a microservice-oriented architecture. All this allows you to focus on your business logic, instead of the plumbing.
 
-![Spine Event Engine Diargram](Grey-Blue-SpineEventEngine.svg)
-
-The Framework provides implementations of the most important building blocks, such as aggregates, repositories, command dispatchers, event buses and stream projections. 
-You can find out more about Spine key concepts [here](/docs/guides/concepts.html).
+The Framework provides implementations of the most important CQRS/ES building blocks. 
+You can find out more about Spine key concepts [here](concepts.md).
  
-#### Name Background 
- We want to be a framework that provides an infrastructure and connects so to say “service” parts of applications with their “brains” — business logic. 
- Find out how following [leading industry trends](/docs/guides/priorart.html) we were [inspired](/docs/guides/motivation.html) to create Spine. 
+While working on Spine we followed great industry [experience](prior_art.md) and inspired by many modern works in this field.
 
-## Read more!
+### Get Started
 
-- Find out how to install Spine and get started in each language's [quick start](/docs/guides/start.html).
-- Follow the [tutorial(s)](/docs/tutorials/principles.html) for your favorite language(s).
-- Discover about <a href = "http://www.grpc.io/docs/">gRPC</a>.
-- Read a detailed description of the <a href ="http://www.grpc.io/docs/guides/wire.html">gRPC over HTTP2 protocol</a>.
+At the moment Spine supports application with backend part written on Java and any UI realization. 
+Spine allows building client applications on Java, JavaScript, Android and iOS (Swift. 
+
+To get up and running with Spine, check the following articles:
+* Quick Start - TBD
+* Tutorials for Java Projects - TBD
 
 
+
+### Learn More about Using Spine
+
+
+* TBD
+* TBD
