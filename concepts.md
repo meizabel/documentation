@@ -1,6 +1,6 @@
 # Spine Event Engine Concepts
 
-<p class="lead"> This document introduces some key Spine architecture concepts.</p> It assumes that you've read the [Introduction](README.md). For language-specific details, see the [Getting Started](/Getting Started/README.md).
+<p class="lead"> This chapter introduces some key Spine architecture concepts.</p> It assumes that you've read the [Introduction](README.md). For language-specific details, see the [Getting Started](/Getting Started/README.md).
 The Diagram below represents architecture of the application build using Spine.
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
@@ -15,7 +15,7 @@ Spine provides realization for most important building blocks of the CQRS orient
 Capture all changes to an application state as a sequence of events. In Spine events are defined as protobuf messages. Find out more about [Writing an Event] .
 
 **Aggregate** handles commands, applies events, and have a state model encapsulated within it that allows it to implement the required command validation, thus upholding the invariants (business rules) of the aggregate.
-Read more on declaring an [Aggregate](/java/aggregate.md)) in Spine.
+Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
 
 **Aggregate Repository** manages Aggregates, sends events to Event Bus and latest Aggregate States to the Aggregate Stand.
 
@@ -35,4 +35,8 @@ Read more on declaring an [Aggregate](/java/aggregate.md)) in Spine.
 
   
 
-**Stream Projection**  - Stream Projection. 
+**Stream Projection**  
+
+** Aggregate Stand ** provides service similar to what Stream Projections does, the Stand would return complete instances of aggregate states, or their projections upon queries from users.
+
+Aggregate Stand Service and Stream Projection Repositories are linked to the Query service, and the Query Service would read data from them, then passing it to the client.
