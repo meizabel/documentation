@@ -9,6 +9,7 @@
 Core gradle dependency:
 <pre>
 dependencies {
+...
 compile group: 'org.spine3', name: 'core-java', version: '0.2', changing: true
 }
 </pre>
@@ -17,6 +18,7 @@ _version is to be changed_
 
 <pre>
 dependencies {
+...
  compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.0.0-beta-1'
 }
 </pre>
