@@ -32,7 +32,7 @@ Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
 **Process Manager Repository** manages communications between Command Bus and Process Manager. It also processes events from the Event Bus.
 
 
-**Event Bus** 
+**Event Bus** allows publish-subscribe-style communication between components without requiring the components to explicitly register with one another (and thus be aware of each other).
 
 ** Event Handler**
 
