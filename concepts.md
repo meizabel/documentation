@@ -8,6 +8,8 @@ The Diagram below represents an architecture of the application built with Spine
 
 Spine provides realization for most important building blocks of the CQRS Event Sourced application. In terminology we heavily lean on Domain-Driven Design(DDD) [“big blue book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) and [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx).  
 
+#### * Below you can find a typical architecture created within the Bounded Context. In different Bounded Contexts some blocks could be omitted, whilst following the generic project structure.*
+
 ##Write side
 **Command** is an instruction to do something. Commands are messages that instruct a specific entity to perform a certain action.They are named with a verb in the imperative mood plus and may include the aggregate type. Unlike an event, a command is not a statement of fact; it's only a request, and thus may be refused. (A typical way to convey refusal is to throw an exception).In Spine [command](/java) is defined as a protobuf message. 
 
@@ -43,5 +45,7 @@ Command Handler changes the state of the business model and produces correspondi
 **Projection.** Objects that subscribe to a stream of events in the system, and provide a view of these to the application. Stream Projection Repository manages Projections.
 
 **Query Service**. Aggregate Stand Service and Stream Projection Repositories are linked to the Query service, and the Query Service would read data from them, then passing it to the client.
+
+___ 
 
 For language-specific details, see the [Getting Started](/Getting Started/README.md).
