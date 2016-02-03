@@ -21,7 +21,7 @@ Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
 
 **Command Bus**
 
-**Command Handler**
+**Command Handler** receives and validates commands, executes the required actions, and dispatches events describing any state changes to the system.
 
 **Command Store**
 
