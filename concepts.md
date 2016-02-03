@@ -1,6 +1,6 @@
 # Spine Event Engine Concepts
 
-<p class="lead"> This chapter introduces some key architecture concepts we use in Spine Event En gine.</p> It assumes that you've read the [Introduction](README.md). For language-specific details, see the [Getting Started](/Getting Started/README.md).
+<p class="lead"> This chapter introduces some key architecture concepts we use in Spine Event En gine.</p> It assumes that you've read the [Introduction](README.md). 
 The Diagram below represents an architecture of the application built with Spine Event Engine.
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
@@ -41,4 +41,6 @@ Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
 
 
 
-Aggregate Stand Service and Stream Projection Repositories are linked to the Query service, and the Query Service would read data from them, then passing it to the client.
+**Query Service**. Aggregate Stand Service and Stream Projection Repositories are linked to the Query service, and the Query Service would read data from them, then passing it to the client.
+
+For language-specific details, see the [Getting Started](/Getting Started/README.md).
