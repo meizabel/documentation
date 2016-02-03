@@ -13,9 +13,9 @@ It is built on top of [Protocol Buffers](https://developers.google.com/protocol-
 
 
 The Framework provides implementations of the most important CQRS/ES building blocks. 
-You can find out more about Spine key concepts [here](concepts.md).
+You can find out more about key architecture concepts [here](concepts.md).
  
-While working on Spine we absorbed great industry [experience](prior_art.md) and inspired by many modern works in this field.
+While working on Spine we absorbed great industry [experience](prior_art.md) and were inspired by many modern works in this field.
 
 ### Get Started
 
