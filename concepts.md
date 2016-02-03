@@ -21,8 +21,8 @@ Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
 
 **Command Bus** is responsible to routing the command to its handler. Unlike Command Handler it does not change business model or produce events.
 
-**Command Handler** receives and validates commands, executes the required actions, 
-Command Handler changes the state of the business model and produces corresponding events and writes it to the Event Store. It also writes status to Command Store.
+**Command Handler** receives and validates commands, executes the required actions. 
+Command Handler changes the state of the business model and produces corresponding events, which are then written to the Event Store. It also writes status to Command Store.
 
 **Command Store** 
 
