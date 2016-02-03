@@ -11,6 +11,7 @@
    * [Command Handler](java/command_handler.md)
    * [Snapshot](java/snapshot.md)
    * [Code Generation](java/code_generation.md)
+   * Query Side
 * [FAQ](faq.md)
 * [Sample Projects](Samples/README.md)
 * [Contribute](contribute/README.md)
