@@ -28,7 +28,7 @@ Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
 
 **Event Bus**
 
-** Process Manager** — is a piece of code that coordinates and routes messages between bounded contexts and aggregates. The term is grabbed from [CQRS Journey](https://msdn.microsoft.com/en-us/library/jj554200.aspx) book.A process manager gives a single place where the routing is defined.
+** Process Manager** — is a piece of code that coordinates and routes messages between bounded contexts and aggregates. The term is grabbed from [CQRS Journey](https://msdn.microsoft.com/en-us/library/jj554200.aspx) book. A process manager gives a single place where the routing is defined.
 
 **Process Manager Repository** manages communications between Command Bus and Process Manager. It also processes events from the Event Bus.
 
