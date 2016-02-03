@@ -1,7 +1,7 @@
 # Spine Event Engine Concepts
 
-<p class="lead"> This chapter introduces some key Spine architecture concepts.</p> It assumes that you've read the [Introduction](README.md). For language-specific details, see the [Getting Started](/Getting Started/README.md).
-The Diagram below represents architecture of the application build using Spine.
+<p class="lead"> This chapter introduces some key architecture concepts we use in Spine Event En gine.</p> It assumes that you've read the [Introduction](README.md). For language-specific details, see the [Getting Started](/Getting Started/README.md).
+The Diagram below represents an architecture of the application built with Spine Event Engine.
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
 
