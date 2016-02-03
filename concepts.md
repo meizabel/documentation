@@ -19,9 +19,10 @@ Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
 
 **Aggregate Repository** manages Aggregates, sends events to Event Bus and latest Aggregate States to the Aggregate Stand.
 
-**Command Bus** is responsible to routing the command to it’s handler.
+**Command Bus** is responsible to routing the command to its handler. Unlike Command Handler it does not change business model or produce events.
 
-**Command Handler** receives and validates commands, executes the required actions, and dispatches events describing any state changes to the system.
+**Command Handler** receives and validates commands, executes the required actions, 
+Command Handler changes the state of the business model and produces corresponding events and writes it to the Event Store. It also writes status to Command Store.
 
 **Command Store** 
 
