@@ -9,6 +9,7 @@
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](java/command_handler.md)
+   * Snapshot
    * [Code Generation](java/code_generation.md)
 * [FAQ](faq.md)
 * [Sample Projects](Samples/README.md)
