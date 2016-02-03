@@ -42,7 +42,7 @@ Command Handler changes the state of the business model and produces correspondi
   ## Read Side
   ** Aggregate Stand ** is called that way to emphasize its _“read”_ nature. It provides service similar to what Stream Projection does, the Aggregate Stand would return complete instances of aggregate states, or their projections upon queries from users.
 
-**Projection.** Objects that subscribe to a stream of events in the system, and provide a view of these to the application. Stream Projection Repository manages Projections.
+**Projection.** Objects that subscribe to a stream of events in the system, and provide a view of these to the application. Projection Repository manages Projections.
 
 **Query Service**. Aggregate Stand Service and Stream Projection Repositories are linked to the Query service, and the Query Service would read data from them, then passing it to the client.
 
