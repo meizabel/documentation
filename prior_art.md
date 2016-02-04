@@ -10,10 +10,10 @@ Major addition to the existent variety of tools, libraries and frameworks that S
 Spine is created for applications that follow[(CQRS)](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html). 
 
 
-This document synthesizes all of our experience and observations on a wide variety of software-as-a-service apps.
-We were inspired by major frameworks on the market like [Axon](http://www.axonframework.org/) and 
+This document synthesizes all of our experience and observations  on the market like [Axon](http://www.axonframework.org/) and 
 
 [Event Store](https://geteventstore.com/). 
+The contributors to this document have been directly involved in the development and deployment of hundreds of apps, and indirectly witnessed the development, operation, and scaling of  apps via our work on .
 The important difference though is that we decided not to use JSON Objects for data transmission. This allows to avoid additional transformation and thus has even better performance. 
 
 
@@ -33,7 +33,7 @@ Spine uses typed commands and events. JSON is nice, but having commands and even
 
 ---
 
-The contributors to this document have been directly involved in the development and deployment of hundreds of apps, and indirectly witnessed the development, operation, and scaling of  apps via our work on .
+
 
  
 Our motivation is to raise awareness of some systemic problems we’ve seen in modern application development, to provide a shared vocabulary for discussing those problems, and to offer a set of practical solutions to those problems with accompanying terminology. 
