@@ -13,12 +13,11 @@ Spine is created for applications that follow[(CQRS)](http://martinfowler.com/bl
 This document synthesizes all of our experience and observations  on the market like [Axon](http://www.axonframework.org/) and 
 
 [Event Store](https://geteventstore.com/). 
-The contributors to this document have been directly involved in the development and deployment of hundreds of apps, and indirectly witnessed the development, operation, and scaling of  apps via our work on .
+
 The important difference though is that we decided not to use JSON Objects for data transmission. This allows to avoid additional transformation and thus has even better performance. 
 
 
-
-Currently to transform code from one language to another you have to use translators, or back-and-force with JSON. We also want to make a ubiqutous language ubiquites in technical
+Currently to transform code from one language to another you have to use translators, or back-and-force with JSON. We also want to make a ubiquitous language ubiquitous in technical
  
 Immutability is one of the corner concepts used in Spine. 
 
