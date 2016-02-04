@@ -24,7 +24,7 @@ Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
 **Command Handler** receives and validates commands, executes the required actions. 
 Command Handler changes the state of the business model and produces corresponding events, which are then written to the [Event Store](#eventstore). It also writes status to Command Store.
 
-**Command Store** receives commands from the Command Bus and writes command statuses received from the Aggregate Repository and Command Handler.
+**Command Store** receives commands from the Command Bus and writes command statuses received from Aggregate Repository and Command Handler.
 
 ** Process Manager** coordinates and routes messages between bounded contexts and aggregates. You may find a broader explanation of this term  in [CQRS Journey](https://msdn.microsoft.com/en-us/library/jj591569.aspx) book. A process manager gives a single place where the routing is defined.
 
