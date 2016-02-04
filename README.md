@@ -19,7 +19,7 @@ While working on Spine we absorbed great industry [experience](prior_art.md) and
 
 ### Get Started
 
-At the moment Spine allows building applications with backend part written on Java and any UI framework, as well as building client applications on Java, JavaScript, Android and iOS (Swift).. 
+At the moment Spine allows building applications with Java backend and any UI framework, as well as building client applications on Java, JavaScript, Android and iOS (Swift).. 
 
 To get up and running with Spine, check the following articles:
 * [Quick Start](Getting Started/README.md) to create your first simplest project on Spine
