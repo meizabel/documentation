@@ -22,3 +22,4 @@ Having absorbed leading [industry experience] (/docs/guides/priorart.html), foll
 Spine aims to free up developers from creating boilerplate code as much as possible. 
 
 Using [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) for formulating business domain allows us to make this language [ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html) not only in human interaction, but in communication of computing devices too.
+Building on top of [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) and [gRPS](http://www.grpc.io/docs/), Spine aims to provide many infrastructure solutions, so that developers can focus on business logic, effective web and mobile UI, etc.
