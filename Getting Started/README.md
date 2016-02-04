@@ -25,9 +25,10 @@ dependencies {
 _protobuf version is to be changed_
 
 ### “Hellow Spine!” Sample Project
-Create protobuf side (message description)
-Create Java side (handlers, init storage etc)
-Create Application class and execute
+* Create protobuf side (message description)
+* Create Java side (handlers, init storage etc)
+* Create Application class and execute
+
 
  ** TODO:** create sample classes/proto for pp 1 to 3
  
