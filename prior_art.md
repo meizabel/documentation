@@ -5,7 +5,7 @@ This section will give you an overview of the concepts and implementations Spine
 
 Spine didn’t appear out of the blue, when the authors of the framework had nothing better to do. It is the result of observation of problems in real applications, and the experience from previous attempts to address or correct these problems, that has led to the Spine vision.
 
-Major addition to the existent variety of tools, libraries and frameworks that Spine brings — is automatic code generation for multiple application clients. It is reached by using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview), which allow automatic code generation for events and commands on variety of platforms.
+Major addition to the existent variety of tools, libraries and frameworks that Spine brings — is automatic code generation for multiple application clients. It is reached by using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview), which allow automatic code generation for events and commands on a range of platforms.
 
 Spine is created for applications that follow[(CQRS)](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html). 
 
