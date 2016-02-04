@@ -16,6 +16,7 @@ Building modern web applications requires a lot of work for organizing storage a
 Building on top of [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) and [gRPS](http://www.grpc.io/docs/), Spine aims to provide many infrastructure solutions, so that developers can focus on business logic, effective web and mobile UI, etc.
 
 
+
 ---
 Spine aims to free up developers from creating boilerplate code as much as possible. 
 
