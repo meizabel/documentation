@@ -17,7 +17,8 @@ This document synthesizes all of our experience and observations  on the market 
 The important difference though is that we decided not to use JSON Objects for data transmission. This allows to avoid additional transformation and thus has even better performance. 
 
 
-Currently to transform code from one language to another you have to use translators, or back-and-force with JSON. We also want to make a ubiquitous language ubiquitous in technical
+Currently to transform code from one language to another you have to use translators, or back-and-force with JSON. Using [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) for formulating business domain allows us
+ to make this language [ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html) not only in human interaction, but in communication of computing devices too.
  
 Immutability is one of the corner concepts used in Spine. 
 
