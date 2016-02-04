@@ -12,6 +12,7 @@
    * [Snapshot](java/snapshot.md)
    * [Code Generation](java/code_generation.md)
    * [Query Side](java/queryside.md)
+   * Process Manager
 * [FAQ](faq.md)
 * [Sample Projects](Samples/README.md)
 * [Contribute](contribute/README.md)
