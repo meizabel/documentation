@@ -3,14 +3,22 @@
 The demands on software projects increase rapidly as time progresses. So do architecture approaches to meet these needs. 
 This section will give you an overview of the concepts and implementations Spine has inherited, while brought some important differences into play.
 
-While creating Spine Event Engine we followed steps of [(CQRS)](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html). 
+Spine didn’t appear out of the blue, when the authors of the framework had nothing better to do. It is the result of observation of problems in real applications, and the experience from previous attempts to address or correct these problems, that has led to the Spine vision.
 
-We were inspired by major frameworks on the market like [Axon](http://www.axonframework.org/) and [Event Store](https://geteventstore.com/). 
-The important difference though is that we decided not to use JSON Objects for data transmission. This allows to avoid additional transformation and thus has event better performance. 
+Major addition to the existent variety of tools, libraries and frameworks that Spine brings — is automatic code generation for multiple application clients. It is reached by using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview), which allow automatic code generation for events and commands on a range of platforms.
 
-Using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) allows automatic code generation for events and commands on variety of platforms.
+Spine is created for applications that follow[(CQRS)](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html). 
 
-Currently to transform code from one language to another you have to use translators, or back-and-force with JSON. We also want to make a ubiqutous language ubiquites in technical
+
+This document synthesizes all of our experience and observations  on the market like [Axon](http://www.axonframework.org/) and 
+
+[Event Store](https://geteventstore.com/). 
+
+The important difference though is that we decided not to use JSON Objects for data transmission. This allows to avoid additional transformation and thus has even better performance. 
+
+
+Currently to transform code from one language to another you have to use translators, or back-and-force with JSON. Using [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) for formulating business domain allows us
+ to make this language [ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html) not only in human interaction, but in communication of computing devices too.
  
 Immutability is one of the corner concepts used in Spine. 
 
@@ -25,8 +33,9 @@ Spine uses typed commands and events. JSON is nice, but having commands and even
 
 ---
 
-The contributors to this document have been directly involved in the development and deployment of hundreds of apps, and indirectly witnessed the development, operation, and scaling of hundreds of thousands of apps via our work on the Heroku platform.
 
-This document synthesizes all of our experience and observations on a wide variety of software-as-a-service apps in the wild. It is a triangulation on ideal practices for app development, paying particular attention to the dynamics of the organic growth of an app over time, the dynamics of collaboration between developers working on the app’s codebase, and avoiding the cost of software erosion.
 
-Our motivation is to raise awareness of some systemic problems we’ve seen in modern application development, to provide a shared vocabulary for discussing those problems, and to offer a set of broad conceptual solutions to those problems with accompanying terminology. The format is inspired by Martin Fowler’s books Patterns of Enterprise Application Architecture and Refactoring.
+ 
+Our motivation is to raise awareness of some systemic problems we’ve seen in modern application development, to provide a shared vocabulary for discussing those problems, and to offer a set of practical solutions to those problems with accompanying terminology. 
+
+is inspired by Martin Fowler’s books Patterns of Enterprise Application Architecture and Refactoring.
