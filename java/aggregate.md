@@ -1,3 +1,4 @@
 ## Defining an Aggregate
 
-Aggregate is defined manually in your Java code. 
+Aggregate state is defined in a protobuf message. 
+
