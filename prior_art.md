@@ -21,12 +21,15 @@ Using [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) f
  Spine Event Engine synthesizes all of our experience and observations of the best-breed market products and solutions like [Axon](http://www.axonframework.org/), [Spring](https://spring.io/), [Event Store](https://geteventstore.com/), [InfluxDB](https://influxdata.com/) and many others.
  
 
+Our motivation is to raise awareness of some ways to make modern application development easier and more efficient, and to offer a set of practical solutions to bring it into life with accompanying approach and terminology. 
+
+In
+
 Immutability is one of the corner concepts used in Spine. 
 Spine uses typed commands and events. Having commands and events as first class citizens in the applications gives a lot of benefits in business logic. Not having to convert back-and-forth with Json gives some performance advantage.
 
 
 
-
-Our motivation is to raise awareness of some systemic problems we’ve seen in modern application development, to provide a shared vocabulary for discussing those problems, and to offer a set of practical solutions to those problems with accompanying terminology. 
+ 
 
 
