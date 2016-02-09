@@ -24,7 +24,7 @@ Spine uses typed commands and events. Having commands and events as first class 
  
  Spine won't be a best fit for the trading or highly loaded applications, where, for example, [LMAX](https://www.lmax.com/) does excellent job. Our motivation is to make modern applications development easier and more efficient, and to offer a set of practical solutions to bring this into life with accompanying approach and terminology. 
 
-In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)by Eric Evans, while combining some elements like “Process Manager” from [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft and adding our own, like [“Aggregate Stand”](concepts.md)
+In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)by Eric Evans, while combining some elements like “Process Manager” from [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft and adding our own, like [“Aggregate Stand”](concepts.md).
 
 We are yet at the beginning of our journey with Spine. Join us and share how it goes!
 
