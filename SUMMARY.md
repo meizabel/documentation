@@ -5,7 +5,7 @@
 * [Prior Art](prior_art.md)
 * [Getting Started](Getting Started/README.md)
 * [Essentials](essentials/README.md)
-   * Everything is Typed
+   * [Everything is Typed](essentials/typed.md)
    * [Working with Protobufs](essentials/principles.md)
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
