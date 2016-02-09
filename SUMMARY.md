@@ -12,7 +12,7 @@
    * [Writing Commands](java/commands.md)
    * [Command Handler](java/command_handler.md)
    * [Command Validation](java/command_validation.md)
-   * [Event Handler](java/event_handler.md)
+   * [Event Handler and Applier](java/event_handler.md)
    * [Snapshot](java/snapshot.md)
    * [Code Generation](java/code_generation.md)
    * [Query Side](java/queryside.md)
