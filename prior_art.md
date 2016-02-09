@@ -28,21 +28,11 @@ This document synthesizes all of our experience and observations  on the market 
 
 
 Immutability is one of the corner concepts used in Spine. 
-
 Spine uses typed commands and events. Having commands and events as first class citizens in the applications gives a lot of benefits in business logic. Not having to convert back-and-forth with Json gives some performance advantage.
 
 
 
 
-
-
-
-
----
-
-
-
- 
 Our motivation is to raise awareness of some systemic problems we’ve seen in modern application development, to provide a shared vocabulary for discussing those problems, and to offer a set of practical solutions to those problems with accompanying terminology. 
 
-is inspired by Martin Fowler’s books Patterns of Enterprise Application Architecture and Refactoring.
+
