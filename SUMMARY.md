@@ -9,7 +9,6 @@
    * [Everything is Typed](essentials/typed.md)
 * [Java](java/README.md)
    * [Writing Commands](java/commands.md)
-   * [Command Validation](java/command_validation.md)
    * [Writing Events](java/event.md)
    * [Writing Business Failures](java/writing_business_failures.md)
    * [Aggregate](java/aggregate.md)
