@@ -3,10 +3,10 @@
 <p class="lead">This tutorial provides a basic Java programmer's introduction to working with Spine. </p>
 
 
-TODO:
+## TODO:
 ### Stream Projection
 
-### Projection
+### FragmentedEntity
 
 ### Command Dispatcher
 Command Dispatcher invokes a handler method for the received command.
