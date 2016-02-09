@@ -1,6 +1,6 @@
 # Welcome to Spine Event Engine
 
-Spine Event Engine is a multi-language, open-source framework.
+Spine Event Engine is a multi-language, open-source, event sourcing framework.
 It helps developers to build Command Query Responsibility Segregation (CQRS) and Event Sourcing (ES) applications. 
 
 Spine aims to free up developers from creating boilerplate code as much as possible.
@@ -13,16 +13,21 @@ It is built on top of [Protocol Buffers](https://developers.google.com/protocol-
 
 
 The Framework provides implementations of the most important CQRS/ES building blocks. 
-You can find out more about key architecture concepts [here](concepts.md).
+You can find out more about Spine key concepts [here](concepts.md).
  
-While working on Spine we absorbed great industry [experience](prior_art.md) and were inspired by many modern works in this field.
+While working on Spine we absorbed great industry [experience](prior_art.md) and inspired by many modern works in this field.
 
 ### Get Started
 
+<<<<<<< HEAD
 At the moment Spine allows building applications with Java backend and any UI framework, as well as building client applications on Java, JavaScript, Android and iOS (Swift). 
+=======
+At the moment Spine supports application with backend part written on Java and any UI realization. 
+Spine allows building client applications on Java, JavaScript, Android and iOS (Swift. 
+>>>>>>> parent of 946f3ae... Concepts finished. added Process manager and start guide.
 
 To get up and running with Spine, check the following articles:
-* [Quick Start](Getting Started/README.md) to create your first simplest project on Spine
+* Quick Start - TBD
 * Tutorials for Java Projects - TBD
 
 
@@ -30,4 +35,6 @@ To get up and running with Spine, check the following articles:
 ### Learn More about Using Spine
 
 
+* TBD
+* TBD
 * TBD

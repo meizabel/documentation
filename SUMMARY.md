@@ -9,10 +9,7 @@
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](java/command_handler.md)
-   * [Snapshot](java/snapshot.md)
    * [Code Generation](java/code_generation.md)
-   * [Query Side](java/queryside.md)
-   * [Process Manager](java/process_manager.md)
 * [FAQ](faq.md)
 * [Sample Projects](Samples/README.md)
 * [Contribute](contribute/README.md)
@@ -22,5 +19,5 @@
    * [Using Gradle Snapshots](contribute/using_gradle_snapshots.md)
 * [Working with Data Storages](data_storage/README.md)
    * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
-
+* [Motivation to rewrite](Motivation_to_rewrite.md)
 
