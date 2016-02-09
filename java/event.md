@@ -23,7 +23,7 @@ message Event {
     EventContext context = 2;
 }
 ```
-Meta-information for an event.
+Meta-information for an event:
 ```java
 message EventContext {
     // The id of the event.
