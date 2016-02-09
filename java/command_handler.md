@@ -14,7 +14,7 @@ To be dispatched to the aggregate root, the command must have an attribute with 
 
 **Note:** the annotation `@Susbscribe` tells that the method participates in automatic dispatching of commands.
 
-A command handler method can throw [business failures](#bizfailure). This means the API of each command handler allows:
+A command handler method can throw [business failures](/java/#bizfailure). This means the API of each command handler allows:
 
 * Either produce an event (or a list of events). Or,
 * It can throw one or more business failures (which are clearly visible in the method signature).
