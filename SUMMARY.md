@@ -16,7 +16,7 @@
    * [Event Handler and Applier](java/event_handler.md)
    * [Snapshot](java/snapshot.md)
    * [Code Generation](java/code_generation.md)
-   * [Query Side](java/queryside.md)
+   * [Query Side](java/query_side.md)
    * [Process Manager](java/process_manager.md)
 * [FAQ](faq.md)
 * [Sample Projects](Samples/README.md)
