@@ -11,7 +11,7 @@ The `message` is the domain model part of command. The type of the command is de
 the type of its message. When we speak about a **command** as a typed thing, we refer to the message of the command.
 
 The context contains attributes common for all commands.
-A command message can hold any valid protobuf message.
+A command message is a protobuf message:
 
 ``````java
 message MyCommand {
@@ -21,6 +21,7 @@ message MyCommand {
     uint32 some_int = 3;
 }
 ``````
+If a command is for an aggregate or a process manager, the first field must contain the ID of the aggregate or the process manager.
 
 By convention command messages are defined in the file named`commands.proto`. Typically the file would reside in the protobuf package of an aggregate or a process manager.
 
