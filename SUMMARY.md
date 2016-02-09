@@ -10,7 +10,7 @@
 * [Java](java/README.md)
    * [Writing Commands](java/commands.md)
    * [Writing Events](java/event.md)
-   * [Writing Business Failures](java/writing_business_failures.md)
+   * [Defining Business Failures](java/defining_business_failures.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](java/command_handler.md)
    * [Event Handler and Applier](java/event_handler.md)
