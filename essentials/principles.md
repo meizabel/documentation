@@ -1,8 +1,6 @@
-# Principles
+# Working with Protocol Buffers
 
-
-
-### Working with Protocol Buffers
+Using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) allows automatic code generation for events and commands on variety of platforms hugely saving development team effort.
 
 By default Spine Event Engine uses *Protocol Buffers*, Google’s
 mature open source mechanism for serializing structured data. You
