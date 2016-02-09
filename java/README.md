@@ -86,13 +86,6 @@ EventBus allows publish-subscribe-style communication between components without
 
 ### Repository 
 
-### Bounded Context 
-
-Bounded Context is a central pattern in Domain-Driven Design. DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.[by Fowler] (http://martinfowler.com/bliki/BoundedContext.html)
-
-
-### Library
-
 ### Query
 
 ### Service
