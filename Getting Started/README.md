@@ -1,37 +1,46 @@
 # Getting Started 
 
 
-<p class="lead">To get up and running with Spine straight away, see the quick start for your chosen language, which provides links to installation instructions, quick instructions for building the example used in this guide, and more.</p>
+<p class="lead">To get up and running with Spine straight away, see the quick start, which provides links to installation instructions, quick instructions for building the example used in this guide, and more.</p>
 
-## Java Quick Start
+## Add Spine dependencies to Gradle project
+There are three artifacts that need to be added to your project:
+1. Client-side library.
+2. Model compiler and checker — for the server-side code with your business model.
+3. Server-side library — for the server-side code.
 
 
-Core gradle dependency:
+### Add model compiler and checker
+TODO
+
+### Add client-side library
+For client-side applications written in Java, please add the following:
 <pre>
 dependencies {
-...
-compile group: 'org.spine3', name: 'core-java', version: '0.2', changing: true
+    ...
+    compile group: 'org.spine3', name: 'client', version: '1.+'
 }
 </pre>
 
-_version is to be changed_
 
+### Add server-side library
+For server-side modules of your app, please add the following:
 <pre>
 dependencies {
-...
- compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.0.0-beta-1'
+    ...
+    compile group: 'org.spine3', name: 'server', version: '1.+'
 }
 </pre>
-_protobuf version is to be changed_
 
 ### “Hellow Spine!” Sample Project
-* Create protobuf side (message description)
-* Create Java side (handlers, init storage etc)
-* Create Application class and execute
+* Define commands, events, aggregate and projection states in protobuf.
+* Define business logic of aggregates and projections.
+* Create repositories.
+* Init Bounded Context with repositories and Storage Factory.
+* Create Application class and execute.
 
 
  ** TODO:** create sample classes/proto for pp 1 to 3
  
 
-You can find out about the Spine Event Engine source code repositories in
-[Spine](https://github.com/SpineEventEngine).
+You can find the Spine Event Engine source code repositories in [Spine](https://github.com/SpineEventEngine).
