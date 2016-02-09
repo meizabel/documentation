@@ -5,7 +5,7 @@
 * [Prior Art](prior_art.md)
 * [Getting Started](Getting Started/README.md)
 * [Essentials](essentials/README.md)
-   * [Principles](princeiples/principles.md)
+   * [Principles](essentials/principles.md)
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](java/command_handler.md)
