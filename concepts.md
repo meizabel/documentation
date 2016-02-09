@@ -1,4 +1,4 @@
-# Spine Event Engine Concepts
+# Concepts
 
 This chapter introduces some key architecture concepts Spine Event Engine is based on. It assumes that you've read the [Introduction](README.md). 
 Below you can find a typical Spine Event Engine application architecture employed within the Bounded Context.
