@@ -11,7 +11,7 @@ The `message` is the domain model part of command. The type of the command is de
 the type of its message. When we speak about a **command** as a typed thing, we refer to the message of the command.
 
 The context contains attributes common for all commands.
-A command can hold any valid Protobuf message, but in most cases, it would be a type defined in `commands.proto` file of the corresponding aggregate or process manager.
+A command can hold any valid protobuf message, but in most cases, it would be a type defined in `commands.proto` file of the corresponding aggregate or process manager.
 There should be **one and only one** command handler associated with the type of the command.
 
 ``````java
