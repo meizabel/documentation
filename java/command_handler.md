@@ -12,12 +12,15 @@ public void handle(Message command, CommandContext ctx) {
 
 To be dispatched to the aggregate root, the command must have an attribute with an ID of the aggregate. See Writing Aggregate Commands for details.
 
-Notice the annotation @Susbscribe, which tells that the method participates in automatic dispatching of commands.
+**Note:** the annotation `@Susbscribe` tells that the method participates in automatic dispatching of commands.
 
-General Command Handlers
+## Abstract Command Handlers
+* Writes Status to Command Store
+* Writes Events to Event Store
+* Accepts Bounded Context in c'tor
 
 TODO: describe implementing an interface.
 
-Registering Command Handlers
+## Registering Command Handlers
 
 TODO: automatic registration of aggregate handlers by registering the corresponding repository. TODO: registering general command handlers with the engine.
