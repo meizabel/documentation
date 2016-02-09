@@ -12,7 +12,6 @@
    * [Writing Events](java/event.md)
    * [Writing Business Failures](java/writing_business_failures.md)
    * [Aggregate](java/aggregate.md)
-   * [Aggregate State](java/aggregate_state.md)
    * [Command Handler](java/command_handler.md)
    * [Event Handler and Applier](java/event_handler.md)
    * [Snapshot](java/snapshot.md)
