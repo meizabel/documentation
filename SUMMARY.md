@@ -15,7 +15,7 @@
    * [Code Generation](java/code_generation.md)
    * [Query Side](java/queryside.md)
    * [Process Manager](java/process_manager.md)
-   * Command Validation
+   * [Command Validation](java/command_validation.md)
 * [FAQ](faq.md)
 * [Sample Projects](Samples/README.md)
 * [Contribute](contribute/README.md)
