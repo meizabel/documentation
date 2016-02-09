@@ -5,7 +5,7 @@
 * [Prior Art](prior_art.md)
 * [Getting Started](Getting Started/README.md)
 * [Essentials](essentials/README.md)
-   * [Principles](essentials/principles.md)
+   * [Working with Protobufs](essentials/principles.md)
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](java/command_handler.md)
@@ -22,5 +22,4 @@
    * [Using Gradle Snapshots](contribute/using_gradle_snapshots.md)
 * [Working with Data Storages](data_storage/README.md)
    * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
-
 
