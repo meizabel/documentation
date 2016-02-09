@@ -8,7 +8,7 @@ A command consists of two parts:
 * command context.
 
 The `message` is the domain model part of command. The type of the command is defined by
-the type of its message. When we speak about a *command* as a typed thing, we refer to the message of the command.
+the type of its message. When we speak about a **command** as a typed thing, we refer to the message of the command.
 
 The context contains attributes common for all commands.
 A command can hold any valid Protobuf message, but in most cases, it would be a type defined in `commands.proto` file of the corresponding aggregate or process manager.
