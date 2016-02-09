@@ -24,5 +24,5 @@ For Linux and the Other UNIX Systems:
 ``````
 ~/.<PRODUCT><VERSION>/config/filetypes
 ``````
-Where PRODUCT is ``````IntelliJIdea`````` or ``````IdeaIC``````, ``````VERSION`````` is IntelliJ IDEA version (14, 15, etc).
+Where PRODUCT is `IntelliJIdea`````` or ``````IdeaIC``````, ``````VERSION`````` is IntelliJ IDEA version (14, 15, etc).
 
