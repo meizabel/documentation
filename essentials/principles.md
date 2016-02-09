@@ -24,7 +24,3 @@ the major differences from the current default version in the [release notes](ht
 
 
 
-
-### Allow easy extension of commands and events as the app evolves
-
-In some approaches they suggest to have MyEvent_v2, etc. Which is ugly requires adding new handlers, etc.
