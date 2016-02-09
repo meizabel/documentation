@@ -55,10 +55,6 @@ EventBus allows publish-subscribe-style communication between components without
 
 ### Service
 
-### Catchup Subscription
-
-### Snapshot
-
 ### Command Validation
 
 
