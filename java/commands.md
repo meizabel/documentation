@@ -21,11 +21,12 @@ message Command {
     spine.base.CommandContext context = 2;
     }
 
-``````java
+``````
 
 Meta-information about the command and the environment, which generated the command.
-message CommandContext {
-    // The id of the command.
+
+``````java
+message CommandContext {The id of the command.
     CommandId command_id = 1;
 
     // The user who created the command.
@@ -42,7 +43,8 @@ message CommandContext {
 }
 
 <a name = "commandcontext"></a>
-### Command Context
+``````
+
 
 <a name="bizfailure"></a>
 ### Business Failure 
