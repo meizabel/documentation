@@ -26,7 +26,7 @@ Spine uses typed commands and events. Having commands and events as first class 
 
 In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)by Eric Evans, while combining some elements like “Process Manager” from [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft and adding our own, like [“Aggregate Stand”](concepts.md).
 
-We are yet at the beginning of our journey with Spine. Join us and share how it goes!
+We are yet at the beginning of our journey using Spine in the wild. Join us and share how it goes!
 
 
 
