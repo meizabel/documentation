@@ -5,7 +5,7 @@ For the majority of commands, a handler would be corresponding aggregate root ob
 * Message for command instance
 * CommandContext for meta-information on the command. 
 
-The method can have any name. We recommend call them handle:
+The method can have any name. We recommend call them **handle**:
 
 ```java
 @Assign
