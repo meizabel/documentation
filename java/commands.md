@@ -3,7 +3,9 @@
 Commands, as well as Events and Aggregate State are defined as protobuf messages
 `Command` is an instruction to do something.
 
-A command consists of two parts: command message and command context.
+A command consists of two parts: 
+* command message
+* command context.
 
 The `message` is the domain model part of command. The type of the command is defined by
 the type of its message. When we speak about a *command* as a typed thing, we refer to the message of the command.
@@ -41,8 +43,6 @@ message CommandContext {The id of the command.
     // The `namespace` attribute must be defined for commands in multitenant applications.
     Namespace namespace = 5;
 }
-
-<a name = "commandcontext"></a>
 ``````
 
 
