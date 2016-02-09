@@ -5,7 +5,8 @@
 Event applier is a method of an aggregate root which applies data from an event to the state of the aggregate.
 
 Event appliers are part of the private API of aggregate roots. As such they are declared private by convention set in the Spine framework:
-<pre>
+
+``````java
  @Apply
  private void on(MyEvent event) {
      MyState newState = getState().toBuilder()
@@ -14,15 +15,14 @@ Event appliers are part of the private API of aggregate roots. As such they are 
      validate(newState);
      setState(newState);
  }
-</pre>
+``````
 
 ### Event Handler
 Event Handler is a method which reacts on a domain event after it's posted to the Event Bus. Unlike [event appliers](#eventapplier), event handlers must be declared public:
 
-<pre>
+``````java
 @Subscribe
 public void on(MyEvent event) {
     // do something
 }
-
-</pre>
+``````
