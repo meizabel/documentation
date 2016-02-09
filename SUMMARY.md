@@ -13,15 +13,11 @@
    * [Defining Business Failures](java/defining_business_failures.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](java/command_handler.md)
-<<<<<<< HEAD
    * [Event Handler and Applier](java/event_handler.md)
    * [Snapshot](java/snapshot.md)
    * [Code Generation](java/code_generation.md)
    * [Query Side](java/query_side.md)
    * [Process Manager](java/process_manager.md)
-=======
-   * [Code Generation](java/code_generation.md)
->>>>>>> master
 * [FAQ](faq.md)
 * [Sample Projects](Samples/README.md)
 * [Contribute](contribute/README.md)
@@ -31,8 +27,5 @@
    * [Using Gradle Snapshots](contribute/using_gradle_snapshots.md)
 * [Working with Data Storages](data_storage/README.md)
    * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
-<<<<<<< HEAD
-=======
-* [Motivation to rewrite](Motivation_to_rewrite.md)
->>>>>>> master
+
 
