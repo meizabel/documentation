@@ -6,6 +6,7 @@
 * [Getting Started](Getting Started/README.md)
 * [Essentials](essentials/README.md)
    * [Working with Protobufs](essentials/principles.md)
+       * Everything is Typed
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](java/command_handler.md)
