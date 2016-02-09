@@ -4,7 +4,7 @@
 * [Concepts](concepts.md)
 * [Prior Art](prior_art.md)
 * [Getting Started](Getting Started/README.md)
-* Name-TBD
+* [Essentials](essentials/README>md)
    * [Principles](princeiples/principles.md)
 * [Java](java/README.md)
    * [Aggregate](java/aggregate.md)
