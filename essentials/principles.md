@@ -1,7 +1,6 @@
 # Principles
 
-In Spine Event Engine a Domain Model, including commands, events and aggregates, is described using Protobufs.
-Using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) allows automatic code generation for events and commands on variety of platforms hugely saving development team effort.
+
 
 ### Working with Protocol Buffers
 
