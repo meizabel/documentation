@@ -11,7 +11,7 @@
    * [Writing Commands](java/commands.md)
    * [Command Validation](java/command_validation.md)
    * [Writing Events](java/event.md)
-   * Writing Business Failures
+   * [Writing Business Failures](java/writing_business_failures.md)
    * [Aggregate](java/aggregate.md)
    * [Aggregate State](java/aggregate_state.md)
    * [Command Handler](java/command_handler.md)
