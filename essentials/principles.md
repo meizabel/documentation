@@ -5,8 +5,7 @@
 ### Working with Protocol Buffers
 
 By default Spine Event Engine uses *Protocol Buffers*, Google’s
-mature open source mechanism for serializing structured data (although it
-can be used with other data formats such as JSON). You
+mature open source mechanism for serializing structured data. You
 can find out lots more about Protocol Buffers in the [Protocol Buffers
 documentation](https://developers.google.com/protocol-buffers/docs/overview).
 
