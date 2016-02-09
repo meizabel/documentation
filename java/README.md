@@ -3,28 +3,6 @@
 <p class="lead">This tutorial provides a basic Java programmer's introduction to working with Spine. </p>
 
 
-### Commands
-
-TBD
-
-### Events
-TBD
-
-### Aggregate
-TBD
-
-### Aggregate State
-
-
-
-#### General Command Handlers
-
-TODO: describe implementing an interface.
-
-#### Registering Command Handlers
-
-TODO: automatic registration of aggregate handlers by registering the corresponding repository. TODO: registering general command handlers with the engine.
-
 
 <a name="Writing Aggregate Commands"></a>
 Writing Aggregate Commands
@@ -90,7 +68,6 @@ A command handler method can throw [business failures] (#bizfailure). This means
 
 
 
-####  Multi Handler 
 
 ### Command Dispatcher
 Command Dispatcher invokes a handler method for the received command.
@@ -126,7 +103,7 @@ Bounded Context is a central pattern in Domain-Driven Design. DDD deals with lar
 
 ### Command Validation
 
-#### Command Validator
+
 
 <a name = "commandcontext"></a>
 ### Command Context
