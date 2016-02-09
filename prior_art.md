@@ -18,14 +18,15 @@ Using [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) f
  to make this language [ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html) not only in human interaction, but in communication of computing devices too.
  
 Immutability is another major concept we follow. 
-Spine uses typed commands and events. Having commands and events as first class citizens in the applications gives a lot of benefits in business logic. Not having to convert back-and-forth with Json gives some performance advantage.
+Spine uses typed commands and events. Having commands and events as first class citizens in the applications gives a lot of benefits in business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
 
- Spine Event Engine synthesizes all of our experience and observations of the best-breed market products and solutions like [Axon](http://www.axonframework.org/), [Spring](https://spring.io/), [Event Store](https://geteventstore.com/), [InfluxDB](https://influxdata.com/) and many others.
+ Spine Event Engine synthesizes all of our experience and observations of the best-breed market products and solutions like [Axon](http://www.axonframework.org/), [Spring](https://spring.io/), [Event Store](https://geteventstore.com/), [InfluxDB](https://influxdata.com/), [Apache Zest](https://zest.apache.org/) and many others.
  
+ Spine won't be a best fit for the trading or super highload solutions, where, for example, [LMAX](https://www.lmax.com/) does excellent job. Our motivation is to make modern applications development easier and more efficient, and to offer a set of practical solutions to bring this into life with accompanying approach and terminology. 
 
-Our motivation is to raise awareness of some ways to make modern application development easier and more efficient, and to offer a set of practical solutions to bring it into life with accompanying approach and terminology. 
+In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)by Eric Evans, while borrowing some elements like “Process Manager” from [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft. 
 
-In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)by Eric Evans and [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft.  
+
 
 
 
