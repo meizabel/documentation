@@ -3,6 +3,7 @@
 The demands on software projects increase rapidly as time progresses. So do architecture approaches to meet these needs. 
 This section will give you an overview of the concepts and implementations Spine has inherited, while brought some important differences into play.
 
+<<<<<<< HEAD
 
 Spine is created for applications that follow [(CQRS)](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html). 
 
@@ -16,6 +17,16 @@ So you need to make your code work on another platform by writing it in another 
 
 Using [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) for formulating business domain allows us
  to make this language [ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html) not only in human interaction, but in communication of computing devices too.
+=======
+While creating Spine Event Engine we followed steps of [(CQRS)](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html). 
+
+We were inspired by major frameworks on the market like [Axon](http://www.axonframework.org/) and [Event Store](https://geteventstore.com/). 
+The important difference though is that we decided not to use JSON Objects for data transmission. This allows to avoid additional transformation and thus has event better performance. 
+
+Using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) allows automatic code generation for events and commands on variety of platforms.
+
+Currently to transform code from one language to another you have to use translators, or back-and-force with JSON. We also want to make a ubiqutous language ubiquites in technical
+>>>>>>> master
  
 **Immutability** is another major concept we follow. 
 Spine uses typed commands and events. Having commands and events as first class citizens in the applications gives a lot of benefits in business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
@@ -31,8 +42,14 @@ We are yet at the beginning of our journey using Spine in the wild. Join us and 
 
 
 
+The contributors to this document have been directly involved in the development and deployment of hundreds of apps, and indirectly witnessed the development, operation, and scaling of hundreds of thousands of apps via our work on the Heroku platform.
 
+This document synthesizes all of our experience and observations on a wide variety of software-as-a-service apps in the wild. It is a triangulation on ideal practices for app development, paying particular attention to the dynamics of the organic growth of an app over time, the dynamics of collaboration between developers working on the app’s codebase, and avoiding the cost of software erosion.
 
+<<<<<<< HEAD
  
 
 
+=======
+Our motivation is to raise awareness of some systemic problems we’ve seen in modern application development, to provide a shared vocabulary for discussing those problems, and to offer a set of broad conceptual solutions to those problems with accompanying terminology. The format is inspired by Martin Fowler’s books Patterns of Enterprise Application Architecture and Refactoring.
+>>>>>>> master
