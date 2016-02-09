@@ -1,6 +1,6 @@
 # Writing Commands
 
-Commands, as well as Events and Aggregate State are defined as protobuf messages
+Commands, as well as Events and Aggregate State are defined as protobuf messages.
 `Command` is an instruction to do something.
 
 A command consists of two parts: 
