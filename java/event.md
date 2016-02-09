@@ -8,14 +8,13 @@ An event consists of two parts: event message and its context.
 
 The `message` is the domain model part of the event. Event messages are formulated in the past tense.The type of the event is defined by the type of the enclosed message.
 
-When we speak about a 'event' as a typed thing, we refer to the message of the event.
-//
-// Event handlers are associated with the type of the messages. There can be multiple handlers
-// per event type.
-//
-// The event context contains attributes common for all events. It can also contain additional attributes
-// added by the code handling the event.
-//
+When we speak about a *event* as a typed thing, we refer to the message of the event.
+Event handlers are associated with the type of the messages. There can be multiple handlers
+per event type.
+
+The event context contains attributes common for all events. It can also contain additional attributes added by the code handling the event.
+
+```java
 message Event {
     // The message of the event message wrapped into `Any`.
     google.protobuf.Any message = 1;
@@ -23,8 +22,9 @@ message Event {
     // The context of the event.
     EventContext context = 2;
 }
-
-// Meta-information for an event.
+```
+Meta-information for an event.
+```java
 message EventContext {
     // The id of the event.
     EventId event_id = 1;
@@ -45,3 +45,4 @@ message EventContext {
     // defined in the event message.
     map<string, google.protobuf.Any> attributes = 6;
 }
+```
