@@ -13,8 +13,13 @@ the type of its message. When we speak about a **command** as a typed thing, we 
 The context contains attributes common for all commands.
 A command message can hold any valid protobuf message.
 
-``````
-
+``````java
+message MyCommand {
+    // The first field of an aggregate command must be the ID of the aggregate.
+    MyAggregateId target_id = 1;
+    string some_string = 2;
+    uint32 some_int = 3;
+}
 ``````
 
 By convention command messages are defined in the file named`commands.proto`. Typically the file would reside in the protobuf package of an aggregate or a process manager.
