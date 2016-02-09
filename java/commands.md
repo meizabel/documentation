@@ -12,16 +12,18 @@ The context contains attributes common for all commands.
 A command can hold any valid Protobuf message, but in most cases, it would be a type defined in `commands.proto` file of the corresponding aggregate or process manager.
 There should be **one and only one** command handler associated with the type of the command.
 
-````java
+``````java
 message Command {
     // The message of the command wrapped into `Any`.
     google.protobuf.Any message = 1;
-``````java
+    
     // Command context.
     spine.base.CommandContext context = 2;
-}
+    }
+
 ``````java
-// Meta-information about the command and the environment, which generated the command.
+
+Meta-information about the command and the environment, which generated the command.
 message CommandContext {
     // The id of the command.
     CommandId command_id = 1;
