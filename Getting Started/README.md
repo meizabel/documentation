@@ -47,7 +47,5 @@ version: '3.0.0-beta-1'
  
  **TODO:** establish maven dependency?
 
- **TODO:** establish maven dependency?
-
 
 You can find the Spine Event Engine source code repositories in [Spine](https://github.com/SpineEventEngine).
