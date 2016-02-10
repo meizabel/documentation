@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Concepts](concepts.md)
 * [Prior Art](prior_art.md)
-* [Getting Started](Getting Started/README.md)
+* [Getting Started](getting_started/README.md)
 * [Essentials](essentials/README.md)
    * [Working with Protobufs](essentials/principles.md)
    * [Everything is Typed](essentials/typed.md)
