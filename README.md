@@ -30,6 +30,6 @@ To get up and running with Spine, check the following articles:
 ### Learn More
 
 
-* Spine Essentials
+* [Spine Essentials](/essentials/index.html)
 * Java Documentation
 * Sample Projects
