@@ -8,9 +8,10 @@ Spine aims to free up developers from creating boilerplate code as much as possi
 
 *  **Domain model language is [Ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html)** not only in people communications, but **in computer communications too**. The model is defined and maintained in protobuf. Most of the implementation code is automatically generated.
 
-*  **The domain model is strongly typed** and open for evolution. Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes strong typing of all parts of a business model. The model can be extended without breaking binary compatibility with client applications.
+*  **The domain model is strongly typed and open for evolution**. Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes strong typing of all parts of a business model. The model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
 
-*  Choice of Storage and Deployment Platform.
+*  **Choice of storage and deployment platforms.** The framework promotes writing code which does not depend on storage media or deployment platform. For example, you can start with JDBC-based storage and later switch to Google Cloud Platform Datastore by changing one line of code. *TODO: link to the example.*
+
 *  Open Source.
 
 Spine allows building applications with Java backend and any UI framework, as well as building client applications on Java, JavaScript, Android and iOS (Swift).
