@@ -8,7 +8,7 @@ Spine aims to free up developers from creating boilerplate code as much as possi
 
 *  **Domain model language is [Ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html)** not only in people communications, but **in computer communications too**. The model is defined and maintained in protobuf. Most of the implementation code is automatically generated.
 
-*  **The domain model is strongly typed** and open for evolution. Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes strong typing of all parts of a business model.
+*  **The domain model is strongly typed** and open for evolution. Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes strong typing of all parts of a business model. The model can be extended without breaking binary compatibility with client applications.
 
 *  Choice of Storage and Deployment Platform.
 *  Open Source.
