@@ -22,13 +22,11 @@ It is built on top of [Protocol Buffers](https://developers.google.com/protocol-
 
 To get up and running with Spine, check the following articles:
 * [Quick Start](/getting_started/README.md)
-* 
-
 
 
 ### Learn More about Using Spine
 
 
-* Essentials
-* Java Documentation
-* Sample Projects
+* [Essentials](/essentials.README.md)
+* [Java Documentation](/java.README.md)
+* [Examples]
