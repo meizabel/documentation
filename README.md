@@ -21,7 +21,7 @@ It is built on top of [Protocol Buffers](https://developers.google.com/protocol-
 ### Get Started
 
 To get up and running with Spine, check the following articles:
-* Quick Start - TBD
+* [Quick Start](
 * Tutorials for Java Projects - TBD
 
 
