@@ -10,7 +10,7 @@ If you plan to contribute to Spine development, please read the following docume
 
 ## Spine Documentation 
 
-This Spine Event Engine documentation is build using [GitBook](https://www.gitbook.com/). 
+This documentation is build using [GitBook](https://www.gitbook.com/). 
 If you'd like to help us improving the [Documentation](https://github.com/SpineEventEngine/documentation), you can do it in few ways.
 
 ###Leave a Comment
