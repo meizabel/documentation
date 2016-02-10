@@ -25,23 +25,10 @@ The important difference though is that we decided not to use JSON Objects for d
 Using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) allows automatic code generation for events and commands on variety of platforms.
 
 Currently to transform code from one language to another you have to use translators, or back-and-force with JSON. We also want to make a ubiqutous language ubiquites in technical
- 
-Immutability is one of the corner concepts used in Spine. 
-
-Spine uses typed commands and events. JSON is nice, but having commands and events as first class citizens in the applications gives a lot of benefits in business logic. Not having to convert back-and-forth with Json gives some performance advantage.
-
-
-
-
-
-
-
->>>>>>> master
 
 **Immutability** is another major concept we follow.
 Spine uses typed commands and events. Having commands and events as first class citizens in the applications gives a lot of benefits in business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
 
-<<<<<<< HEAD
  Spine Event Engine synthesizes all of our experience and observations of the best-breed market products and solutions like [Axon](http://www.axonframework.org/), [Spring](https://spring.io/), [Event Store](https://geteventstore.com/), [InfluxDB](https://influxdata.com/), [Apache Zest](https://zest.apache.org/) and many others. Yet, trying to find it's own niche.
 
  Spine won't be a best fit for the trading or highly loaded applications, where, for example, [LMAX](https://www.lmax.com/) does excellent job. Our motivation is to make modern applications development easier and more efficient, and to offer a set of practical solutions to bring this into life with accompanying approach and terminology.
@@ -49,10 +36,3 @@ Spine uses typed commands and events. Having commands and events as first class 
 In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)by Eric Evans, while combining some elements like “Process Manager” from [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft and adding our own, like [“Aggregate Stand”](concepts.md).
 
 We are yet at the beginning of our journey using Spine in the wild. Join us and share how it goes!
-=======
-The contributors to this document have been directly involved in the development and deployment of hundreds of apps, and indirectly witnessed the development, operation, and scaling of hundreds of thousands of apps via our work on the Heroku platform.
-
-This document synthesizes all of our experience and observations on a wide variety of software-as-a-service apps in the wild. It is a triangulation on ideal practices for app development, paying particular attention to the dynamics of the organic growth of an app over time, the dynamics of collaboration between developers working on the app’s codebase, and avoiding the cost of software erosion.
-
-Our motivation is to raise awareness of some systemic problems we’ve seen in modern application development, to provide a shared vocabulary for discussing those problems, and to offer a set of broad conceptual solutions to those problems with accompanying terminology. The format is inspired by Martin Fowler’s books Patterns of Enterprise Application Architecture and Refactoring.
->>>>>>> master

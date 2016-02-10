@@ -17,12 +17,8 @@ TODO
 For client-side applications written in Java, please add the following:
 <pre>
 dependencies {
-<<<<<<< HEAD
-    ...
     compile group: 'org.spine3', name: 'client', version: '1.+'
-=======
-compile group: 'org.spine3', name: 'core-java', version: '0.2', changing: true
->>>>>>> master
+
 }
 </pre>
 
@@ -31,32 +27,26 @@ compile group: 'org.spine3', name: 'core-java', version: '0.2', changing: true
 For server-side modules of your app, please add the following:
 <pre>
 dependencies {
-<<<<<<< HEAD
 ...
     compile group: 'org.spine3', name: 'server', version: '1.+'
 
-=======
- compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.0.0-beta-1'
->>>>>>> master
+version: '3.0.0-beta-1'
 }
 </pre>
 
-<<<<<<< HEAD
+
 ### “Hellow Spine!” Sample Project
 * Define commands, events, aggregate and projection states in protobuf.
 * Define business logic of aggregates and projections.
 * Create repositories.
 * Init Bounded Context with repositories and Storage Factory.
 * Create Application class and execute.
-=======
-### Hellow Spine Sample Project
-Create protobuf side (message description)
-Create Java side (handlers, init storage etc)
-Create Application class and execute
->>>>>>> master
+
 
  ** TODO:** create sample classes/proto for pp 1 to 3
  
+ **TODO:** establish maven dependency?
+
  **TODO:** establish maven dependency?
 
 
