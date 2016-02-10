@@ -4,7 +4,7 @@ In this chapter we will highlight some key concepts we follow and important buil
 
 * In Spine Event Engine a Domain Model, including commands, events and aggregates, is described using [Protocol Buffers](essentials/principles.md).
 * Events and Commands are [typed](essentials/typed.md).
-* Ubiquitous language ubiquitous is human and computing devices
+* Ubiquitous language is ubiquitous across human communications and computing devices
 
 
 
