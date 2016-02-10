@@ -7,10 +7,8 @@ Spine aims to free up developers from creating boilerplate code as much as possi
 ### Why Spine?
 
 *  **Domain model language is Ubiquitous** not only in people communications, but **in computer communications too**. The model is defined once in protobuf, most of the  implementation code is automatically generated.
-*  **The domain model is strongly typed** and open for evolution. 
-*  
-*  Choice of Storage
-*  Choice of Deployment Platform
+*  **The domain model is strongly typed** and open for evolution. Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes strong typing of all parts of a business model.
+*  Choice of Storage and Deployment Platform
 *  Open Source
 
 Spine allows building applications with Java backend and any UI framework, as well as building client applications on Java, JavaScript, Android and iOS (Swift).
