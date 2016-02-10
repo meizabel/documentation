@@ -22,7 +22,7 @@ Spine uses typed commands and events. Having commands and events as first class 
 
  Spine Event Engine synthesizes all of our experience and observations of the best-breed market products and solutions like [Axon](http://www.axonframework.org/), [Spring](https://spring.io/), [Event Store](https://geteventstore.com/), [InfluxDB](https://influxdata.com/), [Apache Zest](https://zest.apache.org/) and many others. Yet, trying to find its own niche.
 
- Spine won't be a best fit for the trading or highly loaded applications, where, for example, [LMAX](https://www.lmax.com/) does excellent job. Our motivation is to make modern applications development easier and more efficient, and to offer a set of practical solutions to bring this into life with accompanying approach and terminology.
+ Spine probably won’t be the best fit for the trading or highly loaded applications, where, for example, [LMAX](https://www.lmax.com/) does excellent job. Our motivation is to make modern applications development easier and more efficient, and to offer a set of practical solutions to bring this into life with accompanying approach and terminology.
 
 In terminology we heavily lean on [Domain-Driven Design (DDD)](http://www.grpc.io/posts/principles/) and the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans. We learnt a lot from the book [“CQRS Jorney”](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft, and our selection of using the term “Process Manager” over commonly used “Saga” is based on experience of Microsoft engineers.
 
