@@ -10,9 +10,9 @@ The primary language of the backend is Java. Client applications and server-side
 
 *  **Domain model language is [Ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html)** not only in people communications, but **in computer communications too**. The model is defined and maintained in protobuf. Most of the implementation code is automatically generated for all languages used in your project.
 
-*  **The domain model is strongly typed and open for evolution**. Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes strong typing of all parts of a business model. The model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
+*  **The domain model is strongly typed** and **open for evolution**. Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes strong typing of all parts of a business model. The model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
 
-*  **Choice of storage and deployment platforms.** The framework promotes writing code which does not depend on storage media or deployment platform. For example, you can start with JDBC-based storage and later switch to Google Cloud Platform Datastore by changing one line of code. *TODO: link to the example.*
+*  **Choice of storage and deployment platforms.** The framework promotes writing code which does not depend on storage media or deployment platform. For example, you can start with JDBC-based storage and later switch to Google Cloud Platform Datastore by changing one line of the code. *TODO: link to the example.*
 
 *  **Open Source.** The permissive [Apache V2 licence](https://github.com/SpineEventEngine/core-java/blob/master/LICENSE) allows to use the framework in closed-source projects. You are welcome to [contribute](/contribute/index.html) to the framework development.
 
