@@ -11,7 +11,7 @@ If you plan to contribute to Spine development, please read the following docume
 ## Spine Documentation 
 
 This documentation is built using [GitBook](https://www.gitbook.com/). 
-If you'd like to help us improving the [Documentation](https://github.com/SpineEventEngine/documentation), you can do it in few ways.
+If you’d like to help us improving the [Documentation](https://github.com/SpineEventEngine/documentation), you can do it in few ways.
 
 ###Leave a Comment
 If you’d like to suggest a better definition or comment something — it’s easy through GitBook “Discussions”. 
