@@ -14,7 +14,7 @@ This documentation is built using [GitBook](https://www.gitbook.com/).
 If you'd like to help us improving the [Documentation](https://github.com/SpineEventEngine/documentation), you can do it in few ways.
 
 ###Leave a Comment
-If you’d like to suggest a better definition or comment some statement — it’s easy through GitBook “Discussions”. 
+If you’d like to suggest a better definition or comment something — it’s easy through GitBook “Discussions”. 
 1. Hover the paragraph you'd like to comment on, and  click `+` sing to open “New Discussion”.
 2. Click “Post”. That’s it!
 
