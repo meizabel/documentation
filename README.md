@@ -2,20 +2,20 @@
 
 Spine Event Engine is a multi-language framework for building Command Query Responsibility Segregation (CQRS) and Event Sourcing (ES) applications.
 
-Spine aims to free up developers from creating boilerplate code as much as possible.
-
+Spine aims to free up developers from creating boilerplate code as much as possible. Our framework is built on top of [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) (a.k.a. protobuf) and [gRPC](http://www.grpc.io/docs/) to bring easiness and efficiency into development of applications with a microservice-oriented architecture. You can focus on business logic, instead of the plumbing.
 
 ### Why Spine?
 
-*  Ultimately Ubiquitous 
-*  Domain Model in a Message
+*  **Domain model language is Ubiquitous** not only in people communications, but **in computer communications too**. The model is defined once in protobuf, most of the  implementation code is automatically generated.
+*  **The domain model is strongly typed** and open for evolution. 
+*  
 *  Choice of Storage
 *  Choice of Deployment Platform
 *  Open Source
 
 Spine allows building applications with Java backend and any UI framework, as well as building client applications on Java, JavaScript, Android and iOS (Swift).
 
-It is built on top of [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) (a.k.a. protobuf) and [gRPC](http://www.grpc.io/docs/) to bring easiness and efficiency into development of the applications with a microservice-oriented architecture. All this allows you to focus on your business logic, instead of the plumbing.
+
 
 
 ### Get Started
