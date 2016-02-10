@@ -15,7 +15,7 @@ If you'd like to help us improving the [Documentation](https://github.com/SpineE
 
 ###Leave a Comment
 If you’d like to suggest a better definition or comment something — it’s easy through GitBook “Discussions”. 
-1. Hover the paragraph you'd like to comment on, and  click `+` sing to open “New Discussion”.
+1. Hover the paragraph you'd like to comment on, and  click `+` sign to open “New Discussion”.
 2. Click “Post”. That’s it!
 
 All comments reviewed and processed weekly.
