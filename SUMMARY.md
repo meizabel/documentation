@@ -27,4 +27,4 @@
    * [Using Gradle Snapshots](contribute/using_gradle_snapshots.md)
 * [Working with Data Storages](data_storage/README.md)
    * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
-* [Motivation to rewrite](Motivation_to_rewrite.md)
+
