@@ -23,6 +23,6 @@ All comments reviewed and processed weekly by our tech writing team.
 
 #### Add Your Article
 
+Work with GitBook as with any other Git Repository. 
 
-
-master : This branch is in production.
+**master** is a branch that goes to production.
