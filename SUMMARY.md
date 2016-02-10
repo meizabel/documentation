@@ -19,7 +19,7 @@
    * [Query Side](java/query_side.md)
    * [Process Manager](java/process_manager.md)
 * [FAQ](faq.md)
-* [Sample Projects](Samples/README.md)
+* [Examples](examples/README.md)
 * [Contribute](contribute/README.md)
 * [Working with Data Storages](data_storage/README.md)
    * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)

@@ -2,18 +2,18 @@
 
 # Spine Event Engine Concepts
 
-This chapter introduces some key architecture concepts Spine Event Engine is based on. It assumes that you've read the [Introduction](README.md).
+This chapter introduces some key architecture concepts Spine Event Engine is based on. It assumes that you reviewed the [Introduction](README.md).
 Below you can find a typical Spine Event Engine application architecture employed within the Bounded Context.
 
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
 
-Spine provides realization for most important building blocks of the CQRS Event Sourced application. In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)by Eric Evans and [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft.  
+Spine provides realization for most important building blocks of the CQRS Event Sourced application. In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans and [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft.  
 
 
 ## 
 
-**Command** is an instruction to do something. Commands are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it's only a request, and thus may be refused. A typical way to convey refusal is to throw an exception. In Spine [command](/java/commands.md) is defined as a protobuf message.
+**Command** is an instruction to do something. Commands are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an exception. In Spine [command](/java/commands.md) is defined as a protobuf message.
 
 **Event** is something that happened in the past.
 Capture all changes to an application state as a sequence of events. In Spine [events](/java/event.md) are defined as protobuf messages as well.
@@ -32,7 +32,7 @@ Command Handler changes the state of the business model and produces correspondi
 
 ** Process Manager** coordinates and routes messages between bounded contexts and aggregates. You may find a broader explanation of this term  in [CQRS Journey](https://msdn.microsoft.com/en-us/library/jj591569.aspx) book. A process manager gives a single place where the routing is defined.
 
-**Process Manager Repository** manages lifecycles of Process Managers, their communications between Command Bus and Process Manager. It also processes events from the Event iBus.
+**Process Manager Repository** manages lifecycles of Process Managers, their communications between Command Bus and Process Manager. It also processes events from the Event Bus.
 
 
 **Event Bus** allows publish-subscribe-style communication between components without requiring the components to explicitly register with one another (and thus be aware of each other).
