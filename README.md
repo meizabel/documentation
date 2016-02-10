@@ -1,6 +1,6 @@
 # Welcome to Spine Event Engine
 
-Spine Event Engine is a multi-language framework for building Command Query Responsibility [Segregation (CQRS)](http://martinfowler.com/bliki/CQRS.html) and [Event Sourcing (ES)]((http://martinfowler.com/eaaDev/EventSourcing.html) applications.
+Spine Event Engine is a multi-language framework for building Command Query Responsibility Segregation [(CQRS)](http://martinfowler.com/bliki/CQRS.html) and Event Sourcing [(ES)]((http://martinfowler.com/eaaDev/EventSourcing.html) applications.
 
 Spine aims to free up developers from creating boilerplate code as much as possible.
 
