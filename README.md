@@ -1,8 +1,8 @@
 # Welcome to Spine Event Engine
 
-Spine Event Engine is a multi-language framework for building Command Query Responsibility Segregation (CQRS) and Event Sourcing (ES) applications.
+Spine Event Engine is a multi-language framework for building Command Query Responsibility Segregation ([CQRS](http://martinfowler.com/bliki/CQRS.html)) and Event Sourcing ([ES](http://martinfowler.com/eaaDev/EventSourcing.html)) applications.
 
-Spine aims to free up developers from creating boilerplate code as much as possible. Our framework is built on top of [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) (a.k.a. protobuf) and [gRPC](http://www.grpc.io/docs/) to bring easiness and efficiency into development of applications with a microservice-oriented architecture. You can focus on business logic, instead of the plumbing.
+Spine aims to free up developers from creating boilerplate code as much as possible. Our framework is built on top of [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) (a.k.a. protobuf) and [gRPC](http://www.grpc.io/docs/) to bring easiness and efficiency into development of applications with a microservice-oriented architecture. The goal is to allow developers to focus on the business logic, instead of the plumbing.
 
 The primary language of the backend is Java. Client applications and server-side modules can be written in JavaScript, Java, JavaNano (Android), Swift, Objective-C, C, C++, C#, Go, Python, Ruby, and PHP.
 
