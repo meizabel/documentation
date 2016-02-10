@@ -32,7 +32,7 @@ Command Handler changes the state of the business model and produces correspondi
 
 ** Process Manager** coordinates and routes messages between bounded contexts and aggregates. You may find a broader explanation of this term  in [CQRS Journey](https://msdn.microsoft.com/en-us/library/jj591569.aspx) book. A process manager gives a single place where the routing is defined.
 
-**Process Manager Repository** manages lifecycles of Process Managers, their communications between Command Bus and Process Manager. It also processes events from the Event iBus.
+**Process Manager Repository** manages lifecycles of Process Managers, their communications between Command Bus and Process Manager. It also processes events from the Event Bus.
 
 
 **Event Bus** allows publish-subscribe-style communication between components without requiring the components to explicitly register with one another (and thus be aware of each other).
