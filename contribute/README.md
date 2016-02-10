@@ -10,13 +10,19 @@ If you plan to contribute to Spine development, please read the following docume
 
 ### Spine Documentation 
 
-If you'd like to help us improving [Spine Documentation](https://github.com/SpineEventEngine/documentation), you can do it in few ways:
-1. **Leave a comment** . Comments are tracked as “Discussions” in GitBook. You can add a comment 
-2.by hovering  the paragraph you'd like to share your thoughts about, and  click `+` sing to open “New Discussion” 
- All comments are tracked and reviewed weekly.
+This Spine Event Engine documentation is build using [GitBook](https://www.gitbook.com/). 
+If you'd like to help us improving the [Documentation](https://github.com/SpineEventEngine/documentation), you can do it in few ways.
+
+####Leave a Comment
+If you’d like to suggest a better definition or comment on some fact — it’s easy through GitBook “Discussions”. 
+1. Hover the paragraph you'd like to comment on, and  click `+` sing to open “New Discussion”.
+2. Click “Post”. That’s it!
+
+All comments reviewed and processed weekly by our tech writing team.
  
 
-This documentation is build using [GitBook](https://www.gitbook.com/)
+#### Add Your article
+
 
 
 master : This branch is in production.
