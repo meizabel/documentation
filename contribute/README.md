@@ -25,7 +25,7 @@ All comments reviewed and processed weekly.
 
 If you’d like to add a new piece of documentation, work with GitBook as with any other Git Repository:
  1. Create a separate branch (you can do it even in GitBook online editor)
- 2. Create a Pull Request and assign to <eugenia.kotlyar@teamdev.com> for review and approve.
+ 2. Create a Pull Request and assign to <eugenia.kotlyar@teamdev.com> to review and approve.
 
 Note: **master** is a branch that goes to production.
 
