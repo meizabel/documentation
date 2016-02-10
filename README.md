@@ -27,9 +27,9 @@ To get up and running with Spine, check the following articles:
 
 
 
-### Learn More about Using Spine
+### Learn More
 
 
-* Essentials
+* Spine Essentials
 * Java Documentation
 * Sample Projects
