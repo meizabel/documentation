@@ -9,7 +9,7 @@ Spine didn’t appear out of the blue, when the authors of the framework had not
 
 Major addition to the existent variety of tools, libraries and frameworks that Spine brings — is automatic **code generation** for multiple application clients. It is reached by using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview).
 
-When creating an Event Sourcing application, you need to write classes for commands, events, command handlers, aggregates, aggregates repository, DTOs etc.
+When creating an Event Sourcing application, you need to write classes for commands, events, command handlers, aggregates, aggregate repository, DTOs etc.
 And if your organization wants an application on, let's say a couple of mobile platforms, you would have to add a lot of work to deliver data to each client application.
 So you need to make your code work on another platform by writing it in another language *manually*, or translate it using tools like [J2ObjC](http://j2objc.org/), or resort to using just Json in client apps.
 
