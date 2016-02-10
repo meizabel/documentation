@@ -17,6 +17,7 @@ Have a look the [comparison matrix](https://capnproto.org/news/2014-06-17-capnpr
 * **Usable as mutable state** — we need this for transforming Aggregate States and Stream Projections.
 * **Other languages** — we need a support of client applications written on JavaScript, JavaNano, Swift, Objective-C, etc.
 
-The obvious non-technical reason is 
+Also, the experience Google gained through years of using this technology internally is a major factor of preferring Protobuf over alternatives.
+
 ### Which version of Protobuf do you use?
 The framework is based on [proto3 dialect](https://developers.google.com/protocol-buffers/docs/proto3).
