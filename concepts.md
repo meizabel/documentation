@@ -12,7 +12,7 @@ Spine provides realization for most important building blocks of the CQRS Event 
 
 ## 
 
-**Command** is an instruction to do something. Commands are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it's only a request, and thus may be refused. A typical way to convey refusal is to throw an exception. In Spine [command](/java/writing_commands.md) is defined as a protobuf message.
+**Command** is an instruction to do something. Commands are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it's only a request, and thus may be refused. A typical way to convey refusal is to throw an exception. In Spine [command](/java/commands.md) is defined as a protobuf message.
 
 **Event** is something that happened in the past.
 Capture all changes to an application state as a sequence of events. In Spine [events](/java/event.md) are defined as protobuf messages as well.
