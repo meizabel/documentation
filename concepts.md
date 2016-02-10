@@ -5,6 +5,7 @@
 This chapter introduces some key architecture concepts Spine Event Engine is based on. It assumes that you've read the [Introduction](README.md).
 Below you can find a typical Spine Event Engine application architecture employed within the Bounded Context.
 
+
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
 
 Spine provides realization for most important building blocks of the CQRS Event Sourced application. In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)by Eric Evans and [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft.  
