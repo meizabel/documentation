@@ -18,11 +18,14 @@ If you’d like to suggest a better definition or comment on some fact — it’
 1. Hover the paragraph you'd like to comment on, and  click `+` sing to open “New Discussion”.
 2. Click “Post”. That’s it!
 
-All comments reviewed and processed weekly by our tech writing team.
+All comments reviewed and processed weekly.
  
 
 #### Add Your Article
 
-Work with GitBook as with any other Git Repository. 
+If you’d like to add a new text, work with GitBook as with any other Git Repository:
+ 1. Create your branch (you can do it even in GitBook online editor)
+ 2. Merge changes when done.
 
-**master** is a branch that goes to production.
+Note: **master** is a branch that goes to production.
+
