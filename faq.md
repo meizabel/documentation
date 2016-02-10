@@ -15,7 +15,7 @@ Have a look the [comparison matrix](https://capnproto.org/news/2014-06-17-capnpr
 
 * **Schema evolution** — we need this as business models evolve as business grows.
 * **Usable as mutable state** — we need this for transforming Aggregate States and Stream Projections.
-* **Other languages** — we need a support of client applications written on JavaScript, Objective-C, Swift, JavaNano, etc.
+* **Other languages** — we need a support of client applications written on JavaScript, JavaNano, Swift, Objective-C, etc.
 
 The obvious non-technical reason is 
 ### Which version of Protobuf do you use?
