@@ -4,6 +4,8 @@ Spine Event Engine is a multi-language framework for building Command Query Resp
 
 Spine aims to free up developers from creating boilerplate code as much as possible. Our framework is built on top of [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) (a.k.a. protobuf) and [gRPC](http://www.grpc.io/docs/) to bring easiness and efficiency into development of applications with a microservice-oriented architecture. You can focus on business logic, instead of the plumbing.
 
+The primary language of the backend is Java. Client applications and server-side modules can be written in JavaScript, Java, JavaNano (Android), Swift, Objective-C, C, C++, C#, Go, Python, Ruby, and PHP.
+
 ### Why Spine?
 
 *  **Domain model language is [Ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html)** not only in people communications, but **in computer communications too**. The model is defined and maintained in protobuf. Most of the implementation code is automatically generated.
@@ -22,8 +24,8 @@ Spine allows building applications with Java backend and any UI framework, as we
 ### Get Started
 
 To get up and running with Spine, check the following articles:
-* [Quick Start](
-* Tutorials for Java Projects - TBD
+* [Quick Start]( TODO
+* Tutorials for Java Projects - TODO
 
 
 
@@ -31,5 +33,5 @@ To get up and running with Spine, check the following articles:
 
 
 * [Spine Essentials](/essentials/index.html)
-* Java Documentation
-* Sample Projects
+* JavaDocs — TODO
+* Examples — TODO
