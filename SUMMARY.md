@@ -21,7 +21,6 @@
 * [FAQ](faq.md)
 * [Sample Projects](Samples/README.md)
 * [Contribute](contribute/README.md)
-   * [Spine Developer Starter Guide](contribute/spine_developer_starter_guide.md)
    * [Coding Conventions](contribute/coding_conventions.md)
    * [IntelliJ IDEA Configuration](Getting Started/idea_config.md)
    * [Using Gradle Snapshots](contribute/using_gradle_snapshots.md)
