@@ -12,7 +12,7 @@ Spine aims to free up developers from creating boilerplate code as much as possi
 
 *  **Choice of storage and deployment platforms.** The framework promotes writing code which does not depend on storage media or deployment platform. For example, you can start with JDBC-based storage and later switch to Google Cloud Platform Datastore by changing one line of code. *TODO: link to the example.*
 
-*  Open Source.
+*  **Open Source.** The permissive [Apache V2 licence](https://github.com/SpineEventEngine/core-java/blob/master/LICENSE) allows to use the framework in closed-source projects. You are welcome to contribute to the framework development.
 
 Spine allows building applications with Java backend and any UI framework, as well as building client applications on Java, JavaScript, Android and iOS (Swift).
 
