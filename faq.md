@@ -11,7 +11,7 @@
 One of the major deployment platforms for us is Google App Engine (GAE). The latest version of Java supported under GAE is Java 7. Google recently [announced Java 8 support under GAE](https://youtu.be/aKUlu9-psZo?t=15m30s). We will be able to migrate once Sandbox mode of GAE works on Java 8.
 
 ### Why Protobuf instead of Cap'n Proto, or SBE, or FlatBuffers?
-Have a look the [comparison matrix](https://capnproto.org/news/2014-06-17-capnproto-flatbuffers-sbe.html) created by the author of Protobuf v2 and the author of Cap'n Proto. The main features that make protobuf best choice for Spine are:
+Have a look the [comparison matrix](https://capnproto.org/news/2014-06-17-capnproto-flatbuffers-sbe.html) created Kenton Varda, the author of Protobuf v2 and Cap'n Proto. The main features that make Protobuf best choice for Spine are:
 
 * **Schema evolution** — we need this as business models evolve as business grows.
 * **Usable as mutable state** — we need this for transforming Aggregate States and Stream Projections.
