@@ -8,7 +8,7 @@ The primary language of the backend is Java. Client applications and server-side
 
 ### Why Spine?
 
-*  **Domain model language is [Ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html)** not only in people communications, but **in computer communications too**. The model is defined and maintained in protobuf. Most of the implementation code is automatically generated for all languages used in your project.
+*  **Domain model language is [Ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html)** not only in people communications, but **in computer interactions too**. The model is defined and maintained in protobuf. Most of the implementation code is automatically generated for all languages used in your project.
 
 *  **The domain model is strongly typed** and **open for evolution**. Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes strong typing of all parts of a business model. The model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
 
