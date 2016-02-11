@@ -23,9 +23,9 @@
    * [Command Dispatcher](java/command_dispatcher.md)
    * [Event Bus](java/event_bus.md)
    * [Repository](java/repository.md)
+* [Working with Data Storages](data_storage/README.md)
+   * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
 * [FAQ](faq.md)
 * [Examples](examples/README.md)
 * [Contribute](contribute/README.md)
-* [Working with Data Storages](data_storage/README.md)
-   * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
 
