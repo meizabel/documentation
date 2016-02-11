@@ -29,3 +29,11 @@ If you’d like to add a new article or section to the documentation, work with 
 
 Note: [**master**](https://github.com/SpineEventEngine/documentation) is a branch that goes to production.
 
+#### Useful tips
+GitBook supports syntax highlighting. To highlight blocks of code properly, use three back-ticks and corresponding language or protocol name.
+For example:
+```
+ ```java
+ ```protobuf
+ ```
+ 

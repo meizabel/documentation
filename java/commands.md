@@ -13,7 +13,7 @@ the type of its message. When we speak about a **command** as a typed thing, we 
 The context contains attributes common for all commands.
 A command message is a protobuf message:
 
-``````java
+``````protobuf
 message MyCommand {
     // The first field of an aggregate command must be the ID of the aggregate.
     MyAggregateId target_id = 1;
@@ -26,21 +26,18 @@ If a command is for an aggregate or a process manager, the first field must cont
 By convention command messages are defined in the file named`commands.proto`. Typically the file would reside in the protobuf package of an aggregate or a process manager.
 
 There should be **one and only one** handler associated with the type of the command.
-
-``````java
+```protobuf
 message Command {
-    // The message of the command wrapped into `Any`.
-    google.protobuf.Any message = 1;
-    
-    // Command context.
-    spine.base.CommandContext context = 2;
+// The message of the command wrapped into `Any`.
+google.protobuf.Any_message = 1
+// Command context.
+spine.base.CommandContext context = 2;
 }
-
-``````
+```
 
 Meta-information about the command and the environment, which generated the command.
 
-``````java
+``````protobuf
 message CommandContext {
     // The id of the command.
     CommandId command_id = 1;
@@ -61,7 +58,7 @@ message CommandContext {
 
 # Command Validation
 
-Each command has additional additional attributes that are *required* from the business logic stand point, they are not obligatory from the [protocol](https://developers.google.com/protocol-buffers/docs/proto#customoptions) stand point.
+Each command has additional attributes that are *required* from the business logic stand point, they are not obligatory from the [protocol](https://developers.google.com/protocol-buffers/docs/proto#customoptions) stand point.
 
 ## Command Validator
 
