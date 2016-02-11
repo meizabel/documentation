@@ -22,7 +22,7 @@ Command Handler changes the state of the business model and produces correspondi
 **Event** is something that happened in the past.
 All changes to an application state are captured as a sequence of events. In Spine [events](/java/event.md) are defined as protobuf messages as well.
 
-**Aggregate** is technically a "concept" and not a file, a class, or a thing you can readily point to in an IDE. It is a logical collection of domain objects, that should form an atomic and cohesive whole. Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
+**Aggregate** is technically a "concept" and not a file, a class, or a thing you can readily point to in an IDE. It is a logical collection of domain objects, that should form an atomic and cohesive whole. Find more detailed overview of Aggregate and its definition in Spine in the [article](/java/aggregate.md).
 
 **Aggregate Repository** manages Aggregates, sends events to Event Bus and latest Aggregate States to the Aggregate Stand.
 
