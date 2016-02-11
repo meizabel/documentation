@@ -23,6 +23,7 @@
    * Command Dispatcher
    * Event Bus
    * Repository
+   * Command Dispatcher
 * [FAQ](faq.md)
 * [Examples](examples/README.md)
 * [Contribute](contribute/README.md)
