@@ -2,14 +2,11 @@
 
 # Spine Event Engine Concepts
 
-This chapter introduces some key architecture concepts Spine is based on. It assumes that you reviewed the [Introduction](README.md).
-Below you can find a typical Spine Event Engine application architecture employed within the Bounded Context.
+This chapter introduces some key concepts Spine is based on. The framework provides implementation for most important building blocks of a CQRS/ES application. In terminology we heavily lean on [Domain-Driven Design](https://www.wikiwand.com/en/Domain-driven_design) (DDD) and the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans, and on [“Enterprise Integration Patterns”](http://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20) by Kyle Brown and Bobby Woolf. 
 
+Below you can find a typical Spine Event Engine application architecture. The concepts behind these building blocks are desrcibed in the sections below.
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
-
-Spine provides realization for most important building blocks of the CQRS/ES application. In terminology we heavily lean on [Domain-Driven Design](https://www.wikiwand.com/en/Domain-driven_design) (DDD) and the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans, and on [“Enterprise Integration Patterns”](http://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20) by Kyle Brown and Bobby Woolf. 
-
 
 ---
 
