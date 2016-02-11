@@ -8,7 +8,7 @@ Spine makes a distinction between _error_ and _business failure_ (or just _failu
 
 In Spine failures are defined (surprise, surprise!) as protobuf messages:
 
-``````java
+``````protobuf
 message OrderCannotBeEmpty {
     OrderId order_id = 1;
 }
