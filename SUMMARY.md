@@ -4,6 +4,7 @@
 * [Concepts](concepts.md)
 * [Prior Art](prior_art.md)
 * [Getting Started](getting_started/README.md)
+   * Defining Business Model
 * [Essentials](essentials/README.md)
    * [Working with Protobufs](essentials/working_with_protobufs.md)
    * [Strongly Typed](essentials/strongly_typed.md)
