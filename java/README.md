@@ -6,8 +6,6 @@
 ## TODO:
 ### Stream Projection
 
-### FragmentedEntity
-
 ### Command Dispatcher
 Command Dispatcher invokes a handler method for the received command.
 
