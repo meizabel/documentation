@@ -1,12 +1,4 @@
 # Spine Event Engine Basics: Java
 
-<p class="lead">This tutorial provides a basic Java programmer's introduction to working with Spine. </p>
-
-### Command Dispatcher
-Command Dispatcher invokes a handler method for the received command.
-
-There can be **only** one handler method for one command type.
-
-
-
+<p class="lead">This tutorial provides a basic Java programmer's introduction to working with Spine.  It is not, however, a tutorial.</p>
 
