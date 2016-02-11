@@ -48,9 +48,12 @@ All changes to an application state are captured as a sequence of events. Events
 
 **Event Store ** keeps all the events of the application in the chronological order, which is also called *Event Stream*. New projections are built by passing the event stream “throught” them. `TODO: link to the example.`
 
-  ** Aggregate Stand ** serves latest states of aggregates. It is called that way to emphasize its _“read”_ nature. It may return complete state, or its fragment, if corresponding query requests only partial representation.
+**Query Service** returns data to the client applications in responce to a query. The query is the request for:
+* state of one or more aggregates or their fragments;
+* one or more projection states or their fragments.
 
-**Query Service**. Aggregate Stand Service and Projection Repositories are linked to the Query service, and the Query Service would read data from them, then passing it to the client.
+
+** Aggregate Stand ** serves latest states of aggregates. It is called that way to emphasize its _“read”_ nature. It may return complete state, or its fragment, if corresponding query requests partial representation.
 
 ___
 
