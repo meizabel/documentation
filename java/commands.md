@@ -26,14 +26,12 @@ If a command is for an aggregate or a process manager, the first field must cont
 By convention command messages are defined in the file named`commands.proto`. Typically the file would reside in the protobuf package of an aggregate or a process manager.
 
 There should be **one and only one** handler associated with the type of the command.
-
 ```protobuf
 message Command {
-    // The message of the command wrapped into `Any`.
-    google.protobuf.Any message = 1;
-    
-    // Command context.
-    spine.base.CommandContext context = 2;
+// The message of the command wrapped into `Any`.
+google.protobuf.Anymessage = 1
+// Command context.
+spine.base.CommandContext context = 2;
 }
 ```
 
