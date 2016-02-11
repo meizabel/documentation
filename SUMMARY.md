@@ -20,7 +20,7 @@
    * [Code Generation](java/code_generation.md)
    * [Query Side](java/query_side.md)
    * [Process Manager](java/process_manager.md)
-   * Command Dispatcher
+   * [Command Dispatcher](java/command_dispatcher.md)
    * Event Bus
    * Repository
    * Command Dispatcher
