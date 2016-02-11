@@ -36,4 +36,10 @@ For example:
  ```java
  ```protobuf
  ```
- 
+#### Marking TODOs
+If you leave a TODO comment in text, frame it as a code:
+
+```
+   `TODO: add link here.`
+```
+It would appear in the text like this: `TODO: add link here.`
