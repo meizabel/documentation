@@ -7,6 +7,7 @@
 * [Essentials](essentials/README.md)
    * [Working with Protobufs](essentials/principles.md)
    * [Strongly Typed](essentials/strongly_typed.md)
+   * Bounded Context
 * [Java](java/README.md)
    * [Writing Commands](java/commands.md)
    * [Writing Events](java/event.md)
@@ -23,3 +24,4 @@
 * [Contribute](contribute/README.md)
 * [Working with Data Storages](data_storage/README.md)
    * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
+
