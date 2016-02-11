@@ -17,13 +17,15 @@ Spine provides realization for most important building blocks of the CQRS Event 
 **Event** is something that happened in the past.
 All changes to an application state are captured as a sequence of events. Events is the main “database” of the application. In Spine [events](/java/event.md) are defined as protobuf messages as well.
 
+**Aggregate** is the main building block of a business model. [Aggregates](https://www.wikiwand.com/en/Aggregate) guarantee consistency of data modifications in response to commands they receive. In response to a command an aggregate modifies its state and produces one or more events. In Spine [aggregates are defined as Java classes](/java/aggregate.md).
+
+**Projection**
 
 **Command Bus** is responsible for routing the command to its handler. Unlike a Command Handler it does not change business model or produce events.
 
 **Command Handler** receives and validates commands, executes the required actions.
 Command Handler changes the state of the business model and produces corresponding events, which are then written to the [Event Store](#eventstore). It also writes status to Command Store.
 
-**Aggregate** is technically a "concept" and not a file, a class, or a thing you can readily point to in an IDE. It is a logical collection of domain objects, that should form an atomic and cohesive whole. You may find more detailed overview of the Aggregate and its definition in Spine in this [article](/java/aggregate.md).
 
 ** Process Manager** coordinates and routes messages between bounded contexts and aggregates. You may find a broader explanation of this term  in [CQRS Journey](https://msdn.microsoft.com/en-us/library/jj591569.aspx) book. A process manager gives a single place where the routing is defined.
 
