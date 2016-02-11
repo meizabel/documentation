@@ -27,7 +27,7 @@ By convention command messages are defined in the file named`commands.proto`. Ty
 
 There should be **one and only one** handler associated with the type of the command.
 
-``````protobuf
+```protobuf
 message Command {
     // The message of the command wrapped into `Any`.
     google.protobuf.Any message = 1;
@@ -36,11 +36,11 @@ message Command {
     spine.base.CommandContext context = 2;
 }
 
-``````
+```
 
 Meta-information about the command and the environment, which generated the command.
 
-``````java
+``````protobuf
 message CommandContext {
     // The id of the command.
     CommandId command_id = 1;
