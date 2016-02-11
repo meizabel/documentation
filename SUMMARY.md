@@ -10,6 +10,7 @@
    * [Ubiquitous Language](essentials/ubiquitous_language.md)
    * [Bounded Context](essentials/bounded_context.md)
 * [Creating Business Model](biz_model/index.md)
+   * [Defining types for identifiers](biz_model/identifiers.md)
    * [Commands](biz_model/commands.md)
    * [Events](biz_model/event.md)
 * [Java](java/README.md)
