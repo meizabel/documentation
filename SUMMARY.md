@@ -9,7 +9,7 @@
    * [Strongly Typed](essentials/strongly_typed.md)
    * [Ubiquitous Language](essentials/ubiquitous_language.md)
    * [Bounded Context](essentials/bounded_context.md)
-* Defining Business Model
+* [Defining Business Model](biz_model/index.md)
 * [Writing Commands](java/commands.md)
 * [Java](java/README.md)
    * [Writing Commands](java/commands.md)
