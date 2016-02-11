@@ -8,6 +8,8 @@ If you plan to contribute to Spine development, please read the following docume
 * [InteliJ IDEA Configuration](https://github.com/SpineEventEngine/core-java/wiki/IntelliJ-IDEA-Configuration)
 * [Using Gradle Snapshots](https://github.com/SpineEventEngine/core-java/wiki/Using-Gradle-Snapshots)
 
+`TODO: we need to have one contrubutor guide`.
+
 ## Spine Documentation 
 
 This documentation is built using [GitBook](https://www.gitbook.com/). 
@@ -29,14 +31,20 @@ If you’d like to add a new article or section to the documentation, work with 
 
 Note: [**master**](https://github.com/SpineEventEngine/documentation) is a branch that goes to production.
 
-#### Useful tips
-GitBook supports syntax highlighting. To highlight blocks of code properly, use three back-ticks and corresponding language or protocol name.
+### Documentation Conventions
+
+#### Use syntax highlighting
+Code examples should be given with syntax highlighting. To highlight blocks of code properly, use three back-ticks and corresponding language name.
 For example:
-```
- ```java
- ```protobuf
- ```
-#### Marking TODOs
+<pre>```java
+    // Some java code here.
+```</pre>
+
+<pre>```protobuf
+    // Some protobuf code here.
+```</pre>
+ 
+#### Mark TODOs as code
 If you leave a TODO comment in text, frame it as a code:
 
 ```
