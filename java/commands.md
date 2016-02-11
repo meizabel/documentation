@@ -35,7 +35,6 @@ message Command {
     // Command context.
     spine.base.CommandContext context = 2;
 }
-
 ```
 
 Meta-information about the command and the environment, which generated the command.
