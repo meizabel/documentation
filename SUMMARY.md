@@ -21,7 +21,7 @@
    * [Query Side](java/query_side.md)
    * [Process Manager](java/process_manager.md)
    * [Command Dispatcher](java/command_dispatcher.md)
-   * Event Bus
+   * [Event Bus](java/event_bus.md)
    * Repository
    * Command Dispatcher
 * [FAQ](faq.md)
