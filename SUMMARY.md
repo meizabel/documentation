@@ -10,6 +10,7 @@
    * [Ubiquitous Language](essentials/ubiquitous_language.md)
    * [Bounded Context](essentials/bounded_context.md)
 * Defining Business Model
+* [Writing Commands](java/commands.md)
 * [Java](java/README.md)
    * [Writing Commands](java/commands.md)
    * [Writing Events](java/event.md)
