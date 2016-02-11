@@ -32,6 +32,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 **Projection** is an Event Handler, which transforms multiple events data into a structural representation. Projections are main building blocks of Query side of the application. `TODO: links.` 
 
+**Entity Fragment** `TODO: define`.
 
 ## Architectural Concepts
 
@@ -45,10 +46,9 @@ All changes to an application state are captured as a sequence of events. Events
 
 **Command Store** keeps the history of all the commands of the application and statuses of their execution.
 
-<a name = "eventstore"></a>
-**Event Store ** keeps all the events of the application in the chronological order, which is also called *Event Stream*.
+**Event Store ** keeps all the events of the application in the chronological order, which is also called *Event Stream*. New projections are built by passing the event stream “throught” them. `TODO: link to the example.`
 
-  ** Aggregate Stand ** is called that way to emphasize its _“read”_ nature. It provides service similar to what Stream Projection does, the Aggregate Stand would return complete instances of aggregate states, or their projections upon queries from users.
+  ** Aggregate Stand ** serves latest states of aggregates. It is called that way to emphasize its _“read”_ nature. It may return complete state, or its fragment, if corresponding query requests only partial representation.
 
 **Query Service**. Aggregate Stand Service and Projection Repositories are linked to the Query service, and the Query Service would read data from them, then passing it to the client.
 
