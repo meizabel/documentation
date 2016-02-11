@@ -8,7 +8,7 @@ Below you can find a typical Spine Event Engine application architecture employe
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
 
-Spine provides realization for most important building blocks of the CQRS Event Sourced application. In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans, [“CQRS Jorney”](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft and [“Enterprise Integration Patterns”](http://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20) by Kyle Brown, Bobby Woolf. 
+Spine provides realization for most important building blocks of the CQRS Event Sourced application. In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans, [“CQRS Jorney”](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft and [“Enterprise Integration Patterns”](http://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20) by Kyle Brown and Bobby Woolf. 
 
 ## 
 
