@@ -23,7 +23,6 @@
    * [Command Dispatcher](java/command_dispatcher.md)
    * [Event Bus](java/event_bus.md)
    * [Repository](java/repository.md)
-   * Command Dispatcher
 * [FAQ](faq.md)
 * [Examples](examples/README.md)
 * [Contribute](contribute/README.md)
