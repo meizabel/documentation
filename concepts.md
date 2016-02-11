@@ -22,7 +22,7 @@ Command Handler changes the state of the business model and produces correspondi
 **Event** is something that happened in the past.
 All changes to an application state are captured as a sequence of events. In Spine [events](/java/event.md) are defined as protobuf messages as well.
 
-**Aggregate** is technically a "concept" and not a file, a class, or a thing you can readily point to in an IDE. It is a logical collection of domain objects, that should form an atomic and cohesive whole. You may ind more detailed overview of the Aggregate and its definition in Spine in this [article](/java/aggregate.md).
+**Aggregate** is technically a "concept" and not a file, a class, or a thing you can readily point to in an IDE. It is a logical collection of domain objects, that should form an atomic and cohesive whole. You may find more detailed overview of the Aggregate and its definition in Spine in this [article](/java/aggregate.md).
 
 ** Process Manager** coordinates and routes messages between bounded contexts and aggregates. You may find a broader explanation of this term  in [CQRS Journey](https://msdn.microsoft.com/en-us/library/jj591569.aspx) book. A process manager gives a single place where the routing is defined.
 
