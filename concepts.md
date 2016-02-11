@@ -8,6 +8,8 @@ Below you can find a typical Spine Event Engine application architecture. The co
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
 
+`TODO: rename the file to Spine-Application-Architecture.svg`
+
 ---
 
 
@@ -57,4 +59,4 @@ All changes to an application state are captured as a sequence of events. Events
 
 ___
 
-For definition details in Java, see the [Java](/java/README.md) section.
+For definition details in Java, see the [Java](/java/README.md) section. `TODO: this needs rephrasing.`
