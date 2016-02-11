@@ -20,6 +20,7 @@
    * [Code Generation](java/code_generation.md)
    * [Query Side](java/query_side.md)
    * [Process Manager](java/process_manager.md)
+   * Command Dispatcher
 * [FAQ](faq.md)
 * [Examples](examples/README.md)
 * [Contribute](contribute/README.md)
