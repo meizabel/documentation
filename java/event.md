@@ -13,17 +13,17 @@ per event type.
 
 The event context contains attributes common for all events. It can also contain additional attributes added by the code handling the event.
 
-```java
+```protobuf
 message Event {
     // The message of the event message wrapped into `Any`.
-    google.protobuf.Any message = 1;
+    google.protobuf.Any_message = 1;
 
     // The context of the event.
     EventContext context = 2;
 }
 ```
 Meta-information for an event:
-```java
+```protobuf
 message EventContext {
     // The id of the event.
     EventId event_id = 1;
