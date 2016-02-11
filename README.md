@@ -16,16 +16,12 @@ The primary language of the backend is Java. Client applications and server-side
 
 *  **Open Source.** Permissive [Apache  License](https://github.com/SpineEventEngine/core-java/blob/master/LICENSE) allows to use the framework in closed-source projects. You are welcome to [contribute](/contribute/index.html) to the framework development.
 
-
-
 ### Get Started
 
 To get up and running with Spine, check the following articles:
 * [Quick Start](/getting_started/README.md)
 
-
 ### Learn More
-
 
 * [Essentials](/essentials.README.md)
 * [Java Documentation](/java.README.md)

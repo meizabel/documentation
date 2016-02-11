@@ -2,54 +2,46 @@
 
 # Spine Event Engine Concepts
 
-This chapter introduces some key architecture concepts Spine Event Engine is based on. It assumes that you reviewed the [Introduction](README.md).
+This chapter introduces some key architecture concepts Spine is based on. It assumes that you reviewed the [Introduction](README.md).
 Below you can find a typical Spine Event Engine application architecture employed within the Bounded Context.
 
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
 
-Spine provides realization for most important building blocks of the CQRS Event Sourced application. In terminology we heavily lean on Domain-Driven Design(DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans and [CQRS Jorney](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft.  
-
+Spine provides realization for most important building blocks of the CQRS Event Sourced application. In terminology we heavily lean on Domain-Driven Design (DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans, [“CQRS Jorney”](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft, as well as [“Enterprise Integration Patterns”](http://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20) by Kyle Brown and Bobby Woolf. 
 
 ## 
 
-**Command** is an instruction to do something. Commands are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an exception. In Spine [command](/java/commands.md) is defined as a protobuf message.
-
-**Event** is something that happened in the past.
-Capture all changes to an application state as a sequence of events. In Spine [events](/java/event.md) are defined as protobuf messages as well.
-
-**Aggregate** handles commands, applies events, and have a state model encapsulated within it that allows it to implement the required command validation, thus upholding the invariants (business rules) of the aggregate.
-Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
-
-**Aggregate Repository** manages Aggregates, sends events to Event Bus and latest Aggregate States to the Aggregate Stand.
+**Command** are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an exception. In Spine [command](/java/commands.md) is defined as a protobuf message.
 
 **Command Bus** is responsible for routing the command to its handler. Unlike a Command Handler it does not change business model or produce events.
 
 **Command Handler** receives and validates commands, executes the required actions.
 Command Handler changes the state of the business model and produces corresponding events, which are then written to the [Event Store](#eventstore). It also writes status to Command Store.
 
-**Command Store** receives commands from the Command Bus and records command statuses received from Aggregate Repository and Command Handler.
+**Event** is something that happened in the past.
+All changes to an application state are captured as a sequence of events. In Spine [events](/java/event.md) are defined as protobuf messages as well.
+
+**Aggregate** is technically a "concept" and not a file, a class, or a thing you can readily point to in an IDE. It is a logical collection of domain objects, that should form an atomic and cohesive whole. You may find more detailed overview of the Aggregate and its definition in Spine in this [article](/java/aggregate.md).
 
 ** Process Manager** coordinates and routes messages between bounded contexts and aggregates. You may find a broader explanation of this term  in [CQRS Journey](https://msdn.microsoft.com/en-us/library/jj591569.aspx) book. A process manager gives a single place where the routing is defined.
 
-**Process Manager Repository** manages lifecycles of Process Managers, their communications between Command Bus and Process Manager. It also processes events from the Event Bus.
+**Repository** is a mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects. It isolates domain objects from details of the database access code. 
 
+So Aggregate Repository, Process Manager Repository and Projection Repository are examples of the  Repository type. 
+
+**Command Store** receives commands from the Command Bus and records command statuses received from Aggregate Repository and Command Handler.
 
 **Event Bus** allows publish-subscribe-style communication between components without requiring the components to explicitly register with one another (and thus be aware of each other).
 
 ** Event Handler** is an object that is subscribed to receive events from Event Bus.
 
-  <a name = "eventstore"></a>
-  **Event Store. ** Events generated by the Aggregates as a result of commands that change state are written to an Event store. Event Store also sends events in response to the Projection Repository requests.
- 
-#  
-  
+<a name = "eventstore"></a>
+**Event Store. ** Events generated by the Aggregates as a result of commands that change state are written to an Event store. Event Store also sends events in response to the Projection Repository requests.
+
   ** Aggregate Stand ** is called that way to emphasize its _“read”_ nature. It provides service similar to what Stream Projection does, the Aggregate Stand would return complete instances of aggregate states, or their projections upon queries from users.
 
-**Projection Repository.** Projections are objects that subscribe to a stream of events in the system, and provide a view of these to the application. Projection Repository manages Projections.
-
 **Query Service**. Aggregate Stand Service and Stream Projection Repositories are linked to the Query service, and the Query Service would read data from them, then passing it to the client.
-
 
 ___
 
