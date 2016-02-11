@@ -1,3 +1,3 @@
 # Event Bus
 
-TBD
+Desciption of the Event Bus definition will be added here.
