@@ -29,7 +29,7 @@ There should be **one and only one** handler associated with the type of the com
 ```protobuf
 message Command {
 // The message of the command wrapped into `Any`.
-google.protobuf.Anymessage = 1
+google.protobuf.Any_message = 1
 // Command context.
 spine.base.CommandContext context = 2;
 }
