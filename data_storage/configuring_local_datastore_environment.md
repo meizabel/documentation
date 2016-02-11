@@ -12,7 +12,7 @@ To run the sample on a local installation of Google Cloud Datastore, or to use i
 ###### for Linux or Mac OS X:
 ```
 ./gcd.sh create -d spine-local-dataset my-project
-````  
+```  
 
 ###### for Windows:
 ```
@@ -28,12 +28,12 @@ To start the local Datastore Server, please run the following command:
 ###### for Linux or Mac OS X:
 ```
 ./gcd.sh start --testing my-project
-````  
+```  
 
 ###### for Windows:
 ```
 gcd start --testing my-project
-```` 
+``` 
 
 Where `my-project` is your local project directory.
 
