@@ -12,20 +12,24 @@ Spine provides realization for most important building blocks of the CQRS Event 
 
 ## 
 
-**Command** is an instruction to do something. Commands are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an exception. In Spine [command](/java/commands.md) is defined as a protobuf message.
+**Command** are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an exception. In Spine [command](/java/commands.md) is defined as a protobuf message.
+
+**Command Bus** is responsible for routing the command to its handler. Unlike a Command Handler it does not change business model or produce events.
+
+**Command Handler** receives and validates commands, executes the required actions.
+Command Handler changes the state of the business model and produces corresponding events, which are then written to the [Event Store](#eventstore). It also writes status to Command Store.
 
 **Event** is something that happened in the past.
-Capture all changes to an application state as a sequence of events. In Spine [events](/java/event.md) are defined as protobuf messages as well.
+All changes to an application state are captured as a sequence of events. In Spine [events](/java/event.md) are defined as protobuf messages as well.
 
 **Aggregate** handles commands, applies events, and have a state model encapsulated within it that allows it to implement the required command validation, thus upholding the invariants (business rules) of the aggregate.
 Read more on declaring an [Aggregate](/java/aggregate.md) in Spine.
 
 **Aggregate Repository** manages Aggregates, sends events to Event Bus and latest Aggregate States to the Aggregate Stand.
 
-**Command Bus** is responsible for routing the command to its handler. Unlike a Command Handler it does not change business model or produce events.
 
-**Command Handler** receives and validates commands, executes the required actions.
-Command Handler changes the state of the business model and produces corresponding events, which are then written to the [Event Store](#eventstore). It also writes status to Command Store.
+
+
 
 **Command Store** receives commands from the Command Bus and records command statuses received from Aggregate Repository and Command Handler.
 
