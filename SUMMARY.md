@@ -5,7 +5,7 @@
 * [Prior Art](prior_art.md)
 * [Getting Started](getting_started/README.md)
 * [Essentials](essentials/README.md)
-   * [Working with Protobufs](essentials/principles.md)
+   * [Working with Protobufs](essentials/working_with_protocol_buffers.md)
    * [Strongly Typed](essentials/strongly_typed.md)
    * [Bounded Context](essentials/bounded_context.md)
 * [Java](java/README.md)
