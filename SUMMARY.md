@@ -7,7 +7,7 @@
 * [Essentials](essentials/README.md)
    * [Working with Protobufs](essentials/working_with_protobufs.md)
    * [Strongly Typed](essentials/strongly_typed.md)
-   * Ubiquitous Language
+   * [Ubiquitous Language](essentials/ubiquitous_language.md)
    * [Bounded Context](essentials/bounded_context.md)
 * [Java](java/README.md)
    * [Writing Commands](java/commands.md)
