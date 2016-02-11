@@ -13,7 +13,7 @@ the type of its message. When we speak about a **command** as a typed thing, we 
 The context contains attributes common for all commands.
 A command message is a protobuf message:
 
-``````java
+``````protobuf
 message MyCommand {
     // The first field of an aggregate command must be the ID of the aggregate.
     MyAggregateId target_id = 1;
@@ -27,7 +27,7 @@ By convention command messages are defined in the file named`commands.proto`. Ty
 
 There should be **one and only one** handler associated with the type of the command.
 
-``````java
+``````protobuf
 message Command {
     // The message of the command wrapped into `Any`.
     google.protobuf.Any message = 1;
