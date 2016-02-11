@@ -14,13 +14,14 @@ Spine provides realization for most important building blocks of the CQRS Event 
 
 **Command** are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an exception. In Spine [command](/java/commands.md) is defined as a protobuf message.
 
+**Event** is something that happened in the past.
+All changes to an application state are captured as a sequence of events. Events is the main “database” of the application. In Spine [events](/java/event.md) are defined as protobuf messages as well.
+
+
 **Command Bus** is responsible for routing the command to its handler. Unlike a Command Handler it does not change business model or produce events.
 
 **Command Handler** receives and validates commands, executes the required actions.
 Command Handler changes the state of the business model and produces corresponding events, which are then written to the [Event Store](#eventstore). It also writes status to Command Store.
-
-**Event** is something that happened in the past.
-All changes to an application state are captured as a sequence of events. In Spine [events](/java/event.md) are defined as protobuf messages as well.
 
 **Aggregate** is technically a "concept" and not a file, a class, or a thing you can readily point to in an IDE. It is a logical collection of domain objects, that should form an atomic and cohesive whole. You may find more detailed overview of the Aggregate and its definition in Spine in this [article](/java/aggregate.md).
 
