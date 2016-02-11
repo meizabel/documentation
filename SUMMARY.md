@@ -22,6 +22,7 @@
    * [Process Manager](java/process_manager.md)
    * Command Dispatcher
    * Event Bus
+   * Repository
 * [FAQ](faq.md)
 * [Examples](examples/README.md)
 * [Contribute](contribute/README.md)
