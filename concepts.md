@@ -30,7 +30,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 ** Event Handler** is an object that is subscribed to receive events.
 
-** Process Manager** `TODO: new description needed.` A process manager can be both Command Handler and Event Handler.
+** Process Manager** is an independent component that reacts to domain events in a cross-aggregate, eventually consistent manner. It serves as a centralized processing unit that maintains the state sequence and defines the next processing step based on intermediate results. A process manager can be both Command Handler and Event Handler.
 
 **Projection** is an Event Handler, which transforms multiple events data into a structural representation. Projections are main building blocks of Query side of the application. `TODO: links.` 
 
