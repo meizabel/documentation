@@ -2,47 +2,61 @@
 
 # Spine Event Engine Concepts
 
-This chapter introduces some key architecture concepts Spine is based on. It assumes that you reviewed the [Introduction](README.md).
-Below you can find a typical Spine Event Engine application architecture employed within the Bounded Context.
+This chapter introduces some key concepts Spine is based on. The framework provides implementation for most important building blocks of a CQRS/ES application. In terminology we heavily lean on [Domain-Driven Design](https://www.wikiwand.com/en/Domain-driven_design) (DDD) and the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans, and on [“Enterprise Integration Patterns”](http://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20) by Kyle Brown and Bobby Woolf. 
 
+Below you can find a typical Spine Event Engine application architecture. The concepts behind these building blocks are desrcibed in the sections below.
 
 ![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
 
-Spine provides realization for most important building blocks of the CQRS Event Sourced application. In terminology we heavily lean on Domain-Driven Design (DDD) [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans, [“CQRS Jorney”](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft, as well as [“Enterprise Integration Patterns”](http://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20) by Kyle Brown and Bobby Woolf. 
+`TODO: rename the file to Spine-Application-Architecture.svg`
 
-## 
+---
 
-**Command** are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an exception. In Spine [command](/java/commands.md) is defined as a protobuf message.
+
+## Domain Model Concepts
+
+**Command** are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an error or failure. In Spine [command](/java/commands.md) is defined as a protobuf message.
+
+**Event** is something that happened in the past.
+All changes to an application state are captured as a sequence of events. Events is the main “database” of the application. In Spine [events](/java/event.md) are defined as protobuf messages as well.
+
+**Error** — `TODO: define`
+
+**Failure** — `TODO: define`
+
+**Command Handler** is an object, which receives commands, modifies the state of the application, and generates events if the modification was successful. `TODO: links?`
+
+**Aggregate** is the main building block of a business model. [Aggregates](http://martinfowler.com/bliki/DDD_Aggregate.html) guarantee consistency of data modifications in response to commands they receive. Aggregate is the most common case of Command Handler. In response to a command an aggregate modifies its state and produces one or more events. These events are used later to restore the state of the aggregate. In Spine aggregates are [defined as Java classes](/java/aggregate.md), and their states are [defined as protobuf messages](/biz_model/aggregate_states.md).
+
+** Event Handler** is an object that is subscribed to receive events.
+
+** Process Manager** `TODO: new description needed.` A process manager can be both Command Handler and Event Handler.
+
+**Projection** is an Event Handler, which transforms multiple events data into a structural representation. Projections are main building blocks of Query side of the application. `TODO: links.` 
+
+**Entity Fragment** `TODO: define`.
+
+## Architectural Concepts
+
+**Bounded Context** — `TODO: define. Mention multiple contexts and how they interact.`
+
+**Repository** is a mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects. It isolates domain objects from details of the database access code. *Aggregate Repository*, *Process Manager Repository*, and *Projection Repository* are types of the repositories your application would have.
 
 **Command Bus** is responsible for routing the command to its handler. Unlike a Command Handler it does not change business model or produce events.
 
-**Command Handler** receives and validates commands, executes the required actions.
-Command Handler changes the state of the business model and produces corresponding events, which are then written to the [Event Store](#eventstore). It also writes status to Command Store.
-
-**Event** is something that happened in the past.
-All changes to an application state are captured as a sequence of events. In Spine [events](/java/event.md) are defined as protobuf messages as well.
-
-**Aggregate** is technically a "concept" and not a file, a class, or a thing you can readily point to in an IDE. It is a logical collection of domain objects, that should form an atomic and cohesive whole. You may find more detailed overview of the Aggregate and its definition in Spine in this [article](/java/aggregate.md).
-
-** Process Manager** coordinates and routes messages between bounded contexts and aggregates. You may find a broader explanation of this term  in [CQRS Journey](https://msdn.microsoft.com/en-us/library/jj591569.aspx) book. A process manager gives a single place where the routing is defined.
-
-**Repository** is a mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects. It isolates domain objects from details of the database access code. 
-
-So Aggregate Repository, Process Manager Repository and Projection Repository are examples of the  Repository type. 
-
-**Command Store** receives commands from the Command Bus and records command statuses received from Aggregate Repository and Command Handler.
-
 **Event Bus** allows publish-subscribe-style communication between components without requiring the components to explicitly register with one another (and thus be aware of each other).
 
-** Event Handler** is an object that is subscribed to receive events from Event Bus.
+**Command Store** keeps the history of all the commands of the application and statuses of their execution.
 
-<a name = "eventstore"></a>
-**Event Store. ** Events generated by the Aggregates as a result of commands that change state are written to an Event store. Event Store also sends events in response to the Projection Repository requests.
+**Event Store ** keeps all the events of the application in the chronological order, which is also called *Event Stream*. New projections are built by passing the event stream “throught” them. `TODO: link to the example.`
 
-  ** Aggregate Stand ** is called that way to emphasize its _“read”_ nature. It provides service similar to what Stream Projection does, the Aggregate Stand would return complete instances of aggregate states, or their projections upon queries from users.
+**Query Service** returns data to the client applications in responce to a query. The query is the request for:
+* state of one or more aggregates or their fragments;
+* one or more projection states or their fragments.
 
-**Query Service**. Aggregate Stand Service and Stream Projection Repositories are linked to the Query service, and the Query Service would read data from them, then passing it to the client.
+
+** Aggregate Stand ** serves latest states of aggregates. It is called that way to emphasize its _“read”_ nature. It may return complete state, or its fragment, if corresponding query requests partial representation.
 
 ___
 
-For definition details in Java, see the [Java](/java/README.md) section.
+For definition details in Java, see the [Java](/java/README.md) section. `TODO: this needs rephrasing.`
