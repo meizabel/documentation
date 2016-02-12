@@ -34,4 +34,5 @@
 * [FAQ](faq.md)
 * [Examples](examples/README.md)
 * [Contribute](contribute/README.md)
+* [New Test](new-test.md)
 
