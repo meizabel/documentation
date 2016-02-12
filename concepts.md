@@ -59,4 +59,4 @@ All changes to an application state are captured as a sequence of events. Events
 
 ___
 
-For definition details in Java, see the [Java](/java/README.md) section. `TODO: this needs rephrasing.`
+For , see the [Java](/java/README.md) section.
