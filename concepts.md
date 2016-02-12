@@ -59,4 +59,4 @@ All changes to an application state are captured as a sequence of events. Events
 
 ___
 
-For , see the [Java](/java/README.md) section.
+For more information read [Creating Business Model](/biz_model/java.md) and [Java](/java/README.md) chapters.
