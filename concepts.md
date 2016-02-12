@@ -50,7 +50,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 **Event Store ** keeps all the events of the application in the chronological order, which is also called *Event Stream*. New projections are built by passing the event stream “throught” them. `TODO: link to the example.`
 
-**Query Service** returns data to the client applications in responce to a query. The query is the request for:
+**Query Service** returns data to the client applications in response to a query. The query is the request for:
 * state of one or more aggregates or their fragments;
 * one or more projection states or their fragments.
 
