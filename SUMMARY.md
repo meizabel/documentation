@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Concepts](concepts.md)
 * [Prior Art](prior_art.md)
+* [Concepts](concepts.md)
 * [Getting Started](getting_started/README.md)
 * [Essentials](essentials/README.md)
    * [Working with Protobufs](essentials/working_with_protobufs.md)
