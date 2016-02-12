@@ -3,3 +3,11 @@
         "website": "styles/website.css"
     }
 }
+{
+       "links": {
+        "sidebar": {
+            "Home": "http://getgauge.io",
+            "Github": "http://github.com/getgauge/gauge"
+         }
+   }
+}
