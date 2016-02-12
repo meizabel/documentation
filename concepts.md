@@ -34,7 +34,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 **Projection** is an Event Handler, which transforms multiple events data into a structural representation. Projections are main building blocks of Query side of the application. `TODO: links.` 
 
-**Entity Fragment** — a message with partial state of an entity. It returns a fragment of the entire state filtered using `FieldMasks` provided in a query.
+**Entity Fragment** — a message with the partial state of an entity. It returns a fragment of the entire state filtered using `FieldMasks` provided in a query.
 
 ## Architectural Concepts
 
