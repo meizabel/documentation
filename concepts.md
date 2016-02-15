@@ -20,7 +20,7 @@ Below you can find a typical Spine Event Engine application architecture. The co
 **Event** is something that happened in the past.
 All changes to an application state are captured as a sequence of events. Events is the main “database” of the application. In Spine [events](/java/event.md) are defined as protobuf messages as well.
 
-**Error** — `TODO: define`
+**Error** — is a technical issue (a programming error, a resource lack, a technical malfunction). The end user usually cannot do much about an error.
 
 **Failure** — `TODO: define`
 
