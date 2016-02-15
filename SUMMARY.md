@@ -33,4 +33,4 @@
    * [Configuring Local Datastore Environment](data_storage/configuring_local_datastore_environment.md)
 * [FAQ](faq.md)
 * [Examples](examples/README.md)
-* [Contribute](contribute/README.md)
+* [Contribute](contribute/index.md)
