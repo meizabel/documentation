@@ -11,7 +11,7 @@
    * [Bounded Context](essentials/bounded_context.md)
 * [Creating Business Model](biz_model/index.md)
    * [Identifiers](biz-model/identifiers.md)
-   * [Aggregate States](biz-model/aggregate_states.md)
+   * [Aggregate States](biz-model/aggregate-states.md)
    * [Commands](biz-model/commands.md)
    * [Events](biz-model/event.md)
    * [Failures](biz-model/failures.md)
