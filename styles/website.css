@@ -1,5 +1,5 @@
 @import url("https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css");
 
 a[href*="//"]:not([href*="mysite.com"]):after {
-content: "\9721"
+content: "&sup&#9721"
    }
