@@ -3,7 +3,7 @@
 The demands on software projects increase rapidly as time progresses. So do architecture approaches to meet these needs.
 This section will give you an overview of the concepts and implementations Spine has inherited, while brought some important differences into play.
 
-Spine is created for applications that follow [CQRS]{.ext-link}(http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html).
+Spine is created for applications that follow [CQRS](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html).
 
 Spine didn’t appear out of the blue, when the authors of the framework had nothing better to do. It is the result of observation of boilerplate code in real applications, and the experience from previous attempts to address this issue, that has led to the Spine vision.
 
