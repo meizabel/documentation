@@ -22,7 +22,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 **Error** — is a technical issue (a programming error, a resource lack, a technical malfunction). The end user usually cannot do much about an error.
 
-**Failure** — is state of the business logic, which can be handled by the end user. Examples are “credit card validation declined”,  “order cannot be empty”, “insufficient funds”, etc.
+**Failure** — is state of the business logic, which can be handled by the end user. Examples are “credit card validation declined”,  “order cannot be empty”, “insufficient funds”, etc. In Spine [failures](/biz-model/failures.md) are defined as protobuf messages as well.
 
 **Command Handler** is an object, which receives commands, modifies the state of the application, and generates events if the modification was successful. `TODO: links?`
 
