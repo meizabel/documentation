@@ -2,4 +2,4 @@
 
 a[href*="//"]:not([href*="spine3.org"]):after{
 content: "\021D7"; vertical-align: super; font-size: smaller; text-decoration: none;
-   }:hover{text-decoration: none;}
+   }:after:hover{text-decoration: none;}
