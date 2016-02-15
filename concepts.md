@@ -48,7 +48,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 **Command Store** keeps the history of all the commands of the application and statuses of their execution.
 
-**Event Store ** keeps all the events of the application in the chronological order, which is also called *Event Stream*. New projections are built by passing the event stream “throught” them. `TODO: link to the example.`
+**Event Store ** keeps all the events of the application in the chronological order, which is also called *Event Stream*. New projections are built by passing the event stream “through” them. `TODO: link to the example.`
 
 **Query Service** returns data to the client applications in response to a query. The query is the request for:
 * state of one or more aggregates or their fragments;
@@ -59,4 +59,4 @@ All changes to an application state are captured as a sequence of events. Events
 
 ___
 
-For more information read [Creating Business Model](/biz_model/java.md) and [Java](/java/README.md) chapters.
+Detailed overview of each concept and its implementation in Spine you can find in  [Creating Business Model](/biz_model/java.md) and [Java](/java/README.md) chapters.
