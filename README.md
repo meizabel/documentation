@@ -19,10 +19,10 @@ The primary language of the backend is Java. Client applications and server-side
 ### Get Started
 
 To get up and running with Spine, check the following articles:
-* [Quick Start](/getting_started/README.md)
+* [Quick Start](/getting-started/index.md)
 
 ### Learn More
 
-* [Essentials](/essentials.README.md)
-* [Java Documentation](/java.README.md)
-* [Examples](/examples/README.md)
+* [Essentials](/essentials.index.md)
+* [Java Documentation](/java.index.md)
+* [Examples](/examples/index.md)
