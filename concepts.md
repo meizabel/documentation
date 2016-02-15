@@ -36,7 +36,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 ## Architectural Concepts
 
-**Bounded Context** — `TODO: define. Mention multiple contexts and how they interact.`
+**Bounded Context** is an explicitly defined scope of a particular model as bounded part of the software system, within which a single model is applied and kept as unified as possible. `TODO: define. Mention multiple contexts and how they interact.`
 
 **Repository** is a mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects. It isolates domain objects from details of the database access code. *Aggregate Repository*, *Process Manager Repository*, and *Projection Repository* are types of the repositories your application would have.
 
