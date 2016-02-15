@@ -6,7 +6,3 @@ content: "\021D7"; vertical-align: super; font-size: smaller; text-decoration: n
 a:hover[href*="//"]:not([href*="spine3.org"]):after{
     text-decoration: none;
    }
-   
-.ext-link{}
-.ext-link:after{content: "\021D7"; vertical-align: super; font-size: smaller; text-decoration: non;}
-.ext-link:hover:after{text-decoration: none;}
