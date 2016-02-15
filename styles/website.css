@@ -1,5 +1,5 @@
 @import url("https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css");
 
-a[href*="//"]:not([href*="docs.spine3.org"]):after {
+a[href*="//"]:not([href*="spine3.org"]):after {
 content: "\021D7"; vertical-align: super; font-size: smaller; text-decoration: none;
    }
