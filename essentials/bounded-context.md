@@ -1,6 +1,6 @@
 # Bounded Context
 
-TODO: add description of the concept and its usage in Spine
+ Bounded Context is an explicitly defined scope of a particular model as bounded part of the software system, within which a model is kept as unified as possible.
 
 As DDD book advises:
 ```
