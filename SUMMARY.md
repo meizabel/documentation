@@ -32,5 +32,5 @@
 * [Working with Data Storages](data-storage/index.md)
    * [Configuring Local Datastore Environment](data-storage/configuring-local-datastore-environment.md)
 * [FAQ](faq.md)
-* [Examples](examples/README.md)
+* [Examples](examples/index.md)
 * [Contribute](contribute/index.md)
