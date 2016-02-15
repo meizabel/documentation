@@ -6,9 +6,7 @@ This chapter introduces some key concepts Spine is based on. The framework provi
 
 Below you can find a typical Spine Event Engine application architecture. The concepts behind these building blocks are described in the sections below.
 
-![Spine Event Engine Diagram](Diagram-SpineEventEngine.svg)
-
-`TODO: rename the file to Spine-Application-Architecture.svg`
+![Spine Application Architecture](Spine-Application-Architecture.svg)
 
 ---
 
