@@ -18,7 +18,7 @@
    * [Projections](biz-model/projections.md)
    * [Process Manager States](biz-model/process-manager-states.md)
 * [Java](java/index.md)
-   * [Writing Events](java/event.md)
+   * [Writing Events](java/event-handler.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](java/command-handler.md)
    * [Event Handler and Applier](java/event-handler.md)
