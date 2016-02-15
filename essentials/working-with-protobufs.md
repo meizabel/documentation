@@ -17,8 +17,5 @@ Java and C++, with an alpha release for JavaNano (Android Java), Python, and
 Ruby from [the Protocol Buffers Github
 repo](https://github.com/google/protobuf/releases), as well as a Go language
 generator from [the golang/protobuf Github repo](https://github.com/golang/protobuf), with more languages in development. You can find out more in the [proto3 language guide](https://developers.google.com/protocol-buffers/docs/proto3), and see
-the major differences from the current default version in the [release notes](https://github.com/google/protobuf/releases). 
-
-
-
+the major differences from the current default version in the [release notes](https://github.com/google/protobuf/releases).
 
