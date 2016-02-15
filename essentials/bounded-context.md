@@ -2,7 +2,7 @@
 
  Bounded Context is an explicitly defined scope of a particular model as bounded part of the software system, within which a model is kept as unified as possible.
 
-As [DDD book] advises:
+As [DDD book](https://www.wikiwand.com/en/Domain-driven_design) advises:
 ```
 “Explicitly define the context within which a model applies. Explicitly set boundaries in terms of team organization, usage
 within specific parts of the application, and physical manifestations such as code bases and database schemas.
