@@ -1,3 +1,3 @@
 # Event Bus
 
-Description of the Event Bus definition will be added here.
+Event Bus delivers events to their subscribers. It also allows a subscriber to catch-up from a given timestamp on a certain event.
