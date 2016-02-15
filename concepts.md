@@ -36,7 +36,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 ## Architectural Concepts
 
-**Bounded Context** is an autonomous component, with its own domain model and its own ubiquitous language. Larger systems usually have multiple contexts (orders, user management, shipping are examples of the separate contexts within an online retail system). Interaction between bounded contexts is organized via Integration Events in Spine.
+**Bounded Context** is an autonomous component, with its own domain model and its own ubiquitous language. Larger systems usually have multiple contexts (orders, user management, shipping are examples of the separate contexts within an online retail system). Interaction between bounded contexts is organized via [Integration Events]`TODO: Link to documentation article` in Spine.
 
 **Repository** is a mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects. It isolates domain objects from details of the database access code. *Aggregate Repository*, *Process Manager Repository*, and *Projection Repository* are types of the repositories your application would have.
 
