@@ -14,7 +14,7 @@
    * [Aggregate States](biz-model/aggregate-states.md)
    * [Commands](biz-model/commands.md)
    * [Events](biz-model/event.md)
-   * Integration Events
+   * [Integration Events](biz-model/integration-events.md)
    * [Failures](biz-model/failures.md)
    * [Projections](biz-model/projections.md)
    * [Process Manager States](biz-model/process-manager-states.md)
