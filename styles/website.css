@@ -1,12 +1,13 @@
 @import url("https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css");
 
-a:hover[href*="//"]:not([href*="spine3.org"]):after{
-    text-decoration: none;
-   }
+
 a[href*="//"]:not([href*="spine3.org"]):after{
 content:""
 "\025F9"; 
 vertical-align: super; 
 font-size: smaller; 
 text-decoration: none;
+   }
+a:hover[href*="//"]:not([href*="spine3.org"]):after{
+    text-decoration: none;
    }
