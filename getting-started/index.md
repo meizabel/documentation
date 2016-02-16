@@ -46,6 +46,4 @@ version: '3.0.0-beta-1'
  ** TODO:** create sample classes/proto for pp 1 to 3
  
  **TODO:** establish maven dependency?
-
-
 You can find Spine source code in the [GitHub repositories](https://github.com/SpineEventEngine).
