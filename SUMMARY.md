@@ -14,6 +14,7 @@
    * [Aggregate States](biz-model/aggregate-states.md)
    * [Commands](biz-model/commands.md)
    * [Events](biz-model/event.md)
+       * Integration Events
    * [Failures](biz-model/failures.md)
    * [Projections](biz-model/projections.md)
    * [Process Manager States](biz-model/process-manager-states.md)
@@ -21,7 +22,6 @@
    * [Event Handler](java/event-handler.md)
    * [Aggregate](java/aggregate.md)
    * [Command Handler](java/command-handler.md)
-   * [Event Handler and Applier](java/event-handler.md)
    * [Snapshot](java/snapshot.md)
    * [Code Generation](java/code-generation.md)
    * [Query Side](java/query-side.md)
@@ -34,3 +34,4 @@
 * [FAQ](faq.md)
 * [Examples](examples/index.md)
 * [Contribute](contribute/index.md)
+
