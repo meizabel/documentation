@@ -1,4 +1,4 @@
-# Essentials
+# Motivation
 
 We started working on Spine after two CQRS/ES projects. Having the experience
 of:
