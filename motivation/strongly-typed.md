@@ -8,7 +8,7 @@ Unlike some of  CQRS/ES frameworks that treat commands and events as Json object
 
 It all leads to an important advantage — the model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
  
- Examples of value objects are things like numbers, dates, monies and strings. Usually, they are small objects which are used quite widely. Their identity is based on their state rather than on their object identity. This way, you can have multiple copies of the same conceptual value object. 
+ Value Object is a measure or description of something. Examples of value objects are things like numbers, dates, monies and strings. Usually, they are small objects which are used quite widely. Their identity is based on their state rather than on their object identity. This way, you can have multiple copies of the same conceptual value object. 
  
 As Martin Fowler writes about [Value Objects](http://martinfowler.com/bliki/ValueObject.html):
 
