@@ -14,7 +14,7 @@ of:
 We decided to create a framework that can help us and development groups like us to build CQRS/ES apps easier.
 
 * In Spine Event Engine a Domain Model, including commands, events and aggregates, Projections and Business Failures, is described using [Protocol Buffers](motivation/working-with-protocol-buffers.md).
-* Events and Commands are [ strongly typed](essentials/strongly-typed.md).
-* Ubiquitous language is [ubiquitous](/essentials/ubiquitous-language.md) across human communications and computing devices interactions.
-* [Bounded Context](/essentials/bounded-context.md) is important.
-* Immutability
+* Events and Commands are [ strongly typed](motivation/strongly-typed.md).
+* Ubiquitous language is [ubiquitous](/motivation/ubiquitous-language.md) across human communications and computing devices interactions.
+* [Bounded Context](/motivation/bounded-context.md) is important.
+* [Immutability](/motivation/immutability.md)
