@@ -18,3 +18,4 @@ We decided to create a framework that can help us and development groups like us
 * Events and Commands are [ strongly typed](essentials/strongly-typed.md).
 * Ubiquitous language is [ubiquitous](/essentials/ubiquitous-language.md) across human communications and computing devices interactions.
 * [Bounded Context](/essentials/bounded-context.md) is important.
+* Immutability
