@@ -3,7 +3,6 @@
 * [Introduction](README.md)
 * [Prior Art](prior_art.md)
 * [Motivation](motivation/index.md)
-   * [Working with Protobufs](motivation/working-with-protobufs.md)
    * [Strongly Typed](motivation/strongly-typed.md)
    * [Ubiquitous Language](motivation/ubiquitous-language.md)
    * [Bounded Context](motivation/bounded-context.md)
