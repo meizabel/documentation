@@ -11,7 +11,8 @@ It all leads to an important advantage — the model [can be extended](https://d
  Examples of value objects are things like numbers, dates, monies and strings. Usually, they are small objects which are used quite widely. Their identity is based on their state rather than on their object identity. This way, you can have multiple copies of the same conceptual value object. 
  
 As Martin Fowler writes about [Value Objects](http://martinfowler.com/bliki/ValueObject.html):
-A general heuristic is that value objects should be entirely immutable. If you want to change a value object you should replace the object with a new one and not be allowed to update the values of the value object itself - updatable value objects lead to aliasing problems.
+
+>A general heuristic is that value objects should be entirely immutable. If you want to change a value object you should replace the object with a new one and not be allowed to update the values of the value object itself - updatable value objects lead to aliasing problems.
 
  Quote Fowler on typed value objects .
 
