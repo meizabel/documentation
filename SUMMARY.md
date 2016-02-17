@@ -4,7 +4,7 @@
 * [Prior Art](prior_art.md)
 * [Concepts](concepts.md)
 * [Getting Started](getting-started/index.md)
-* [Essentials](essentials/index.md)
+* [Motivation](essentials/index.md)
    * [Working with Protobufs](essentials/working-with-protobufs.md)
    * [Strongly Typed](essentials/strongly-typed.md)
    * [Ubiquitous Language](essentials/ubiquitous-language.md)
