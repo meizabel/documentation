@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Prior Art](prior_art.md)
-* [Motivation](essentials/index.md)
+* [Motivation](motivation/index.md)
    * [Working with Protobufs](essentials/working-with-protobufs.md)
    * [Strongly Typed](essentials/strongly-typed.md)
    * [Ubiquitous Language](essentials/ubiquitous-language.md)
