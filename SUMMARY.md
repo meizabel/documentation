@@ -9,7 +9,7 @@
    * [Strongly Typed](essentials/strongly-typed.md)
    * [Ubiquitous Language](essentials/ubiquitous-language.md)
    * [Bounded Context](essentials/bounded-context.md)
-   * Immutability
+   * [Immutability](essentials/immutability.md)
 * [Creating Business Model](biz-model/index.md)
    * [Identifiers](biz-model/identifiers.md)
    * [Aggregate States](biz-model/aggregate-states.md)
