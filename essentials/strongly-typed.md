@@ -3,17 +3,19 @@
 We believe that domain language, being the most important part of the
 application, must be strongly [typed](http://martinfowler.com/ieeeSoftware/whenType.pdf).
 
-Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes commands and events to be first class citizens in the applications, which gives a lot of benefits in business logic. Defining events and commands as classes, and not having to convert back-and-forth with Json gives some performance advantage at the same time.
+### Commands and Events
+Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes commands and events to be first class citizens in the application. That gives a lot of benefits in describing business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
 
-  The model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
-  
+It all leads to an important advantage — the model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
+ 
+ Examples of value objects are things like numbers, dates, monies and strings. Usually, they are small objects which are used quite widely. Their identity is based on their state rather than on their object identity. This way, you can have multiple copies of the same conceptual value object. Every $5 note has its own identity (thanks to its serial number), but the cash economy relies on every $5 note having the same value as every other $5 note. 
 A general heuristic is that value objects should be entirely immutable. If you want to change a value object you should replace the object with a new one and not be allowed to update the values of the value object itself - updatable value objects lead to aliasing problems.
 TODO: link to TinyTypes. Quote Fowler on typed value objects (http://martinfowler.com/bliki/ValueObject.html).
 
-
+### Identifiers
 Identifiers must be typed too. The framework does allow to have IDs of type
 `String`, `Long`, or `Integer`.
-But we recommend to have typed identifiers. So if you have the
+But we recommend to have typed identifiers. So, if you have the
 `Order` class for one of your aggregates, there should be an `OrderId`.
 
 There are two benefits of this:
