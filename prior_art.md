@@ -5,7 +5,7 @@ This section will give you an overview of the concepts and implementations Spine
 
 Spine is created for applications that follow [CQRS](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html).
 
-Spine didn’t appear out of the blue, when the authors of the framework had nothing better to do. It is the result of observation of boilerplate code in real applications, and the experience from previous attempts to address this issue, that has led to the Spine vision.
+Spine didn’t appear out of the blue. It is the result of our observation of enormous manual effort on creating events and commands, delivering events and data to web and mobile clients. It takes time, does not require much creativity from a developer, whilst this energy could have been spent on the productive Event Storming, detailing the Domain model and so on. Attempts to address this issue led to the Spine vision.
 
 Major addition to the existent variety of tools, libraries and frameworks that Spine brings — is automatic **code generation** for multiple application clients. It is reached by using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview).
 
@@ -15,7 +15,6 @@ So you need to make your code work on another platform by writing it in another 
 
 Using [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) for formulating business domain allows us to make this language [ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html) not only in human interaction, but in communication of computing devices too.
 
-
 **Immutability** is another major concept we follow.
 Spine uses typed commands and events. Having commands and events as first class citizens in the applications gives a lot of benefits in business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
 
@@ -23,6 +22,10 @@ Spine uses typed commands and events. Having commands and events as first class 
 
  Spine probably won’t be the best fit for the trading or highly loaded applications, where, for example, [LMAX](https://www.lmax.com/) does excellent job. Our motivation is to make modern applications development easier and more efficient, and to offer a set of practical solutions to bring this into life with accompanying approach and terminology.
 
-In terminology we heavily lean on [Domain-Driven Design (DDD)](http://www.grpc.io/posts/principles/) and the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans. We learnt a lot from the book [“CQRS Jorney”](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft, and our selection of using the term “Process Manager” over commonly used “Saga” is based on experience of Microsoft engineers. The “Process Manager” pattern was first defined and brought into common vocabulary by Kyle Brown and Bobby Woolf under the guidance of Martin Fowler in the book [“Enterprise Integration Patterns”](http://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
+In terminology we heavily lean on [Domain-Driven Design (DDD)](http://www.grpc.io/posts/principles/) and the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans. We learned a lot from the book [“CQRS Jorney”](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft, and our selection of using the term “Process Manager” over commonly used “Saga” is based on experience of Microsoft engineers. The “Process Manager” pattern was first defined and brought into common vocabulary by Kyle Brown and Bobby Woolf under the guidance of Martin Fowler in the book [“Enterprise Integration Patterns”](http://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
+
+Another great resource on the object-oriented design worth mentioning here — is [“Patterns of Enterprise Application Architecture”](http://www.martinfowler.com/books/eaa.html) by Martin Fowler. Many modern frameworks implement these patterns behind the scenes, and so does Spine. 
+But as [Martin Fowler](http://www.martinfowler.com/books/eaa.html) notes:
+>Frameworks still require you to make decisions about how to use them, and knowing the underlying patterns is essential if you are to make wise choices.
 
 We are yet at the beginning of our journey using Spine in the wild. Join us and share how it goes!
