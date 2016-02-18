@@ -38,7 +38,7 @@ phone numbers. Having `CustomerId` class in the first place would make the
 integration much easier.
 
 
- 
+
 `TODO: Quote Fowler on typed value objects.`
 
 Value Object is a measure or description of something. Examples of value objects are things like numbers, dates, monies and strings. Usually, they are small objects which are used quite widely. Their identity is based on their state rather than on their object identity. This way, you can have multiple copies of the same conceptual value object. 
