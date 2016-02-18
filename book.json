@@ -1,5 +1,17 @@
+
 {
-    "styles": {
+     "styles": {
         "website": "styles/website.css"
     }
+}
+{
+    "links": {
+        "sidebar": {
+            "Home": "http://spine3.org",
+            "Github": "https://github.com/SpineEventEngine"
+        },
+        "home": "http://spine3.org",
+        "about": "http://spine3.org",
+        }
+}
 }
