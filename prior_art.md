@@ -5,7 +5,7 @@ This section will give you an overview of the concepts and implementations Spine
 
 Spine is created for applications that follow [CQRS](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html).
 
-Spine didn’t appear out of the blue. It is the result of our observation of enormous manual effort on creating events and commands, delivering events and data to web and mobile clients. It takes time, does not require much creativity from a developer, whilst this energy could have been spent on the productive Event Storming, detailing the Domain model of the application and so on. Attempts to address this issue led to the Spine vision.
+Spine didn’t appear out of the blue. It is the result of our observation of enormous manual effort on creating events and commands, delivering events and data to web and mobile clients. It takes time, does not require much creativity from a developer, whilst this energy could have been spent on the productive Event Storming, detailing the Domain model and so on. Attempts to address this issue led to the Spine vision.
 
 Major addition to the existent variety of tools, libraries and frameworks that Spine brings — is automatic **code generation** for multiple application clients. It is reached by using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview).
 
