@@ -9,7 +9,7 @@ Being a team that strives for efficiency in each project we are working on, impl
 Instead, we decided to create a framework that can help us and development groups like us to build CQRS/ES apps easier.
 
 There are four fundamental principles Spine is based on:
-* Events and Commands are [ strongly typed](motivation/strongly-typed.md).
+* Events and Commands should be [ strongly typed](motivation/strongly-typed.md).
 * Ubiquitous language must be really [ubiquitous](/motivation/ubiquitous-language.md).
 * [Bounded Context](/motivation/bounded-context.md) definition is a key.
 * Classes must be [immutable](/motivation/immutability.md) unless there's a
