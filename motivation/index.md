@@ -8,7 +8,7 @@ of:
 Being a team that strives for efficiency in each project we are working on, implementing a great deal of cutting edge technologies to make development process easier and more productive, we could not just accept it. 
 Instead, we decided to create a framework that can help us and development groups like us to build CQRS/ES apps easier.
 
-Spine is base on:
+There are four fundamental principles Spine is based on:
 *  [Protocol Buffers](motivation/working-with-protocol-buffers.md).
 * Events and Commands are [ strongly typed](motivation/strongly-typed.md).
 * Ubiquitous language is [ubiquitous](/motivation/ubiquitous-language.md) across human communications and computing devices interactions.
