@@ -2,15 +2,12 @@
 
 Ubiquitous language — a language structured around the domain model and used by all team members to connect all the activities of the team with the software.
 
-In Spine Event Engine a Domain Model, including commands, events and aggregates, Projections and Business Failures, is described using
+In Spine Event Engine a Domain Model, including commands, events and aggregates, Projections and Business Failures, is described using Protocol Buffers.
 
-Cross-platform compatibility
+###Cross-platform compatibility
 Using [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) allows automatic code generation for events and commands on variety of platforms hugely saving development team effort.
 
-By default Spine Event Engine uses *Protocol Buffers*, Google’s
-mature open source mechanism for serializing structured data. You
-can find out lots more about Protocol Buffers in the [Protocol Buffers
-documentation](https://developers.google.com/protocol-buffers/docs/overview).
+By default Spine Event Engine uses *Protocol Buffers*, Google’s mature open source mechanism for serializing structured data. Youcan find out lots more about Protocol Buffers in the [Protocol Buffers documentation](https://developers.google.com/protocol-buffers/docs/overview).
 
 #### Protocol Buffer versions
 
