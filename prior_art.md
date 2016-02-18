@@ -15,7 +15,6 @@ So you need to make your code work on another platform by writing it in another 
 
 Using [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) for formulating business domain allows us to make this language [ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html) not only in human interaction, but in communication of computing devices too.
 
-
 **Immutability** is another major concept we follow.
 Spine uses typed commands and events. Having commands and events as first class citizens in the applications gives a lot of benefits in business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
 
@@ -25,6 +24,8 @@ Spine uses typed commands and events. Having commands and events as first class 
 
 In terminology we heavily lean on [Domain-Driven Design (DDD)](http://www.grpc.io/posts/principles/) and the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans. We learned a lot from the book [“CQRS Jorney”](https://msdn.microsoft.com/en-us/library/jj554200.aspx) by Microsoft, and our selection of using the term “Process Manager” over commonly used “Saga” is based on experience of Microsoft engineers. The “Process Manager” pattern was first defined and brought into common vocabulary by Kyle Brown and Bobby Woolf under the guidance of Martin Fowler in the book [“Enterprise Integration Patterns”](http://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
 
-Another “Bible” of the object-oriented design that worth mentioning here is [“Patterns of Enterprise Application Architecture”](http://www.martinfowler.com/books/eaa.html) — is the book every bit of which is as relevant today as it was the day it was released. 
+Another great resource on the object-oriented design worth mentioning here — is [“Patterns of Enterprise Application Architecture”](http://www.martinfowler.com/books/eaa.html) by Martin Fowler. Many modern frameworks implement these patterns behind the scenes, and so does Spine. 
+But as [Martin Fowler](http://www.martinfowler.com/books/eaa.html) notes:
+>Frameworks still require you to make decisions about how to use them, and knowing the underlying patterns is essential if you are to make wise choices.
 
 We are yet at the beginning of our journey using Spine in the wild. Join us and share how it goes!
