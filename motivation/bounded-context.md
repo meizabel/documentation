@@ -11,7 +11,7 @@ Smaller models provide many benefits, allowing teams to define clear boundaries 
 
 
 ## Interaction between Bounded Contexts
-Bounded contexts are autonomous components, with their own domain models and their own ubiquitous language. They should not have any dependencies on each other at run time and should be capable of running in isolation. However they are a part of the same overall system and do need to exchange data with one another. If you are implementing the CQRS pattern in a bounded context, you should use **Integration events** `TODO: link to the spine documentation article` for this type of communication.
+Bounded contexts are autonomous components, with their own domain models and their own ubiquitous language. They should not have any dependencies on each other at run time and should be capable of running in isolation. However they are a part of the same overall system and do need to exchange data with one another. If you are implementing the CQRS pattern in a bounded context, you need to use a special type of events for this type of communication. In Spine we use term [*Integration Events*](/biz-model/integration-events.md).
 
 Integration Events have the same nature as events within the bounded context.  They are one-way, asynchronous messages that publish information about something that has already happened. 
 
