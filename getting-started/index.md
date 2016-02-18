@@ -1,7 +1,7 @@
 # Getting Started 
 
 
-<p class="lead">To get up and running with Spine straight away, see the quick start, which provides links to installation instructions, quick instructions for building the example used in this guide, and more.</p>
+<p class="lead">To get up and running with Spine straight away, you need to follow 4 simple steps. Follow the installation instructions and build example .</p>
 
 ## Add Spine dependencies to Gradle project
 There are three artifacts that need to be added to your project:
