@@ -14,3 +14,7 @@ There are four fundamental principles Spine is based on:
 * [Bounded Context](/motivation/bounded-context.md) definition is a key.
 * Classes must be [immutable](/motivation/immutability.md) unless there's a
 good reason not to do so.
+
+That’s it! Now you know what Spine is  all about. 
+
+Just if you would like to dig more into details, check 
