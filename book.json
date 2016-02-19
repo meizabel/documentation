@@ -1,5 +1,26 @@
 {
-     "styles": {
-        "website": "styles/website.css"
-    }
+	"title": "Spine Documentation",
+	"description": "User documentation for Spine.",
+	"github": "https://github.com/SpineEventEngine/core-java",
+	"githubHost": "https://github.com/",
+	"plugins": [
+		"anchors@0.4.0",
+		"ga@0.2.1"
+	],
+	"styles": {
+		"website": "styles/website.css"
+	},
+	"links": {
+		"sidebar": {
+			"Home": "http://spine3.org",
+			"Github": "https://github.com/SpineEventEngine"
+		},
+		"home": "http://spine3.org",
+		"about": "http://spine3.org",
+		"sharing": {
+			"google": "http://spine3.org",
+			"facebook": "http://spine3.oeg",
+			"twitter": "SpineEngine"
+		}
+	}
 }
