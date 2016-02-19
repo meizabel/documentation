@@ -5,7 +5,7 @@ of:
 - tons of manual work for creating commands, events, etc.
 - delivering events and data to web and mobile clients.
 
-Being a team that strives for efficiency in each project we are working on, implementing a great deal of cutting edge technologies to make development process easier and more productive, we could not just accept it. 
+Being a team that strives for efficiency in each product we create, implementing a great deal of cutting edge technologies to make development process easier and more productive, we could not just accept it. 
 Instead, we decided to create a framework that can help us and development groups like us to build CQRS/ES apps easier.
 
 There are four fundamental principles Spine is based on:
@@ -18,4 +18,4 @@ good reason not to do so.
 That’s it! Now you know what Spine is  all about. 
 
 ---
-When you are ready to dig into details, check [Concepts](/concepts.md)  chapter, which talks about architecture concepts behind the Spine framework.
+When you are ready to dig into details, check [Concepts](/concepts.md)  chapter, which talks about architecture and Domain Model concepts behind the Spine framework.
