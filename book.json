@@ -18,5 +18,12 @@
 		"sidebar": {
 			  "Home": "http://spine3.org"
 			}
+	},
+	"sharing": {
+            "google": false,
+            "facebook": false,
+            "twitter": false,
+            "weibo": false,
+            "all": false
 	}
 }
