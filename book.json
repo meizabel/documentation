@@ -17,6 +17,7 @@
 }
 },
 	"links": {
-		"sidebar": {}
+		"sidebar": {"Home": "http://spine3.org"
+		}
 	}
 }
