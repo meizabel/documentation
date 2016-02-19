@@ -1,6 +1,6 @@
 {
-    "output": "_book",
-    "generator": "site",
+	"output": "_book",
+	"generator": "site",
 	"title": "Spine Documentation",
 	"description": "User documentation for Spine.",
 	"github": "https://github.com/SpineEventEngine/core-java",
@@ -14,11 +14,6 @@
 			"Github": "https://github.com/SpineEventEngine"
 		},
 		"home": "http://spine3.org",
-		"about": "http://spine3.org",
-		"sharing": {
-			"google": "http://spine3.org",
-			"facebook": "http://spine3.org",
-			"twitter": "SpineEngine"
-		}
+		"about": "http://spine3.org"
 	}
 }
