@@ -16,7 +16,7 @@
 },
 	"links": {
 		"sidebar": {"Home": "http://spine3.org",
-		"https://www.gitbook.com/book/": false
+		"https://www.gitbook.com/book": false
 		}
 	}
 }
