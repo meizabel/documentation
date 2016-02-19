@@ -17,4 +17,5 @@ good reason not to do so.
 
 That’s it! Now you know what Spine is  all about. 
 
+---
 When you are ready to dig into details, check [Concepts](concepts.md)  chapter, which talks about architecture concepts behind the Spine framework.
