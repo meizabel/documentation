@@ -15,7 +15,8 @@
 }
 },
 	"links": {
-		"sidebar": {"Home": "http://spine3.org"
+		"sidebar": {"Home": "http://spine3.org",
+		"https://www.gitbook.com/book/eugeniakotlyar/documentation/": false
 		}
 	}
 }
