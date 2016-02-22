@@ -17,7 +17,7 @@ While Protocol Buffers have been available for open source users for some time, 
 ## Event Storming results implementataion
 **Event storming** is a rapid, lightweight group modeling technique that is intense, fun, and useful for accelerating development teams. 
 
-You run an event storming session as a facilitated workshop. Everyone participates, and the facilitator keeps the group focused and engaged, guiding progress toward a complete model of the domain. The group starts with domain events, walking through the model forwards and backwards to ensure that everything is covered. Then the group adds the commands, or triggers, that cause the events, and considers all sources of commands, including users, external systems, and even time.
+An event storming session usually ran as a facilitated workshop. Everyone participates, and the facilitator keeps the group focused and engaged, guiding progress toward a complete model of the domain. The group starts with domain events, walking through the model forwards and backwards to ensure that everything is covered. Then the group adds the commands, or triggers, that cause the events, and considers all sources of commands, including users, external systems, and even time.
 
 The group identifies aggregates that accept commands and accomplish events, and begins to group aggregates together into bounded contexts. Along the way, key test scenarios, users, and goals are identified and incorporated into the model. Finally, the relationships between bounded contexts are added to create a context map. The resulting model is then challenged with code in order to validate the group learning and verify the model.
 
