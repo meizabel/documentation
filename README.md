@@ -23,6 +23,6 @@ To get up and running with Spine, check the following articles:
 
 ### Learn More
 
-* Our [Motivation](/essentials.index.md) to build Spine
+* Our [Motivation](/motivation.index.md) to build Spine
 * [Java Documentation](/java.index.md)
 * [Examples](/examples/index.md)
