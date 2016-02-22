@@ -43,3 +43,13 @@ Handling changes to event type definitions requires more complex changes to your
 
 
 ### Isolation of storage and deployment aspects from the main code
+The CQRS pattern enables data and objects segregation in your applications. The write model can use a database that is optimized for writes by being fully normalized. The read model can use a database that is optimized for reads by being denormalized to suit the specific queries that the application must support on the read side.
+
+Several benefits come from this: 
+* better performance because each database is optimized for a particular set of operations, 
+* better scalability because you can scale out each side independently, and 
+* simpler locking schemes. On the write side you no longer need to worry about how your locks impact queries, and on the read side your database can be read-only.
+
+If you capture changes in your write model as events, you can save all of your changes simply by appending those events to your database or data store on the write side using only Insert operations.
+
+You can also use those same events to push your changes to the read side. You can use those events to build projections of the data that contain the data structured to support the queries on the read side.
