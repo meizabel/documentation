@@ -14,8 +14,8 @@ By default Spine Event Engine uses *Protocol Buffers*, Google’s mature open so
 While Protocol Buffers have been available for open source users for some time, Spine uses a new flavor of Protocol Buffers called proto3, which has a slightly simplified syntax, some useful new features, and supports more languages. This is currently available as an beta release in Java and C++, with an alpha release for JavaNano (Android Java), Python, and Ruby from [the Protocol Buffers Github repo](https://github.com/google/protobuf/releases), as well as a Go language generator from [the golang/protobuf Github repo](https://github.com/golang/protobuf), with more languages in development. You can find out more in the [proto3 language guide](https://developers.google.com/protocol-buffers/docs/proto3), and see the major differences from the current default version in the [release notes](https://github.com/google/protobuf/releases).
 
 
-## Event Storming results implementataion
-**Event storming** is a rapid, lightweight group modeling technique that is intense, fun, and useful for accelerating development teams. 
+## Event Storming results instant implementataion
+**Event storming** is a rapid, lightweight group modeling technique that is intense, fun, and useful for accelerating development teams. The brainchild of Alberto Brandolini, it's a synthesis of facilitated group learning practices from [Gamestorming](http://gamestorming.com/) and the principles of domain-driven design (DDD).
 
 An event storming session usually ran as a facilitated workshop. Everyone participates, and the facilitator keeps the group focused and engaged, guiding progress toward a complete model of the domain. The group starts with domain events, walking through the model forwards and backwards to ensure that everything is covered. Then the group adds the commands, or triggers, that cause the events, and considers all sources of commands, including users, external systems, and even time.
 
