@@ -30,7 +30,7 @@ Once an event has been accepted and committed, it becomes an established fact â€
 
 Consequently the storage mechanism that we use to persist our events becomes very simple. It is basically a stack. We continuously append new events on top of the stack. Existing events are never touched again. No update or delete operation is defined, only add operations are ever possible.
 
-Similarly to Commands, events may need to be updated as application and business model evolves. 
+Similarly to Commands, events may need to be updated as application and business model evolves. Scenarios where event modification can occure.
 
 #### Redundant events
 If your system no longer uses a particular event type, you may be able to simply remove it from the system. However, if you are using event sourcing, your event store may hold many instances of this event, and these instances may be used to rebuild the state of your aggregates. Your aggregates must continue to be able to handle these old events when they are replayed from the event store even though the system will no longer raise new instances of this event type.
