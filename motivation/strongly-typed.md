@@ -4,7 +4,7 @@ We believe that domain language, being the most important part of the
 application, must be strongly [typed](http://martinfowler.com/ieeeSoftware/whenType.pdf).
 
 ### Commands and Events
-Unlike some of  CQRS/ES frameworks which treat commands and events as Json objects, Spine promotes commands and events to be first class citizens in the application. That gives a lot of benefits in describing business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
+Unlike some of  CQRS/ES frameworks which treat commands and events as Json objects, Spine promotes commands and events to be first class citizens in the application. That gives a lot of benefits in describing the business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
 
 It all leads to an important advantage — the model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
  
