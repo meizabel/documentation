@@ -20,7 +20,7 @@ Upgrading commands becomes necessary when new requirements cause existing comman
 
 #### How do I upgrade my commands?
 
-How you do the upgrade depends how much control you have over your clients. If you can deploy your client updates and server updates together, just change things in both and deploy the updates.And you are done. If not, it's usually best to have the updated command be a new type and have the command handler accept both for a while.
+How you do the upgrade depends how much control you have over your clients. If you can deploy your client updates and server updates together, just change things in both and deploy the updates. Ta da! You are done. If not, it's usually best to have the updated command be a new type and have the command handler accept both for a while.
 
 
 ### Events must be immutable.
