@@ -3,10 +3,19 @@
 We believe that domain language, being the most important part of the
 application, must be strongly [typed](http://martinfowler.com/ieeeSoftware/whenType.pdf).
 
-### Commands and Events
-Unlike some of  CQRS/ES frameworks that treat commands and events as Json objects, Spine promotes commands and events to be first class citizens in the application. That gives a lot of benefits in describing business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
+### Value objects
 
-It all leads to an important advantage — the model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
+Value Object is a measure or description of something. Examples of value objects are things like numbers, dates, monies and strings. Usually, they are small objects which are used quite widely. Their identity is based on their state rather than on their object identity. This way, you can have multiple copies of the same conceptual value object. 
+ 
+As Martin Fowler writes about [Value Objects](http://martinfowler.com/bliki/ValueObject.html):
+
+>A general heuristic is that value objects should be entirely immutable. If you want to change a value object you should replace the object with a new one and not be allowed to update the values of the value object itself - updatable value objects lead to aliasing problems.
+
+
+### Commands and Events
+Unlike some of  CQRS/ES frameworks which treat commands and events as Json objects, Spine promotes commands and events to be first class citizens in the application. That gives a lot of benefits in describing the business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
+
+With commands and events strongly typed we get an important advantage — the model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
  
 
 ### Identifiers
@@ -37,12 +46,3 @@ are based on email addresses, and with another system in which customer IDs are
 phone numbers. Having `CustomerId` class in the first place would make the
 integration much easier.
 
-
-----
-`TODO: Quote Fowler on typed value objects.`
-
-Value Object is a measure or description of something. Examples of value objects are things like numbers, dates, monies and strings. Usually, they are small objects which are used quite widely. Their identity is based on their state rather than on their object identity. This way, you can have multiple copies of the same conceptual value object. 
- 
-As Martin Fowler writes about [Value Objects](http://martinfowler.com/bliki/ValueObject.html):
-
->A general heuristic is that value objects should be entirely immutable. If you want to change a value object you should replace the object with a new one and not be allowed to update the values of the value object itself - updatable value objects lead to aliasing problems.
