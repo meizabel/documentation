@@ -15,7 +15,7 @@ While Protocol Buffers have been available for open source users for some time, 
 
 
 ## Event Storming results instant implementataion
-**Event storming** is a rapid, lightweight group modeling technique that is intense, fun, and useful for accelerating development teams. The brainchild of [Alberto Brandolini](http://ziobrando.blogspot.com/search?q=event+storming), it's a synthesis of facilitated group learning practices from [Gamestorming](http://gamestorming.com/) and the principles of DDD.
+**Event storming** is a rapid, lightweight group modeling technique that is intense, fun, and useful for accelerating development teams. The brainchild of [Alberto Brandolini](https://skillsmatter.com/members/ziobrando#overview), it's a synthesis of facilitated group learning practices from [Gamestorming](http://gamestorming.com/) and the principles of DDD.
 
 An event storming session usually ran as a facilitated workshop. Everyone participates, and the facilitator keeps the group focused and engaged, guiding progress toward a complete model of the domain. The group starts with domain events, walking through the model forwards and backwards to ensure that everything is covered. Then the group adds the commands, or triggers, that cause the events, and considers all sources of commands, including users, external systems, and even time.
 
