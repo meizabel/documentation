@@ -18,4 +18,4 @@ good reason not to do so.
 That’s it! Now you know what Spine is  all about. 
 
 ---
-When you are ready to dig into details, check  architecture and Domain Model [Concepts](/concepts.md) lying in the Spine’s foundation.
+When you are ready to dig into details, check  Architecture and Domain Model [Concepts](/concepts.md) lying in the Spine’s foundation.
