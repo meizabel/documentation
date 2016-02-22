@@ -1,9 +1,10 @@
-# Immutability
+# Bebefit of Immutability
 
 An immutable object is one whose externally visible state cannot change after it is instantiated. 
 Immutable objects greatly simplify your program, since they:
 
 * are simple to construct, test, and use
+* You can freely share and cache references to immutable objects without having to copy or clone them
 * are automatically thread-safe and have no synchronization issues
 
 In [Effective Java](http://www.amazon.com/exec/obidos/ASIN/0321356683/ref=nosim/javapractices-20), Joshua Bloch makes this compelling recommendation :
@@ -12,7 +13,20 @@ In [Effective Java](http://www.amazon.com/exec/obidos/ASIN/0321356683/ref=nosim/
 ### Commands must be immutable.
 
 ### Events must be immutable.
-Events that have happened are immutable. An event describes something that happened in the past and thus cannot be undone. Consequently the storage mechanism that we use to persist our events becomes very simple. It is basically a stack. We continuously append new events on top of the stack. Existing events are never touched again. No update or delete operation is defined, only add operations are ever possible.
+This idea of having immutable events is incredibly powerful because it completely solves one of the primary challenges in computing-concurrency and the need for a single, authoritative source of truth. 
+
+Once an event has been accepted and committed, it becomes an established fact — as unalterable as a decree from Pharaoh — and it can be copied everywhere. The only way to “undo” an event is to add a compensating event on top — like a negative transaction in accounting.
+
+Consequently the storage mechanism that we use to persist our events becomes very simple. It is basically a stack. We continuously append new events on top of the stack. Existing events are never touched again. No update or delete operation is defined, only add operations are ever possible.
+
+#### Redundant events
+If your system no longer uses a particular event type, you may be able to simply remove it from the system. However, if you are using event sourcing, your event store may hold many instances of this event, and these instances may be used to rebuild the state of your aggregates. Your aggregates must continue to be able to handle these old events when they are replayed from the event store even though the system will no longer raise new instances of this event type.
+
+#### New event types
+If you introduce new event types into your system, this should have no impact on existing behavior. Typically, it is only new features or functionality that use the new event types.
+
+#### Changing existing event definitions
+Handling changes to event type definitions requires more complex changes to your system. For example, your event store may hold many instances of an old version of an event type while the system raises events that are a later version, or different bounded contexts may raise different versions of the same event. Your system must be capable of handling multiple versions of the same event. 
 
 
 ### Isolation of storage and deployment aspects from the main code
