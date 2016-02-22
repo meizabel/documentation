@@ -14,12 +14,13 @@ In [Effective Java](http://www.amazon.com/exec/obidos/ASIN/0321356683/ref=nosim/
 ### Commands must be immutable.
 Commands are immutable because their expected usage is to be sent directly to the domain model side for processing. They do not need to change during their projected lifetime in traveling from client to server.
 
+Commands form part of the lexicon or ubiquitous language. Naming a command is a careful process. It should be intention revealing. It should also be understandable by the domain experts.
+
 Upgrading commands becomes necessary when new requirements cause existing commands not to be sufficient. Maybe a new field needs to be added, for example, or maybe an existing field should really have been split into several different ones.
 
-How do I upgrade my commands?
+#### How do I upgrade my commands?
 
 How you do the upgrade depends how much control you have over your clients. If you can deploy your client updates and server updates together, just change things in both and deploy the updates.And you are done. If not, it's usually best to have the updated command be a new type and have the command handler accept both for a while.
-
 
 
 ### Events must be immutable.
