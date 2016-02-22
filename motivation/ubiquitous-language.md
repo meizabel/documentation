@@ -21,8 +21,8 @@ An event storming session usually ran as a facilitated workshop. Everyone partic
 
 The group identifies aggregates that accept commands and accomplish events, and begins to group aggregates together into bounded contexts. Along the way, key test scenarios, users, and goals are identified and incorporated into the model. Finally, the relationships between bounded contexts are added to create a context map. The resulting model is then challenged with code in order to validate the group learning and verify the model.
 
-The domain expert is not interested in databases, web sockets, or design patterns, but in the business domain of the things that have to happen. 
-Protobuf is an easy language. And you can describe events, commands and aggregate states together with domain experts just as you go through the Event Storming session in a way that doesn't specify a particular implementation.
+It is important to remember that the domain expert is not interested in databases, web sockets, or design patterns, but in the business domain of the things that have to happen. 
+**Protobuf** is an easy language. And you can describe events, commands and aggregate states together with the domain experts just as you go through the Event Storming session in a way that doesn't specify a particular implementation.
 
 ## Domain model should be open for evolution
 
