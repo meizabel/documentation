@@ -1,16 +1,26 @@
 # Bebefit of Immutability
 
-An immutable object is one whose externally visible state cannot change after it is instantiated. 
+An immutable object is one whose externally visible state cannot change after it is instantiated. The string type in Java and C# is a familiar example; you never actually change an existing string value, you just create new string values based on old ones.
+
 Immutable objects greatly simplify your program, since they:
 
 * are simple to construct, test, and use
-* You can freely share and cache references to immutable objects without having to copy or clone them
+* can be freely shared and references to immutable objects cached without having to copy or clone them
 * are automatically thread-safe and have no synchronization issues
 
 In [Effective Java](http://www.amazon.com/exec/obidos/ASIN/0321356683/ref=nosim/javapractices-20), Joshua Bloch makes this compelling recommendation :
 >Classes should be immutable unless there's a very good reason to make them mutable....If a class cannot be made immutable, limit its mutability as much as possible.
 
 ### Commands must be immutable.
+Commands are immutable because their expected usage is to be sent directly to the domain model side for processing. They do not need to change during their projected lifetime in traveling from client to server.
+
+Upgrading commands becomes necessary when new requirements cause existing commands not to be sufficient. Maybe a new field needs to be added, for example, or maybe an existing field should really have been split into several different ones.
+
+How do I upgrade my commands?
+
+How you do the upgrade depends how much control you have over your clients. If you can deploy your client updates and server updates together, just change things in both and deploy the updates.And you are done. If not, it's usually best to have the updated command be a new type and have the command handler accept both for a while.
+
+
 
 ### Events must be immutable.
 This idea of having immutable events is incredibly powerful because it completely solves one of the primary challenges in computing-concurrency and the need for a single, authoritative source of truth. 
