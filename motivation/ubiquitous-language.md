@@ -17,12 +17,12 @@ While Protocol Buffers have been available for open source users for some time, 
 ## Event Storming results instant implementataion
 **Event storming** is a rapid, lightweight group modeling technique that is intense, fun, and useful for accelerating development teams. The brainchild of [Alberto Brandolini](https://skillsmatter.com/members/ziobrando#overview), it’s a synthesis of facilitated group learning practices from [Gamestorming](http://gamestorming.com/) and the principles of DDD.
 
-An event storming session usually ran as a facilitated workshop. Everyone participates, and the facilitator keeps the group focused and engaged, guiding progress toward a complete model of the domain. The group starts with domain events, walking through the model forwards and backwards to ensure that everything is covered. Then the group adds the commands, or triggers, that cause the events, and considers all sources of commands, including users, external systems, and even time.
+An event storming session usually ran as a facilitated workshop. The group starts with domain events, walking through the model forwards and backwards to ensure that everything is covered. Then the group adds the commands, or triggers, that cause the events, and considers all sources of commands, including users, external systems, and even time.
 
-The group identifies aggregates that accept commands and accomplish events, and begins to group aggregates together into bounded contexts. Along the way, key test scenarios, users, and goals are identified and incorporated into the model. Finally, the relationships between bounded contexts are added to create a context map. The resulting model is then challenged with code in order to validate the group learning and verify the model.
+The group identifies aggregates that accept commands and accomplish events, and begins to group aggregates together into bounded contexts. Finally, the relationships between bounded contexts are added to create a context map. The resulting model is then challenged with code in order to validate the group learning and verify the model.
 
 It is important to remember that the domain expert is not interested in databases, web sockets, or design patterns, but in the business domain of the things that have to happen. 
-**Protobuf** is an easy language. And you can describe events, commands and aggregate states together with the domain experts just as you go through the Event Storming session in a way that specifies actual implementation.
+**Protobuf** is an easy language, which means you can describe events, commands and aggregate states together with the domain experts just as you go through the Event Storming session in a way that specifies actual implementation.
 
 ## Domain model should be open for evolution
 
