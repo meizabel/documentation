@@ -30,4 +30,6 @@ Another great resource on the object-oriented design worth mentioning here — i
 But as [Martin Fowler](http://www.martinfowler.com/books/eaa.html) notes:
 >Frameworks still require you to make decisions about how to use them, and knowing the underlying patterns is essential if you are to make wise choices.
 
+Systems built on top of Spine framework are flexible, loosely-coupled, scalable and open to changes. Here we should thank to [Reactive Manifesto](http://www.reactivemanifesto.org/), which became on the corner stones and drivers of the Spine philosophy.
+
 We are yet at the beginning of our journey using Spine in the wild. Join us and share how it goes!
