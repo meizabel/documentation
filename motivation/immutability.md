@@ -43,7 +43,7 @@ Handling changes to event type definitions requires more complex changes to your
 
 
 ### Isolation of storage and deployment aspects from the main code
-Another level you can apply immutability at is the data store. With events being immutable, you can write your application in a way that it stores data in “append-only” fashion to pretty much any data store technology that exists.
+Another level you can apply immutability at is the data store. With Event sourcing notion, you can write your application in a way that it stores data in “append-only” fashion to pretty much any data store technology that exists.
 
 The CQRS pattern enables data and objects segregation in your applications. The write model can use a database that is optimized for writes by being fully normalized. The read model can use a database that is optimized for reads by being denormalized to suit the specific queries that the application must support on the read side.
 
