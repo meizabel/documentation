@@ -1,13 +1,12 @@
 # Strongly Typed
 
-We believe that domain language, being the most important part of the
-application, must be strongly [typed](http://martinfowler.com/ieeeSoftware/whenType.pdf).
+We believe that domain language, being the most important part of the application, must be strongly [typed](http://martinfowler.com/ieeeSoftware/whenType.pdf).
 
 ### Value objects
 
-Value Object is a measure or description of something. Examples of value objects are things like numbers, dates, monies and strings. Usually, they are small objects which are used quite widely. Their identity is based on their state rather than on their object identity. This way, you can have multiple copies of the same conceptual value object. 
+Value Object is a measure or description of something. Examples of value objects are things like *numbers, dates, monies* and *strings*. Usually, they are small objects which are used quite widely. Their identity is based on their state rather than on their object identity. This way, you can have multiple copies of the same conceptual value object. 
  
-As Martin Fowler writes about [Value Objects](http://martinfowler.com/bliki/ValueObject.html):
+Martin Fowler also emphasizes an *immutable* nature of the [Value Objects](http://martinfowler.com/bliki/ValueObject.html):
 
 >A general heuristic is that value objects should be entirely immutable. If you want to change a value object you should replace the object with a new one and not be allowed to update the values of the value object itself - updatable value objects lead to aliasing problems.
 
@@ -45,4 +44,3 @@ Then you decide to integrate with another system in which customer IDs
 are based on email addresses, and with another system in which customer IDs are
 phone numbers. Having `CustomerId` class in the first place would make the
 integration much easier.
-
