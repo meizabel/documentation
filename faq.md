@@ -10,6 +10,9 @@
 
 One of the major deployment platforms for us is Google App Engine (GAE). The latest version of Java supported under GAE is Java 7. Google recently [announced Java 8 support under GAE](https://youtu.be/aKUlu9-psZo?t=15m30s). We will be able to migrate once Sandbox mode of GAE works on Java 8.
 
+### Why Protobuf and not Json?
+Having messages (events and commands) typed, we make them a part of the domain model language. So using protobufs gives us a cross language support.
+
 ### Why Protobuf instead of Cap'n Proto, or SBE, or FlatBuffers?
 Have a look the [comparison matrix](https://capnproto.org/news/2014-06-17-capnproto-flatbuffers-sbe.html) created Kenton Varda, the author of Protobuf v2 and Cap'n Proto. The main features that make Protobuf best choice for Spine are:
 
@@ -21,3 +24,4 @@ Also, the experience Google gained through years of using this technology intern
 
 ### Which version of Protobuf do you use?
 The framework is based on [proto3 dialect](https://developers.google.com/protocol-buffers/docs/proto3).
+
