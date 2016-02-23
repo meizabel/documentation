@@ -55,3 +55,5 @@ Several benefits come from this:
 If you capture changes in your write model as events, you can save all of your changes simply by appending those events to your database or data store on the write side using only Insert operations.
 
 You can also use those same events to push your changes to the read side. You can use those events to build projections of the data that contain the data structured to support the queries on the read side.
+
+Immutability is a very simple property, but it has profound implications and we can more easily build a truly distributed system.
