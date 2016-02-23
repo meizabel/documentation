@@ -39,10 +39,12 @@ If your system no longer uses a particular event type, you may be able to simply
 If you introduce new event types into your system, this should have no impact on existing behavior. Typically, it is only new features or functionality that use the new event types.
 
 #### Changing existing event definitions
-Handling changes to event type definitions requires more complex changes to your system. For example, your event store may hold many instances of an old version of an event type while the system raises events that are a later version, or different bounded contexts may raise different versions of the same event. Your system must be capable of handling multiple versions of the same event.Some of the ways to handle versioning are described in the “CQRS Journey” [Reference 4: A CQRS and ES Deep Dive](https://msdn.microsoft.com/en-us/library/jj591577.aspx) chapter.
+Handling changes to event type definitions requires more complex changes to your system. For example, your event store may hold many instances of an old version of an event type while the system raises events that are a later version, or different bounded contexts may raise different versions of the same event. Your system must be capable of handling multiple versions of the same event. Some ways to handle versioning are described in the “CQRS Journey” [Reference 4: A CQRS and ES Deep Dive](https://msdn.microsoft.com/en-us/library/jj591577.aspx) chapter.
 
 
 ### Isolation of storage and deployment aspects from the main code
+Another level you can apply immutability at is the data store. With events being immutable, you can write your application in a way that it stores data in “append-only” fashion to pretty much any data store technology that exists.
+
 The CQRS pattern enables data and objects segregation in your applications. The write model can use a database that is optimized for writes by being fully normalized. The read model can use a database that is optimized for reads by being denormalized to suit the specific queries that the application must support on the read side.
 
 Several benefits come from this: 
