@@ -24,7 +24,9 @@ The group identifies aggregates that accept commands and accomplish events, and 
 It is important to remember that the domain expert is not interested in databases, web sockets, or design patterns, but in the business domain of the things that have to happen. 
 **Protobuf** is an easy language, which means you can describe events, commands and aggregate states together with the domain experts just as you go through the Event Storming session in a way that specifies actual implementation.
 
-## Domain model should be open for evolution
+## Domain model should be open for evolution 
+`TODO: finish up this section`
+
 No surprise that Domain model and our knowledge about it may evolve. So what it means to the application code? 
 
 ### Problems with Java Serialization
