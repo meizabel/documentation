@@ -13,7 +13,7 @@ When creating an Event Sourcing application, you need to write classes for comma
 And if your organization wants an application on, let’s say a couple of mobile platforms, you would have to add a lot of work to deliver data to each client application.
 So you need to make your code work on another platform by writing it in another language *manually*, or translate it using tools like [J2ObjC](http://j2objc.org/), or resort to using just Json in the client apps.
 
-Using [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) for formulating business domain allows us to make this language [ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html) not only in human interaction, but in communication of computing devices too.
+Using [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) for formulating business domain allows us to make this language [ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html) not only in human interaction, but in communication of computing devices, too.
 
 **Immutability** is another major concept we follow.
 Spine uses typed commands and events. Having commands and events as first class citizens in the applications gives a lot of benefits in business logic. Not having to convert back-and-forth with Json gives some performance advantage at the same time.
