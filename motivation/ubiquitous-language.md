@@ -25,5 +25,12 @@ It is important to remember that the domain expert is not interested in database
 **Protobuf** is an easy language, which means you can describe events, commands and aggregate states together with the domain experts just as you go through the Event Storming session in a way that specifies actual implementation.
 
 ## Domain model should be open for evolution
+No surprise that Domain model and our knowledge about it may evolve. So what it means to the application code? 
 
-`TODO: problems with Java Serialization`
+### Problems with Java Serialization
+
+The serialization mechanism automatically, at runtime, converts class objects into metadata so instances can be serialized with the least amount of programmer work.
+This is great as long as the classes don't change. When classes change, the metadata, which was created from obsolete class objects, accurately describes the serialized information. But it might not correspond to the current class implementations.
+
+### Model evolution with Protobufs
+If an existing message type no longer meets all your needs – for example, you'd like the message format to have an extra field – but you'd still like to use code created with the old format, don't worry! It's very simple to update message types without breaking any of your existing code. 
