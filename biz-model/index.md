@@ -1,6 +1,8 @@
 # Creating Business Model
 
-Creating a business model is not something you can do very quickly.  In fact the domain model will constantly evolve and require refactoring. And 
+Creating a business model is not something you can do very quickly.  In fact the Domain Model will constantly evolve and require refactoring. 
+
+Similarly to what we done as a part of [“Hello Spine!”](/getting-started/index.md)
 * Define commands, events, aggregate and projection states in protobuf.
 * Define business logic of aggregates and projections.
 * Create repositories.
