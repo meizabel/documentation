@@ -1,6 +1,6 @@
 # Prior Art
 
-The demands for software projects increase rapidly as time progresses. So do architecture approaches to meet these needs.
+The demands for software projects increase rapidly as time progresses. So does the scope of the architecture approaches to meet these needs.
 This section will give you an overview of the concepts and implementations Spine has inherited, while brought some important differences into play.
 
 Spine is created for applications that follow [CQRS](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html).
