@@ -2,7 +2,7 @@
 
 Spine Event Engine is a multi-language framework for building Command Query Responsibility Segregation ([CQRS](http://martinfowler.com/bliki/CQRS.html)) and Event Sourcing ([ES](http://martinfowler.com/eaaDev/EventSourcing.html)) applications.
 
-Spine aims to free developers from creating boilerplate code as much as possible. Our framework is built on top of [Protocol Buffers](https://developers.google.com/protocol-buffers/) (a.k.a. protobufs) and [gRPC](http://www.grpc.io/) to bring easiness and efficiency into development of applications with microservice-oriented architecture. The goal is to allow developers to focus on the business logic, instead of the plumbing.
+Spine aims to free developers from creating boilerplate code as much as possible. Our framework is built on top of [Protocol Buffers](https://developers.google.com/protocol-buffers/) (a.k.a. protobufs) and [gRPC](http://www.grpc.io/) to bring easiness and efficiency into development of applications with microservice-oriented architecture. The goal is to allow developers to focus on the business logic instead of the plumbing.
 
 The primary language of the backend is Java. Client applications and server-side modules can be written on JavaScript, Java, JavaNano (Android), Swift, Objective-C, C, C++, C#, Go, Python, Ruby and PHP.
 
@@ -14,7 +14,7 @@ The primary language of the backend is Java. Client applications and server-side
 
 *  **Choice of storage and deployment platforms.** The framework promotes writing code which does not depend on storage media or deployment platform. For example, you can start with JDBC-based storage and later switch to Google Cloud Platform Datastore by changing one line of the code. `TODO: link to the example.`
 
-*  **Open Source.** Permissive [Apache  License](https://github.com/SpineEventEngine/core-java/blob/master/LICENSE) allows using the framework in closed-source projects. You are welcome to [contribute](/contribute/index.html) to the framework development.
+*  **Open Source.** The Permissive [Apache  License](https://github.com/SpineEventEngine/core-java/blob/master/LICENSE) allows using the framework in closed-source projects. You are welcome to [contribute](/contribute/index.html) to the framework development.
 
 ### Get Started
 
