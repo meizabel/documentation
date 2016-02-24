@@ -26,7 +26,9 @@ It is important to remember that the domain expert is not interested in database
 
 ## Domain model should be open for evolution 
 
-No surprise a Domain model may evolve. So what it means to the application code? With the traditional approach, changing something in the Domain model on a backend side, means you have to *manually* update UI end and all the client applications.
+No surprise a Domain model may evolve. Moreover, Domain Modeling is an iterative process, where new insights need to be constantly used to refactor the model. So, what it means to the application code? 
+
+With the traditional approach, changing something in the Domain model on a backend side, means you have to *manually* update UI end and all the client applications.
 
 ### Problems with Java Serialization
 
