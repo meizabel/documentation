@@ -26,7 +26,7 @@ It is important to remember that the domain expert is not interested in database
 
 ## Domain model should be open for evolution 
 
-No surprise that Domain model and our knowledge about it may evolve. So what it means to the application code? 
+No surprise that Domain model and our knowledge about it may evolve. So what it means to the application code? With traditional approach, when changing something in the Domain model on a backend side, means you have to manually update UI piece and all client applications.
 
 ### Problems with Java Serialization
 
@@ -36,7 +36,7 @@ This is great as long as the classes don't change. When classes change, the meta
 Serialization is a generic marshalling and demarshalling algorithm, with many hooks for customization. Thus, serialization is, at times, both slow and bandwidth-intensive. There are three main performance problems with serialization: it depends on reflection, it has an incredibly verbose data format, and it is very easy to send more data than is required.
 
 ### Model evolution with Protobufs
-Using Protocol Buffers allows extending model at your demand. As long as aggregate states, commands, events, projections and failures are defined as protobuf messages, it becomes safe and easy to modify and version them.
+Using Protocol Buffers allows extending model at your demand. As long as all Domain model building blocks are defined as protobuf messages, it becomes safe and easy to modify and version them. Moreover, it hugely saves developers effort
 
 If an existing message type no longer meets all your needs – for example, you'd like the message format to have an extra field – but you'd still like to use code created with the old format, don't worry! It's very simple to update message types without breaking any of your existing code. 
 More about updating message types you can read in [
