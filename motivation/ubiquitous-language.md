@@ -37,5 +37,5 @@ This is great as long as the classes don't change. When classes change, the meta
 Serialization is a generic marshalling and demarshalling algorithm, with many hooks for customization. Thus, serialization is, at times, both slow and bandwidth-intensive. There are three main performance problems with serialization: it depends on reflection, it has an incredibly verbose data format, and it is very easy to send more data than is required.
 
 ### Model evolution with Protobufs
-Using Pr
+Using Protocol Buffers
 If an existing message type no longer meets all your needs – for example, you'd like the message format to have an extra field – but you'd still like to use code created with the old format, don't worry! It's very simple to update message types without breaking any of your existing code. 
