@@ -1,5 +1,6 @@
 # Creating Business Model
 
+
 * Define commands, events, aggregate and projection states in protobuf.
 * Define business logic of aggregates and projections.
 * Create repositories.
