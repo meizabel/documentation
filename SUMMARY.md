@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Prior Art](prior_art.md)
+* [Prior Art](prior-art.md)
 * [Motivation](motivation/index.md)
    * [Strongly Typed](motivation/strongly-typed.md)
    * [Ubiquitous Language](motivation/ubiquitous-language.md)
