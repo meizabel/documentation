@@ -25,17 +25,21 @@ It is important to remember that the domain expert is not interested in database
 **Protobuf** is an easy language, which means you can describe events, commands and aggregate states together with the domain experts just as you go through the Event Storming session in a way that specifies actual implementation.
 
 ## Domain model should be open for evolution 
-`TODO: finish up this section`
 
-No surprise that Domain model and our knowledge about it may evolve. So what it means to the application code? 
+No surprise a Domain model may evolve. Moreover, Domain Modeling is an iterative process, where new insights need to be constantly used to refactor the model. So, what it means to the application code? 
+
+With the traditional approach, changing something in the Domain model on a backend side, means you have to *manually* update UI end and all the client applications.
 
 ### Problems with Java Serialization
 
 The serialization mechanism automatically, at runtime, converts class objects into metadata so instances can be serialized with the least amount of programmer work.
 This is great as long as the classes don't change. When classes change, the metadata, which was created from obsolete class objects, accurately describes the serialized information. But it might not correspond to the current class implementations.
 
-Serialization is a generic marshalling and demarshalling algorithm, with many hooks for customization. Thus, serialization is, at times, both slow and bandwidth-intensive. There are three main performance problems with serialization: it depends on reflection, it has an incredibly verbose data format, and it is very easy to send more data than is required.
+Another issue with Java serialization that it is simply fragile
 
 ### Model evolution with Protobufs
-Using Pr
+Using Protocol Buffers allows extending model at your demand. As long as all Domain model building blocks are defined as protobuf messages, it becomes safe and easy to modify and version them. Moreover, it hugely saves developers effort
+
 If an existing message type no longer meets all your needs – for example, you'd like the message format to have an extra field – but you'd still like to use code created with the old format, don't worry! It's very simple to update message types without breaking any of your existing code. 
+More about updating message types you can read in [
+Language Guide (proto3)](https://developers.google.com/protocol-buffers/docs/proto3#updating).

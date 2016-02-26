@@ -10,7 +10,8 @@ A command consists of two parts:
 The `message` is the domain model part of command. The type of the command is defined by
 the type of its message. When we speak about a **command** as a typed thing, we refer to the message of the command.
 
-The context contains attributes common for all commands.
+The context contains attributes common for all commands.More about Command Context you can find in our [GitHub pero](https://github.com/SpineEventEngine/core-java/blob/8ddee17753fe27a2bb92ae96f2bf2f266b4da5a8/client/src/main/proto/spine/base/command.proto).
+
 A command message is a protobuf message:
 
 ``````protobuf
@@ -27,37 +28,6 @@ By convention command messages are defined in the file named`commands.proto`. Ty
 
 There should be **one and only one** handler associated with the type of the command.
 
-`TODO: why do we have code for Command and CommandContext on this page? There's no text preceding these code fragments.`
-
-```protobuf
-message Command {
-    // The message of the command wrapped into `Any`.
-    google.protobuf.Any message = 1
-    // Command context.
-    spine.base.CommandContext context = 2;
-}
-```
-
-Meta-information about the command and the environment, which generated the command.
-
-``````protobuf
-message CommandContext {
-    // The id of the command.
-    CommandId command_id = 1;
-
-    // The user who created the command.
-    UserId actor = 2;
-
-    // Date/time at which the command was created.
-    google.protobuf.Timestamp timestamp = 3;
-
-    // The zone offset from which the command is made.
-    time.ZoneOffset zone_offset = 4;
-
-    // The `namespace` attribute must be defined for commands in multitenant applications.
-    Namespace namespace = 5;
-}
-``````
 
 # Command Validation
 
