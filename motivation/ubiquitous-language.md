@@ -35,7 +35,7 @@ With the traditional approach, changing something in the Domain model on a backe
 The serialization mechanism automatically, at runtime, converts class objects into metadata so instances can be serialized with the least amount of programmer work.
 This is great as long as the classes don't change. When classes change, the metadata, which was created from obsolete class objects, accurately describes the serialized information. But it might not correspond to the current class implementations.
 
-Serialization is a generic marshalling and demarshalling algorithm, with many hooks for customization. Thus, serialization is, at times, both slow and bandwidth-intensive. There are three main performance problems with serialization: it depends on reflection, it has an incredibly verbose data format, and it is very easy to send more data than is required.
+Another issue with Java serialization that it is simply fragile
 
 ### Model evolution with Protobufs
 Using Protocol Buffers allows extending model at your demand. As long as all Domain model building blocks are defined as protobuf messages, it becomes safe and easy to modify and version them. Moreover, it hugely saves developers effort
