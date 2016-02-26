@@ -29,21 +29,14 @@ For server-side modules of your app, please add the following:
 dependencies {
 ...
     compile group: 'org.spine3', name: 'server', version: '1.+'
-
-version: '3.0.0-beta-1'
 }
 </pre>
 
 
-### “Hellow Spine!” Sample Project
+### “Hello Spine!” Sample Project
 * Define commands, events, aggregate and projection states in protobuf.
 * Define business logic of aggregates and projections.
 * Create repositories.
 * Init Bounded Context with repositories and Storage Factory.
 * Create Application class and execute.
 
-
- ** TODO:** create sample classes/proto for pp 1 to 3
- 
- **TODO:** establish maven dependency?
-You can find Spine source code in the [GitHub repositories](https://github.com/SpineEventEngine).
