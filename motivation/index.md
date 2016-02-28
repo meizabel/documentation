@@ -10,7 +10,7 @@ Instead, we decided to create a framework that can help us and development group
 
 There are four fundamental principles Spine is based on:
 * Events and Commands should be [ strongly typed](/motivation/strongly-typed.html).
-* Ubiquitous language must be really [ubiquitous](/motivation/ubiquitous-language.md).
+* Ubiquitous language must be really [ubiquitous](/motivation/ubiquitous-language.html).
 * [Bounded Context](/motivation/bounded-context.md) definition is a key to successful architecture.
 * Classes must be [immutable](/motivation/immutability.md) unless there’s a
 good reason not to do so.
