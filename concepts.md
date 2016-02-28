@@ -57,4 +57,4 @@ All changes to an application state are captured as a sequence of events. Events
 
 ___
 
-Detailed overview of each concept and its implementation in Spine you can find in  [Creating Business Model](/biz_model/java.md) and [Java](/java/README.md) chapters.
+Detailed overview of each concept and its implementation in Spine you can find in  [Creating Business Model](/biz-model/index.md) and [Java](/java/index.md) chapters.
