@@ -24,7 +24,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 **Command Handler** is an object, which receives commands, modifies the state of the application, and generates events if the modification was successful. More about command handling you can find in [Java](/java/command-handler.md) section of this documentation.
 
-**Aggregate** is the main building block of a business model. [Aggregates](http://martinfowler.com/bliki/DDD_Aggregate.html) guarantee consistency of data modifications in response to commands they receive. Aggregate is the most common case of Command Handler. In response to a command an aggregate modifies its state and produces one or more events. These events are used later to restore the state of the aggregate. In Spine aggregates are [defined as Java classes](/java/aggregate.md), and their states are [defined as protobuf messages](/biz_model/aggregate_states.md).
+**Aggregate** is the main building block of a business model. [Aggregates](http://martinfowler.com/bliki/DDD_Aggregate.html) guarantee consistency of data modifications in response to commands they receive. Aggregate is the most common case of Command Handler. In response to a command an aggregate modifies its state and produces one or more events. These events are used later to restore the state of the aggregate. In Spine aggregates are [defined as Java classes](/java/aggregate.md), and their states are [defined as protobuf messages](/biz-model/aggregate-states.md).
 
 ** Event Handler** is an object that is subscribed to receive events.
 
