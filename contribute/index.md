@@ -51,6 +51,6 @@ If you leave a TODO comment in text, frame it as a code:
 It would appear in the text like this: `TODO: add link here.`
 
 #### File and Folder name
-While adding new chapters or single articles, please use hyphens in the corresponding folders’ and files’ names with two and more words.
+While adding new chapters or single articles, please use hyphens in the corresponding folder and file’ names with two and more words.
 
 Please also rename the “README.md” file inside the folders to “index.md”.
