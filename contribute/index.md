@@ -4,11 +4,6 @@
 
 If you plan to contribute to Spine development, please read the following documents:
 * [Starter Guide Page](https://github.com/SpineEventEngine/core-java/wiki/Spine-Developer-Starter-Guide)
-* [Coding Conventions](https://github.com/SpineEventEngine/core-java/wiki/Coding-Conventions)
-* [InteliJ IDEA Configuration](https://github.com/SpineEventEngine/core-java/wiki/IntelliJ-IDEA-Configuration)
-* [Using Gradle Snapshots](https://github.com/SpineEventEngine/core-java/wiki/Using-Gradle-Snapshots)
-
-`TODO: we need to have one contrubutor guide`.
 
 ### License Information
 The framework and its documentation are licensed under the Apache License, Version 2.0. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
@@ -16,7 +11,7 @@ The framework and its documentation are licensed under the Apache License, Versi
 ## Spine Documentation 
 
 This documentation is built using [GitBook](https://www.gitbook.com/). 
-If you’d like to help us improving the [Documentation](https://github.com/SpineEventEngine/documentation), you can do it in few ways.
+If you’d like to help us to improve the [Documentation](https://github.com/SpineEventEngine/documentation), you can do it in few ways.
 
 ###Leave a Comment
 If you’d like to suggest a better definition or comment something — it’s easy through GitBook “Discussions”. 
@@ -54,3 +49,8 @@ If you leave a TODO comment in text, frame it as a code:
    `TODO: add link here.`
 ```
 It would appear in the text like this: `TODO: add link here.`
+
+#### File and Folder name
+While adding new chapters or single articles, please use hyphens in the corresponding folders’ and files’ names with two and more words.
+
+Please also rename the “README.md” file inside the folders to “index.md”.
