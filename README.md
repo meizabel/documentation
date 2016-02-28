@@ -24,5 +24,5 @@ To get up and running with Spine, check the following articles:
 ### Learn More
 
 * Our [Motivation](/motivation/index.md) to build Spine
-* [Java Documentation](/java.index.md)
+* [Java Documentation](/java/index.md)
 * [Examples](/examples/index.md)
