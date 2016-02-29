@@ -1,7 +1,7 @@
 # Defining Aggregate State
 
-An Aggregate State, similarly to Event and Command, is defined as a protobuf message. 
-Aggregate State represents data, while Aggregate, defined as Java class describes procedures and actions within aggregate.
+An Aggregate State represents data structure and is defined as a protobuf message. 
+The **Aggregate** is defined as Java class and handles commands, applies events, and have a state model encapsulated within it that allows it to implement the required command validation, thus upholding the invariants (business rules) of the aggregate
 
 An event consists of two parts: event message and its context.
 
