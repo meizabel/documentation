@@ -6,6 +6,8 @@ Typically, when you implement the CQRS pattern, the classes in the write model d
 
 In Spine an [**aggregate state**](../biz-model/aggregate-states.md) is defined in a protobuf message, while aggregate itself is a java class. 
 
+### Aggregate Definition
+
 An **aggregate** should be inherited from the Spine abstract `Aggregate` class. And have two parameters defined: ID and  Aggregate State.
 
 ```java
@@ -18,8 +20,10 @@ Then create a new instance of the aggregate using a `Constructor`. Constructor m
         super(id);
 }
 ```
-An aggregate should also contain at least one [Command Handler](./command-handler.md) method and one Event Applier.
 
+### Command Handler
+An aggregate should also contain at least one [Command Handler](./command-handler.md) method. 
+A Command Handler method is used with `@Assign` annotation. See an example of the `OrderAggregate`command handler method:
 
 ```java
  @Assign
