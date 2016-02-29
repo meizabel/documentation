@@ -6,10 +6,9 @@ An **Aggregate State** represents data structure and is defined as a protobuf me
 When we speak about a aggregate state as a typed thing, we refer to the message of the Aggregate.
 
 
+An Aggregate State consists of the: Aggregate [Identifier](./biz-model/identifiers.md) and at least one more field.
 
-An Aggregate State consists of the :Aggregate Identifier and  at least one more field.
-
-An Identifier type should be already known by the time of creating an 
+An identifier type should be already known by the time of creating an Aggregate State. We recommend to have typed identifiers. So, if you have the `Order` class for one of your aggregates, there should be an `OrderId`.
 
 Below you can see a sample of the Aggregate State definition:
 
