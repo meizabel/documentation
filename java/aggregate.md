@@ -8,12 +8,15 @@ In Spine an [**aggregate state**](../biz-model/aggregate-states.md) is defined i
 
 ### Aggregate Definition
 
-An **aggregate** should be inherited from the Spine abstract `Aggregate` class. And have two parameters defined: ID and  Aggregate State.
+An **aggregate** root should be inherited from the Spine abstract `Aggregate` class. And have two parameters defined: Aggregate Identifier and  Aggregate State.
 
 ```java
 public class OrderAggregate extends Aggregate<OrderId, Order> {
 }
 ```
+**Note** that only the aggregate root needs to implement the Aggregate abstract class and other abstract classes mentioned below. The other entities that are part of the aggregate do not have to implement any interfaces.
+
+
 Then create a new instance of the aggregate using a `Constructor`. Constructor method should be `public` as it serves as a public API for Spine. With its help new instances of the aggregate will be added to the Repository. 
 ```java
  public OrderAggregate(OrderId id) {
