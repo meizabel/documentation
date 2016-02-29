@@ -20,7 +20,7 @@ Spine uses typed commands and events. Having commands and events as first class 
 
 We are greatly inspired by [Redux](http://redux.js.org) — one of the most exciting things happening in JavaScript at the moment. It stands out from the landscape of libraries and frameworks by getting so many things absolutely right: a simple, predictable state model; an emphasis on functional programming and immutable data.
 
-In Spine Event Engine we synthesized all of our experience and observations of the best-breed market products and solutions like [Axon](http://www.axonframework.org/), [Spring](https://spring.io/), [Event Store](https://geteventstore.com/), [InfluxDB](https://influxdata.com/), [Apache Zest](https://zest.apache.org/) and many others. Spine has yet to find its own niche.
+In Spine Event Engine we combined all of our experience and observations of the best-breed market products and solutions like [Axon](http://www.axonframework.org/), [Spring](https://spring.io/), [Event Store](https://geteventstore.com/), [InfluxDB](https://influxdata.com/), [Apache Zest](https://zest.apache.org/) and many others. Spine has yet to find its own niche.
 
  Spine probably won’t be the best fit for trading or highly loaded applications, where, for example, [LMAX](https://www.lmax.com/) does an excellent job. Our motivation is to make development of modern applications easier and more efficient, and to offer a set of practical solutions to bring this into life with a corresponding approach and terminology.
 
