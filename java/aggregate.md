@@ -18,7 +18,7 @@ Then create a new instance of the aggregate using a `Constructor`. Constructor m
         super(id);
 }
 ```
-An aggregate should also contain at least one [Command Handler](./java/command-handler.md) method and one Event Applier.
+An aggregate should also contain at least one [Command Handler](/java/command-handler.md) method and one Event Applier.
 
 
 ```java
