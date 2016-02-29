@@ -11,5 +11,3 @@ Consider using `Message`-based IDs if you want to have [typed IDs](../motivation
 * ISBN
 * Phone number
 * email address with a local-part and domain
-
-A state of an entity is defined as a protobuf message and basic versioning attributes. The entity keeps only its latest state and meta information associated with this state
