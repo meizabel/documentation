@@ -8,9 +8,11 @@ When we speak about a aggregate state as a typed thing, we refer to the message 
 
 An Aggregate State consists of the: 
 * Aggregate [Identifier](./biz-model/identifiers.md)
-* At least on  Entity or Value object
+* At least one other attribute (Entity or Value object)
 
 An identifier type should be already known by the time of creating an Aggregate State. We recommend to have typed identifiers. So, if you have the `Order` class for one of your aggregates, there should be an `OrderId`.
+
+A `Message`-based ID type could be defined in the same `.proto` file or in the same package. 
 
 Below you can see a sample of the `Order` Aggregate State definition:
 
