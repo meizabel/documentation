@@ -19,3 +19,24 @@ Then create a new instance of the aggregate using a `Constructor`. Constructor m
 }
 ```
 An aggregate should also contain at least on [Command Handler](./java/command-handler.md) method and one Event Applier
+```java
+ @Assign
+    public List<Message> handle(RegisterToConference command, CommandContext context) {
+        checkNotConfirmed(getState(), command);
+        validateCommand(command);
+
+        final ImmutableList.Builder<Message> result = ImmutableList.builder();
+        final boolean isNew = getVersion() == 0;
+        if (isNew) {
+            final OrderPlaced placed = EventFactory.orderPlaced(command);
+            result.add(placed);
+        } else {
+            final OrderUpdated updated = EventFactory.orderUpdated(command);
+            result.add(updated);
+        }
+        final OrderTotalsCalculated totalsCalculated = buildOrderTotalsCalculated(command.getOrderId(),
+                command.getConferenceId(), command.getSeatList());
+        result.add(totalsCalculated);
+        return result.build();
+    }
+```
