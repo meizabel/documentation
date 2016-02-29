@@ -30,13 +30,13 @@ All changes to an application state are captured as a sequence of events. Events
 
 ** Process Manager** is an independent component that reacts to domain events in a cross-aggregate, eventually consistent manner. It serves as a centralized processing unit that maintains the state sequence and defines the next processing step based on intermediate results. A process manager can be both Command Handler and Event Handler. 
 
-**Projection** is an Event Handler, which transforms multiple events data into a structural representation. [Projections](/biz-model/projections.md) are main building blocks of Query side of the application.
+**Projection** is an Event Handler, which transforms multiple events data into a structural representation. [Projections](../biz-model/projections.md) are main building blocks of Query side of the application.
 
 **Entity Fragment** — a message with the partial state of an entity. It returns a fragment of the entire state filtered using `FieldMasks` provided in a query.
 
 ## Architectural Concepts
 
-**Bounded Context** is an autonomous component, with its own domain model and its own ubiquitous language. Larger systems usually have multiple contexts (orders, user management, shipping are examples of the separate contexts within an online retail system). Interaction between bounded contexts is organized via [Integration Events](/biz-model/integration-events.md) in Spine.
+**Bounded Context** is an autonomous component, with its own domain model and its own ubiquitous language. Larger systems usually have multiple contexts (orders, user management, shipping are examples of the separate contexts within an online retail system). Interaction between bounded contexts is organized via [Integration Events](../biz-model/integration-events.md) in Spine.
 
 **Repository** is a mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects. It isolates domain objects from details of the database access code. *Aggregate Repository*, *Process Manager Repository*, and *Projection Repository* are types of the repositories your application would have.
 
