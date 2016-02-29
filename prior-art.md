@@ -3,7 +3,7 @@
 The demands for software projects increase rapidly as time progresses. So does the scope of architecture approaches to meet these needs.
 This section will give you an overview of the concepts and implementations Spine has inherited, while bringing some important differences into play.
 
-Spine is created for applications that follow the [CQRS](http://martinfowler.com/bliki/CQRS.html) architectural pattern and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html).
+Spine is created for applications that follow the [CQRS](http://martinfowler.com/bliki/CQRS.html)  and [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html) architectural patterns.
 
 Spine didn’t appear out of the blue. While working on our own CQRS/ES based projects we were amazed how much manual effort is spent on creating events and commands, delivering events and data to the web and mobile clients. It takes time, does not require much creativity from a developer, whilst this energy could have been spent on productive [Event Storming](http://ziobrando.blogspot.com/2013/11/introducing-event-storming.html), detailing the Domain model and so on. Attempts to address this issue led to the Spine vision.
 
