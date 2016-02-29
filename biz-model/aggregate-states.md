@@ -7,7 +7,7 @@ When we speak about an aggregate state as a *typed* thing, we refer to the messa
 
 
 An Aggregate State consists of the: 
-* Aggregate [Identifier](./biz-model/identifiers.md)
+* Aggregate [Identifier](./identifiers.md)
 * At least one other attribute (Entity or Value object)
 
 An identifier type should be already set by the time of creating an aggregate state. We recommend to have [typed](../motivation/strongly-typed.md) identifiers. So, if you have the `Order` class for one of your aggregates, there should be an `OrderId`.
