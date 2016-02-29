@@ -35,7 +35,7 @@ Suppose you have a command like this:
                                  .setNotes(notes)
                                  .build();
 ```
-It’s easy to pass a wrong ID if it’s a string. With typed identifiers, your
+It’s easy to pass a wrong ID if it is a string. With typed identifiers, your
 IDE (and compiler) would point the error.
 
 2. **Identifiers can be extended as business grows**
