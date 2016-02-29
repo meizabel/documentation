@@ -4,7 +4,9 @@ An **Aggregate** is defined as [Java class](../java/aggregate.md). The Aggregate
 
 An **Aggregate State** represents data structure and is defined as a protobuf message. The `message` is the domain model part of the Aggregate.
 
-An Aggregate State consists of the Aggregate Identifier and  at least one more field.
+An Aggregate State consists of the :Aggregate Identifier and  at least one more field.
+
+Identifier 
 
 Below you can see a sample of the Aggregate State definition:
 
