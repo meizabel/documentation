@@ -22,8 +22,9 @@ Then create a new instance of the aggregate using a `Constructor`. Constructor m
 ```
 
 ### Command Handler
-An aggregate should also contain at least one [Command Handler](./command-handler.md) method. 
-A Command Handler method is used with `@Assign` annotation. See an example of the `OrderAggregate`command handler method:
+An aggregate usually contains at least one [Command Handler](./command-handler.md) method that defines what Events will be created as a result of the command execution. 
+
+A Command Handler method is used with `@Assign` annotation. See an example of the Command Handler of the`OrderAggregate`:
 
 ```java
  @Assign
@@ -61,3 +62,10 @@ Event appliers are part of the private API of aggregate roots. As such they are 
      setState(newState);
  }
 ``````
+By default an Event applier should be created for each Event produced by the aggregate. But if there is an Event that does not mutate aggregate’s state, the Event applier for it may not be created. 
+This behavior could be re-defined by using a method that returns state neutral event classes. 
+```java
+private static final ImmutableSet<Class<? extends Message>> STATE_NEUTRAL_EVENT_CLASSES =
+            ImmutableSet.<Class<? extends Message>>of(
+                    OrderTotalsCalculated.class, OrderExpired.class, OrderRegistrantAssigned.class);
+```
