@@ -13,18 +13,18 @@ Below you can find a typical Spine Event Engine application architecture. The co
 
 ## Domain Model Concepts
 
-**Command** are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an error or failure. In Spine [command](/biz-model/commands.md) is defined as a protobuf message.
+**Command** are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an error or failure. In Spine [command](../biz-model/commands.md) is defined as a protobuf message.
 
 **Event** is something that happened in the past.
-All changes to an application state are captured as a sequence of events. Events is the main “database” of the application. In Spine [events](/biz-model/event.md) are defined as protobuf messages as well.
+All changes to an application state are captured as a sequence of events. Events is the main “database” of the application. In Spine [events](../biz-model/event.md) are defined as protobuf messages as well.
 
 **Error** — is a technical issue (a programming error, a resource lack, a technical malfunction). The end user usually cannot do much about an error.
 
-**Failure** — is state of the business logic, which can be handled by the end user. Examples are “credit card validation declined”,  “order cannot be empty”, “insufficient funds”, etc. In Spine [failures](/biz-model/failures.md) are defined as protobuf messages as well.
+**Failure** — is state of the business logic, which can be handled by the end user. Examples are “credit card validation declined”,  “order cannot be empty”, “insufficient funds”, etc. In Spine [failures](../biz-model/failures.md) are defined as protobuf messages as well.
 
-**Command Handler** is an object, which receives commands, modifies the state of the application, and generates events if the modification was successful. More about command handling you can find in [Java](/java/command-handler.md) section of this documentation.
+**Command Handler** is an object, which receives commands, modifies the state of the application, and generates events if the modification was successful. More about command handling you can find in [Java](../java/command-handler.md) section of this documentation.
 
-**Aggregate** is the main building block of a business model. [Aggregates](http://martinfowler.com/bliki/DDD_Aggregate.html) guarantee consistency of data modifications in response to commands they receive. Aggregate is the most common case of Command Handler. In response to a command an aggregate modifies its state and produces one or more events. These events are used later to restore the state of the aggregate. In Spine aggregates are [defined as Java classes](/java/aggregate.md), and their states are [defined as protobuf messages](/biz-model/aggregate-states.md).
+**Aggregate** is the main building block of a business model. [Aggregates](http://martinfowler.com/bliki/DDD_Aggregate.html) guarantee consistency of data modifications in response to commands they receive. Aggregate is the most common case of Command Handler. In response to a command an aggregate modifies its state and produces one or more events. These events are used later to restore the state of the aggregate. In Spine aggregates are [defined as Java classes](../java/aggregate.md), and their states are [defined as protobuf messages](../biz-model/aggregate-states.md).
 
 ** Event Handler** is an object that is subscribed to receive events.
 
@@ -57,4 +57,4 @@ All changes to an application state are captured as a sequence of events. Events
 
 ___
 
-Detailed overview of each concept and its implementation in Spine you can find in  [Creating Business Model](/biz-model/index.md) and [Java](/java/index.md) chapters.
+Detailed overview of each concept and its implementation in Spine you can find in  [Creating Business Model](../biz-model/index.md) and [Java](../java/index.md) chapters.
