@@ -6,9 +6,16 @@ Typically, when you implement the CQRS pattern, the classes in the write model d
 
 In Spine an [**aggregate state**](../biz-model/aggregate-states.md) is defined in a protobuf message, while aggregate itself is a java class. 
 
-An **aggregate** should be inherited from the Spine abstract `Aggregate` class. And have two parameters defined: ID and State.
+An **aggregate** should be inherited from the Spine abstract `Aggregate` class. And have two parameters defined: ID and  Aggregate State.
 
 ```java
 public class OrderAggregate extends Aggregate<OrderId, Order> {
 }
 ```
+Then create a new instance of the aggregate using a `Constructor`. Constructor method should be `public` as it serves as a public API for Spine. With its help new instances of the aggregate will be added to the Repository. 
+```java
+ public OrderAggregate(OrderId id) {
+        super(id);
+}
+```
+An aggregate should also contain at least on [Command Handler](./java/command-handler.md) method and one Event Applier
