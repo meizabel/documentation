@@ -50,7 +50,6 @@ A Command Handler method is used with `@Assign` annotation. See an example of th
         return result.build();
     }
 ```
-Each command requires validation.
 ### Event Applier
 Event applier is a method of an aggregate root which applies data from an event to the state of the aggregate.
 
