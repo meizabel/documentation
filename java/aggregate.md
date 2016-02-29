@@ -18,7 +18,9 @@ Then create a new instance of the aggregate using a `Constructor`. Constructor m
         super(id);
 }
 ```
-An aggregate should also contain at least on [Command Handler](./java/command-handler.md) method and one Event Applier
+An aggregate should also contain at least one [Command Handler](./java/command-handler.md) method and one Event Applier.
+
+
 ```java
  @Assign
     public List<Message> handle(RegisterToConference command, CommandContext context) {
@@ -40,3 +42,18 @@ An aggregate should also contain at least on [Command Handler](./java/command-ha
         return result.build();
     }
 ```
+### Event Applier
+Event applier is a method of an aggregate root which applies data from an event to the state of the aggregate.
+
+Event appliers are part of the private API of aggregate roots. As such they are declared private by convention set in the Spine framework:
+
+``````java
+ @Apply
+ private void on(MyEvent event) {
+     MyState newState = getState().toBuilder()
+       .setMyProperty(event.getProperty())
+       .build();
+     validate(newState);
+     setState(newState);
+ }
+``````
