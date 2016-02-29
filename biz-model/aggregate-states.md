@@ -1,7 +1,7 @@
 # Defining Aggregate State
 
 An Aggregate State represents data structure and is defined as a protobuf message. 
-The **Aggregate** is defined as Java class and handles commands, applies events, and have a state model encapsulated within it that allows it to implement the required command validation, thus upholding the invariants (business rules) of the aggregate.
+An **Aggregate** is defined as [Java class](../java/aggregate.md) and handles commands, applies events, and have a state model encapsulated within it that allows it to implement the required command validation.
 In response to a command an aggregate modifies its state and produces one or more events. These events are used later to restore the state of the aggregate.
 
 An event consists of two parts: event message and its context.
