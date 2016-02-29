@@ -12,3 +12,4 @@ Consider using `Message`-based IDs if you want to have [typed IDs](../motivation
 * Phone number
 * email address
 
+we recommend to have typed identifiers. So, if you have the `Order` class for one of your aggregates, there should be an `OrderId`.
