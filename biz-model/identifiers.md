@@ -6,10 +6,8 @@ An entity identifier can be of one of the following types:
  * `Integer`
  * A class implementing `Message`
  
-Consider using `Message`-based IDs if you want to have [typed IDs](../motivation/strongly-typed.md) in your code and/or if you need to have IDs with some structure inside. Examples of such structural IDs are:
+Consider using `Message`-based IDs if you want to have [typed IDs](../motivation/strongly-typed.md) in your code and/or if you need to have Identifiers with some structure inside. Examples of such structural IDs are:
 * EAN value used in bar codes
 * ISBN
 * Phone number
-* email address
-
-we recommend to have typed identifiers. So, if you have the `Order` class for one of your aggregates, there should be an `OrderId`.
+* email address with a local-part and domain
