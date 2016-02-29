@@ -12,9 +12,9 @@ An Aggregate State consists of the:
 
 An identifier type should be already known by the time of creating an Aggregate State. We recommend to have typed identifiers. So, if you have the `Order` class for one of your aggregates, there should be an `OrderId`.
 
-A `Message`-based ID type could be defined in the same `.proto` file or in the same package. 
+A `Message`-based ID type, typically, would reside in the protobuf package of an aggregate.
 
-Below you can see a sample of the `Order` Aggregate State definition:
+Below you can see a sample of the `Order` aggregate state definition:
 
 ```protobuf
 message Order {
