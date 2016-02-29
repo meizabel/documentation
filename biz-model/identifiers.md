@@ -1,9 +1,9 @@
 # Entitity Identifiers
 
 An entity identifier can be of one of the following types:
- * String
- * Long
- * Integer
+ * `String`
+ * `Long`
+ * `Integer`
  * A class implementing `Message`
  
 
