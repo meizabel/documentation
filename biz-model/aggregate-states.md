@@ -6,6 +6,8 @@ An **Aggregate State** represents data structure and is defined as a protobuf me
 
 An Aggregate State consists of the Aggregate Identifier and  at least one more field.
 
+Below you can see a sample of the Aggregate State definition:
+
 ```protobuf
 message Order {
     // The unique order id.
