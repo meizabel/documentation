@@ -1,7 +1,7 @@
 # Writing Command Handlers
 
 
-For the majority of commands, a handler would be corresponding aggregate root object. Such a method takes two parameters: 
+For the majority of commands, a handler would be a corresponding aggregate root object. Such a method takes two parameters: 
 * Message for command instance
 * CommandContext for meta-information on the command. 
 
