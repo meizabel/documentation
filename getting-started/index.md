@@ -18,7 +18,6 @@ For client-side applications written in Java, please add the following:
 <pre>
 dependencies {
     compile group: 'org.spine3', name: 'client', version: '1.+'
-
 }
 </pre>
 
