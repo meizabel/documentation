@@ -16,7 +16,7 @@ public class OrderAggregate extends Aggregate<OrderId, Order> {
 ```
 **Note** that only the aggregate root needs to implement the Aggregate abstract class and other abstract classes mentioned below. The other entities that are part of the aggregate do not have to implement any interfaces.
 
-
+### Aggregate Initialization
 A new instance of the aggregate should be initialized using a `Constructor`. Constructor method should be `public` as it serves as a public API for Spine. With its help new instances of the aggregate will be added to the Aggregate Repository`TODO: add article about Aggregate Repository`. 
 ```java
  public OrderAggregate(OrderId id) {
