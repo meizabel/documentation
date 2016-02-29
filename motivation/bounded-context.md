@@ -4,15 +4,15 @@ Bounded Context describes a delimited applicability of a particular model. Bound
 
 As [DDD book](https://www.wikiwand.com/en/Domain-driven_design) advises:
 >Explicitly define the context within which a model applies. Explicitly set boundaries in terms of team organization, usage
-within specific parts of the application, and physical manifestations such as code bases and database schemas.
-Keep the model strictly consistent within these bounds, but don’t be distracted or confused by issues outside.”
+within specific parts of the application, and physical manifestations such as code bases and database schemes.
+Keep the model strictly consistent within these bounds, but don’t be distracted or confused by issues outside.
 
 Smaller models provide many benefits, allowing teams to define clear boundaries relating to design and development responsibilities. They also lead to better maintainability — because a context has a smaller surface area, you have fewer side effects to worry about when making modifications.
 
 `TODO: Add description how to initialize a Bounded Context to get your app working.`
 
 ## Interaction between Bounded Contexts
-Bounded contexts are autonomous components, with their own domain models and their own ubiquitous language. They should not have any dependencies on each other at run time and should be capable of running in isolation. However they are a part of the same overall system and do need to exchange data with one another. If you are implementing the CQRS pattern in a bounded context, you need to use a special type of events for this type of communication. In Spine we use term [*Integration Events*](/biz-model/integration-events.md).
+Bounded contexts are autonomous components, with their own domain models and their own ubiquitous language. They should not have any dependencies on each other at run time and should be capable of running in isolation. However they are a part of the same overall system and do need to exchange data with one another. If you are implementing the CQRS pattern in a bounded context, you need to use a special type of events for this type of communication. In Spine we use term [*Integration Events*](../biz-model/integration-events.md).
 
 Integration Events have the same nature as events within the bounded context.  They are one-way, asynchronous messages that publish information about something that has already happened. 
 

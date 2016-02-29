@@ -14,7 +14,7 @@ The primary language of the backend is Java. Client applications and server-side
 
 *  **Choice of storage and deployment platforms.** The framework promotes writing code which does not depend on storage media or deployment platform. For example, you can start with JDBC-based storage and later switch to Google Cloud Platform Datastore by changing one line of the code. `TODO: link to the example.`
 
-*  **Open Source.** The Permissive [Apache  License](https://github.com/SpineEventEngine/core-java/blob/master/LICENSE) allows using the framework in closed-source projects. You are welcome to [contribute](/contribute/index.html) to the framework development.
+*  **Open Source.** The Permissive [Apache  License](https://github.com/SpineEventEngine/core-java/blob/master/LICENSE) allows using the framework in closed-source projects. You are welcome to [contribute](../contribute/index.html) to the framework development.
 
 ### Get Started
 
@@ -23,6 +23,6 @@ To get up and running with Spine, check the following articles:
 
 ### Learn More
 
-* Our [Motivation](/motivation/index.md) to build Spine
-* [Java Documentation](/java.index.md)
-* [Examples](/examples/index.md)
+* Our [Motivation](../motivation/index.md) to build Spine
+* [Java Documentation](../java/index.md)
+* [Examples](../examples/index.md)

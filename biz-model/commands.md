@@ -10,7 +10,7 @@ A command consists of two parts:
 The `message` is the domain model part of command. The type of the command is defined by
 the type of its message. When we speak about a **command** as a typed thing, we refer to the message of the command.
 
-The context contains attributes common for all commands.More about Command Context you can find in our [GitHub pero](https://github.com/SpineEventEngine/core-java/blob/8ddee17753fe27a2bb92ae96f2bf2f266b4da5a8/client/src/main/proto/spine/base/command.proto).
+A `CommandContext` is meta-information of the command. The context contains attributes common for all commands. For details of the `CommandContext` fields, please see the type declaration in `command.proto` in our [GitHub repo](https://github.com/SpineEventEngine/core-java/blob/8ddee17753fe27a2bb92ae96f2bf2f266b4da5a8/client/src/main/proto/spine/base/command.proto).
 
 A command message is a protobuf message:
 
