@@ -1,11 +1,19 @@
-## What is an Aggregate?
+## What is an Aggregate
 
-An Aggregate is a group (a cluster) of objects that work together and are treated as a unit, to provide a specific functionality. It is the main building block of a business model. If you need more information about Aggregates, you can find it in the “” or on the web.
+An Aggregate is a group (a cluster) of objects that work together and are treated as a unit, to provide a specific functionality. It is the main building block of a business model. If you need more information about Aggregates, you can find it in the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) or [on the web](http://blog.sapiensworks.com/post/2012/04/18/DDD-Aggregates-And-Aggregates-Root-Explained.aspx).
 
 Typically, when you implement the CQRS pattern, the classes in the write model define your aggregates. Aggregates are recipients of commands and units of persistence. After an aggregate instance has processed a command and applied events produced, Spine saves the new Aggregate state to a storage. `TODO: create corresponding Article.`
 
 
-In Spine an [**aggregate state**](../biz-model/aggregate-states.md) is defined in a protobuf message, while aggregate itself is a java class. 
+## How to Define an Aggregate
+
+In Spine, an Aggregate consists from its [state](../biz-model/aggregate-states.md) defined as a protobuf message and a Java class which manages this state. 
+The main steps to define an Aggregate are:
+
+Select a type for identifiers of the aggregates. If you select to use a typed identifier (which is recommended), you need to define a protobuf message for the ID type.
+Define an aggregate state structure as a protobuf message.
+Generate Java code for the ID and state types.
+Create a new Aggregate class derived from org.spine3.server.aggregate.Aggregate passing the ID and state type parameters.
 
 ### Aggregate Definition
 
