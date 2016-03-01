@@ -5,7 +5,7 @@ An Aggregate is a group (a cluster) of objects that work together and are treate
 Typically, when you implement the CQRS pattern, the classes in the write model define your aggregates. Aggregates are recipients of commands and units of persistence. After an aggregate instance has processed a command and applied events produced, Spine saves the new Aggregate state to a storage. `TODO: create corresponding Article.`
 
 
-## How to Define an Aggregate
+### How to Define an Aggregate
 
 In Spine, an Aggregate consists from its [state](../biz-model/aggregate-states.md) defined as a protobuf message and a Java class which manages this state. 
 The main steps to define an Aggregate are:
