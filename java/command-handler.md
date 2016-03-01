@@ -14,7 +14,7 @@ public void handle(Message command, CommandContext ctx) {
 }
 ```
 
-To be dispatched to the aggregate root, the command must have an attribute with an ID of the aggregate. See [Commands](../biz-model/commands.md) article for details.
+To be dispatched to the aggregate root, the command must have an attribute with an ID of the aggregate. See [Commands](../biz-model/commands.md) section for details.
 
 **Note:** the annotation `@Assign` tells that the method participates in automatic dispatching of commands.
 
