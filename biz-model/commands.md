@@ -24,7 +24,7 @@ message MyCommand {
 ``````
 If a command is for an aggregate or a process manager, the first field must contain the ID of the aggregate or the process manager.
 
-By convention command messages are defined in the file named`commands.proto`. Typically the file would reside in the protobuf package of an aggregate or a process manager.
+By convention command messages are defined in the file named`commands.proto`. Typically the file would reside in the protobuf package of a corresponding aggregate or a process manager.
 
 There should be **one and only one** handler associated with the type of the command.
 
