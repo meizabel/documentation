@@ -31,7 +31,7 @@
    * [Repository](java/repository.md)
 * [Repositories and Data Storages](data-storage/index.md)
    * [Configuring Local Datastore Environment](data-storage/configuring-local-datastore-environment.md)
-   * Aggregate Repository
+   * [Aggregate Repository](data-storage/aggregate-repository.md)
 * [FAQ](faq.md)
 * [Examples](examples/index.md)
 * [Contribute](contribute/index.md)
