@@ -14,9 +14,7 @@ All it will know is the [“Repository”](../data-storage/index.md) which will 
 
 
 ### Domain Model blocks 
-
-Spine provides you with classes to support domain model creation. To build a Business Model you need to define *commands, events, aggregate and projection states* as protobuf messages.
-
-The command handler retrieves domain objects (Aggregates) from a repository and executes methods on them to change their state. These aggregates typically contain the actual business logic and are therefore responsible for guarding their own invariants. The state changes of aggregates result in the generation of Domain Events
+If you already checked [Concepts](../concepts.md) chapter, you are aware of the major Domain model building blocks and that Spine provides you with classes to support domain model creation. 
+To build a Business Model you need to define *commands, events, aggregate and projection states* as protobuf messages.
 
 This chapter will guide you through the major building blocks creation. 
