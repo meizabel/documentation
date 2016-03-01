@@ -1,4 +1,4 @@
-## Defining an Aggregate
+## What is an Aggregate
 
 In domain-driven design (DDD), an aggregate defines a consistency boundary. External references are restricted to one member of the Aggregate, designated as the root. A set of consistency rules applies within the Aggregate’s boundaries.
 
