@@ -13,7 +13,7 @@ The main steps to define an Aggregate are:
 * Select a type for identifiers of the aggregates. If you select to use a typed identifier (which is recommended), you need to define a protobuf message for the ID type.
 * Define an aggregate state structure as a protobuf message.
 * Generate Java code for the ID and state types.
-* Create a new Aggregate class derived from org.spine3.server.aggregate.Aggregate passing the ID and state type parameters.
+* Create a new Aggregate class derived from [org.spine3.server.aggregate.Aggregate](https://github.com/SpineEventEngine/core-java/blob/master/server/src/main/java/org/spine3/server/aggregate/Aggregate.java) passing the ID and state type parameters.
 
 
 ### Aggregate Definition
