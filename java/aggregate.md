@@ -45,6 +45,7 @@ public List<Message> handle(RegisterToConference command, CommandContext context
         return result.build();
     }
     ```
+Basic Command validation is supported by Spine on a protobuf level. If you need more sophisticated validation, it can be manually added 
 ### Event Appliers
 
 An Event Applier is a method that modifies a state of an Aggregate with the data from the passed event. Event Appliers are not supposed to be called from the outside of the declaring aggregate class. As such they are declared private by convention set in the Spine framework. 
