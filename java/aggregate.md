@@ -53,7 +53,7 @@ A Command Handler method is used with `@Assign` annotation. See an example of th
 ### Event Applier
 Event applier is a method of an aggregate root which applies data from an event to the state of the aggregate.
 
-Event appliers are part of the private API of aggregate roots. As such they are declared private by convention set in the Spine framework:
+Event appliers is not a public API of aggregate roots. As such they are declared private by convention set in the Spine framework:
 
 ``````java
  @Apply
