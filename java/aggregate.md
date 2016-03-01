@@ -15,7 +15,7 @@ The main steps to define an Aggregate are:
 * Generate Java code for the ID and state types.
 * Create a new Aggregate class derived from [org.spine3.server.aggregate.Aggregate](https://github.com/SpineEventEngine/core-java/blob/master/server/src/main/java/org/spine3/server/aggregate/Aggregate.java) passing the ID and state type parameters.
 
-Constructor 
+#### Constructor 
 
 An Aggregate must have a public constructor initializing an Aggregate ID. It must be public as it serves as a public API for Spine (it is used by the Repository). TODO: add article about Aggregate Repository.
 
