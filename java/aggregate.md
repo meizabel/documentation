@@ -10,10 +10,11 @@ Typically, when you implement the CQRS pattern, the classes in the write model d
 In Spine, an Aggregate consists from its [state](../biz-model/aggregate-states.md) defined as a protobuf message and a Java class which manages this state. 
 The main steps to define an Aggregate are:
 
-Select a type for identifiers of the aggregates. If you select to use a typed identifier (which is recommended), you need to define a protobuf message for the ID type.
-Define an aggregate state structure as a protobuf message.
-Generate Java code for the ID and state types.
-Create a new Aggregate class derived from org.spine3.server.aggregate.Aggregate passing the ID and state type parameters.
+* Select a type for identifiers of the aggregates. If you select to use a typed identifier (which is recommended), you need to define a protobuf message for the ID type.
+* Define an aggregate state structure as a protobuf message.
+* Generate Java code for the ID and state types.
+* Create a new Aggregate class derived from org.spine3.server.aggregate.Aggregate passing the ID and state type parameters.
+
 
 ### Aggregate Definition
 
