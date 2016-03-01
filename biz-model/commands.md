@@ -12,7 +12,7 @@ the type of its message. When we speak about a **command** as a typed thing, we 
 
 A `CommandContext` is meta-information of the command. The context contains attributes common for all commands. For details of the `CommandContext` fields, please see the type declaration in `command.proto` in our [GitHub repo](https://github.com/SpineEventEngine/core-java/blob/8ddee17753fe27a2bb92ae96f2bf2f266b4da5a8/client/src/main/proto/spine/base/command.proto).
 
-A command message is a protobuf message:
+See a command example below:
 
 ``````protobuf
 message MyCommand {
