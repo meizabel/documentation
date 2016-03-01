@@ -1,7 +1,7 @@
 # Writing Command Handlers
 
 
-For the majority of commands, a handler would be corresponding aggregate root object. Such a method takes two parameters: 
+For the majority of commands, a handler would be a corresponding aggregate root object. Such a method takes two parameters: 
 * Message for command instance
 * CommandContext for meta-information on the command. 
 
@@ -14,9 +14,9 @@ public void handle(Message command, CommandContext ctx) {
 }
 ```
 
-To be dispatched to the aggregate root, the command must have an attribute with an ID of the aggregate. See Writing Aggregate Commands for details.
+To be dispatched to the aggregate root, the command must have an attribute with an ID of the aggregate. See [Commands](../biz-model/commands.md) section for details.
 
-**Note:** the annotation `@Susbscribe` tells that the method participates in automatic dispatching of commands.
+**Note:** the annotation [@Assign](https://github.com/SpineEventEngine/core-java/blob/dc073660ee72af118f036fcb2768e511223908d7/server/src/main/java/org/spine3/server/Assign.java) tells that the method participates in automatic dispatching of commands. 
 
 A command handler method can throw [business failures](../biz-model/failures.md). This means the API of each command handler allows:
 
