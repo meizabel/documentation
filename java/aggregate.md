@@ -25,7 +25,7 @@ public OrderAggregate(OrderId id) {
 ```
 ### Command Handlers
 
-An Aggregate contains Command Handlers, which are methods annotated with `@Assign` and have a command message and a command context as parameters. An example of the Command Handler of the OrderAggregate:
+An Aggregate contains [Command Handlers](/command-handler.md), which are methods annotated with `@Assign` and have a command message and a command context as parameters. An example of the Command Handler of the OrderAggregate:
 
 ```java
 @Assign
