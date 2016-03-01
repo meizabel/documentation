@@ -2,7 +2,7 @@
 
 An Aggregate is a group (a cluster) of objects that work together and are treated as a unit, to provide a specific functionality. It is the main building block of a business model. If you need more information about Aggregates, you can find it in the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) or [on the web](http://blog.sapiensworks.com/post/2012/04/18/DDD-Aggregates-And-Aggregates-Root-Explained.aspx).
 
-Typically, when you implement the CQRS pattern, the classes in the write model define your aggregates. Aggregates are recipients of commands and units of persistence. After an aggregate instance has processed a command and applied events produced, Spine saves the new Aggregate state to a storage. `TODO: create corresponding Article.`
+Typically, when you implement the CQRS pattern, the classes in the write model define your aggregates. Aggregates are recipients of commands and units of persistence. After an aggregate instance has processed a command and applied events produced, Spine saves the new Aggregate state to a [storage](../data-storage/index.md). `TODO: create corresponding Article.`
 
 
 ### How to Define an Aggregate
