@@ -48,8 +48,9 @@ public List<Message> handle(RegisterToConference command, CommandContext context
 ### Event Appliers
 
 An Event Applier is a method that modifies a state of an Aggregate with the data from the passed event. Event Appliers are not supposed to be called from the outside of the declaring aggregate class. As such they are declared private by convention set in the Spine framework. 
-They are annotated with @Apply(link).
+They are annotated with [@Apply](https://github.com/SpineEventEngine/core-java/blob/c7901d99c497a639ee9132124bd6d4bec713f179/server/src/main/java/org/spine3/server/aggregate/Apply.java).
 
+```java
 @Apply
  private void on(MyEvent event) {
      MyState newState = getState().toBuilder()
