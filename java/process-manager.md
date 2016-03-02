@@ -18,7 +18,13 @@ The main steps to define a Process Manager are:
 * Select a type of identifiers of this kind of process managers. If you decide to use a typed identifier (which is recommended), you need to define it as a protobuf message.
 * Define a Process Manager state structure as a protobuf message.
 * Generate Java code for the ID and state types.
-* Create a new Process Manager class derived from [ProcessManager](https://github.com/SpineEventEngine/core-java/blob/037ac4d9e7133a95c75d927e5b649ab4f6f0f7f2/server/src/main/java/org/spine3/server/procman/ProcessManager.java) abstract base class, passing the ID and state type parameters.
+* Create a new Process Manager class derived from [ProcessManager](https://github.com/SpineEventEngine/core-java/blob/037ac4d9e7133a95c75d927e5b649ab4f6f0f7f2/server/src/main/java/org/spine3/server/procman/ProcessManager.java) abstract base class, passing the ID and state type parameters:
+
+```java
+public class RegistrationProcessManager extends ProcessManager<ProcessManagerId, RegistrationProcess> {
+    // code of the process manager
+}
+```
 
 #### Constructor 
 
