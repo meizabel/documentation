@@ -4,11 +4,11 @@ A [Process Manager](../java/process-manager.md) is defined as a Java class. It s
 
 A **Process Manager State** reflects a state of a business process. It is a data structure which is defined as a protobuf message. The Process Manager state is *typed*.
 
-The Process Manager State may consist of the [Process Manager ID](./identifiers.md), enumeration constant describing the current process state and any additional info needed (for example, Aggregate IDs).
-
 An identifier type should be already set by the time of creating a process manager state. We recommend to have [typed](../motivation/strongly-typed.md) identifiers.
 
 A protobuf definition of the state typically resides in the protobuf package of a process manager.
+
+The Process Manager State may consist of the [Process Manager ID](./identifiers.md), enumeration constant describing the current process state and any additional info needed (for example, Aggregate IDs):
 
 ```protobuf
 message RegistrationProcess {
