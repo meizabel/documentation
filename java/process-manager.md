@@ -25,10 +25,28 @@ The main steps to define a Process Manager are:
 A Process Manager must have a public constructor initializing a Process Manager ID. It must be public as it serves as a public API for Spine (it is used by the [ProcessManagerRepository](./repository.md)).
 
 ```java
-public OrderAggregate(OrderId id) {
+public RegistrationProcessManager(ProcessManagerId id) {
         super(id);
-}
+        this.commandSender = new CommandSender();
+    }
 ```
 ### Command Handlers
 
-An Aggregate contains [Command Handlers](/command-handler.md), which are methods annotated with `@Assign` and have a command message and a command context as parameters. An example of the Command Handler of the OrderAggregate:
+Process Managers can also [handle commands](./command-handler.md), for example, to stop or restart the process. Handling commands is more rare case than handling events. Just define Command Handler - a method annotated with @Assign and accept a command message and a command context as parameters:
+@Assign
+public CommandRouted handle(StopRegistrationProcess stopCmd, CommandContext context) {
+    final RegistrationProcess.State state = getState().getProcessState();
+    if (state != COMPLETED) {
+        setIsCompleted(true);
+        final RejectOrder rejectOrderCmd = newRejectOrderCommand();
+        final CancelSeatReservation cancelReservationCmd = newCancelSeatReservationCommand();
+        return newRouter().of(stopCmd, context)
+                .add(rejectOrderCmd)
+                .add(cancelReservationCmd)
+                .route();
+    } else {
+        throw newIllegalProcessStateFailure();
+    }
+}
+Use a Command Router to create and post command(s) in response to a command received by the Process Manager. 
+The routed commands are created on behalf of the actor of the original command. That is, the actor and zoneOffset fields of created CommandContext instances will be the same as in the incoming command.
