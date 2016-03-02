@@ -39,7 +39,7 @@ public RegistrationProcessManager(ProcessManagerId id) {
 A Process Manager handles domain events. In [Event Handler](./event-handler.md), it usually performs the following:
 * sends commands to Aggregates based on conditions like current process state;
 * changes the current process state;
-* throws Business Failures if the process is in an inappropriate state, etc.
+* throws a [Business Failure](../biz-model/failures.md) if the process is in an inappropriate state, etc.
 
 ```java
 @Subscribe
@@ -53,7 +53,6 @@ public void on(PaymentCompleted event, EventContext context) throws IllegalProce
     }
 }
 ```
-Based on processed events a Process Manager changes its own state. If a Process Manager is in a state that is different from what is required in the handled event, it will through a [business failure](../biz-model/failures.md). 
 
 ### Command Handlers
 
