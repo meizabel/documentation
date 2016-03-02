@@ -29,7 +29,6 @@ message RegistrationProcess {
 }
 
 message ProcessManagerId {
-    // The UUID-based value of the ID.
     string uuid = 1;
 }
 ```
