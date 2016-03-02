@@ -76,4 +76,4 @@ public CommandRouted handle(StopRegistrationProcess stopCmd, CommandContext cont
 }
 ```
 Use a **Command Router** to create and post command(s) in response to a command received by the Process Manager. 
-The routed commands are created on behalf of the actor of the original command. That is, the actor and zoneOffset fields of created CommandContext instances will be the same as in the incoming command.
+The routed commands are created on behalf of the actor of the original command. That is, the `actor` and `zoneOffset` fields of created `CommandContext` instances will be the same as in the incoming command.
