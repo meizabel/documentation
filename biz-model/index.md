@@ -10,7 +10,7 @@ You need to identify what are the items (objects) you need to accomplish the des
 You do not need to know how and where the data of your domain will persist while you do the model of the domain. So, Domain Model **knows nothing** about the database.
 
 This ignorance makes your domain model free from any coupling with the persistence layer of the application. In result your application will be free from coupling with any data store and will be very easily unit testable.
-All it will know is the [“Repository”](../java/repository.md.md) which will eventually manage your application’s persistence concern.
+All it will know is the [“Repository”](../java/repository.md) which will eventually manage your application’s persistence concern.
 
 
 ### Domain Model blocks 
