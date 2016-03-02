@@ -15,7 +15,7 @@ For more information on Process Managers (and the important difference between P
 A Process Manager is defined as a Java class which encapsulates and manages its [state](../biz-model/process-manager-states.md) which is defined as a protobuf message.  
 The main steps to define a Process Manager are:
 
-* Select a type for identifiers of the process managers. If you select to use a typed identifier (which is recommended), you need to define a protobuf message for the ID type.
+* Select a type of identifiers of this kind of process managers. If you decide to use a typed identifier (which is recommended), you need to define it as a protobuf message.
 * Define a Process Manager state structure as a protobuf message.
 * Generate Java code for the ID and state types.
 * Create a new Process Manager class derived from [org.spine3.server.procman.ProcessManager](https://github.com/SpineEventEngine/core-java/blob/037ac4d9e7133a95c75d927e5b649ab4f6f0f7f2/server/src/main/java/org/spine3/server/procman/ProcessManager.java) passing the ID and state type parameters.
