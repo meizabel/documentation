@@ -16,7 +16,7 @@ The main steps to define an Aggregate are:
 
 #### Constructor 
 
-An Aggregate must have a public constructor initializing an Aggregate ID. It must be public as it serves as a public API for Spine (it is used by the [Repository](../data-storage/aggregate-repository.md)).
+An Aggregate must have a public constructor initializing an Aggregate ID. It must be public as it serves as a public API for Spine (it is used by the [Repository](./repository.md)).
 
 ```java
 public OrderAggregate(OrderId id) {
