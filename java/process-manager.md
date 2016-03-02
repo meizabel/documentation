@@ -1,6 +1,6 @@
 # Process Manager
 
-Process Manager coordinates and routes messages between aggregates within a Bounded Context (BC). It is a central processing unit which maintains the state of the business process and determines the next processing step based on intermediate results.
+Process Manager coordinates and routes messages between aggregates within a Bounded Context (BC). It is a central processing unit which maintains a state of a business process and determines the next processing step based on intermediate results.
 
 Event and Command Handlers are invoked by the [ProcessManagerRepository](./repository.md) which manages the instances of a Process Manager class.
 
