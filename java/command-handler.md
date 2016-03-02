@@ -28,10 +28,11 @@ A command handler method can throw [business failures](../biz-model/failures.md)
 * Writes Events to Event Store
 * Accepts Bounded Context in c'tor
 
-TODO: describe implementing an interface.
+`TODO: describe implementing an interface.`
 
 ## Registering Command Handlers
 
-TODO: automatic registration of aggregate handlers by registering the corresponding repository. TODO: registering general command handlers with the engine.
+`TODO: automatic registration of aggregate handlers by registering the corresponding repository.`
+`TODO: registering general command handlers with the engine.`
 
 

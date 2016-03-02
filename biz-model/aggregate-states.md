@@ -16,16 +16,12 @@ Below you can see a sample of the `Order` aggregate state definition:
 
 ```protobuf
 message Order {
-    // The unique order id.
-    sample.OrderId id = 1;
-
-    // The conference id the order associated with.
-    sample.ConferenceId conference_id = 2;
-
-    // The lines of the order.
-    repeated sample.OrderLine line = 3;
-
-    // The order is confirmed when the registrant has successfully paid for the order items.
+    OrderId id = 1;
+    
+    ConferenceId conference_id = 2;
+    
+    repeated OrderLine line = 3;
+    
     bool is_confirmed = 4;
 }
 ```
