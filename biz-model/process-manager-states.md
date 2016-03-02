@@ -8,7 +8,7 @@ The Process Manager State may consist of the [Process Manager ID](./identifiers.
 
 An identifier type should be already set by the time of creating a process manager state. We recommend to have [typed](../motivation/strongly-typed.md) identifiers.
 
-A `Message`-based ID, typically, would reside in the protobuf package of a process manager.
+A protobuf definition of the state typically resides in the protobuf package of a process manager.
 
 ```protobuf
 message RegistrationProcess {
