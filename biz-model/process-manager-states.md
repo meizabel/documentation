@@ -7,6 +7,6 @@ The process manager state is *typed*.
 
 The Process Manager State consists of the: [Identifier](./identifiers.md), constants describing its states and additional info it may need for processing steps, like Aggregate IDs etc.
 
-An identifier type should be already set by the time of creating a process manager state. We recommend to have [typed](../motivation/strongly-typed.md) identifiers. For example, if you have an `Order` aggregate, there should be an `OrderId` defined as a protobuf message.
+An identifier type should be already set by the time of creating a process manager state. We recommend to have [typed](../motivation/strongly-typed.md) identifiers.
 
 A `Message`-based ID, typically, would reside in the protobuf package of a process manager.
