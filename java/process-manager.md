@@ -36,7 +36,10 @@ public RegistrationProcessManager(ProcessManagerId id) {
 }
 ```
 ### Event Handlers
-A Process Manager handles domain events. In [Event Handler](./event-handler.md), it usually sends commands to Aggregates based on conditions like current process state.
+A Process Manager handles domain events. In [Event Handler](./event-handler.md), it usually performs the following:
+* sends commands to Aggregates based on conditions like current process state;
+* changes the current process state;
+* throws Business Failures if the process is in an inappropriate state, etc.
 
 ```java
 @Subscribe
