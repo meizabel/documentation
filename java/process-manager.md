@@ -30,6 +30,7 @@ public RegistrationProcessManager(ProcessManagerId id) {
     this.commandSender = new CommandSender()
 }
 ```
+### Event Handlers
 
 ```java
 @Subscribe
