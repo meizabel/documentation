@@ -12,13 +12,13 @@ For more information on Process Managers (and the important difference between P
 
 ### How to Define a Process Manager
 
-In Spine, an Aggregate consists from its [state](../biz-model/process-manager-states.md) defined as a protobuf message and a Java class which manages this state. 
-The main steps to define an Aggregate are:
+In Spine, a Process Manager consists from its [state](../biz-model/process-manager-states.md) defined as a protobuf message and a Java class which manages this state. 
+The main steps to define a Process Manager are:
 
-* Select a type for identifiers of the aggregates. If you select to use a typed identifier (which is recommended), you need to define a protobuf message for the ID type.
-* Define an aggregate state structure as a protobuf message.
+* Select a type for identifiers of the process managers. If you select to use a typed identifier (which is recommended), you need to define a protobuf message for the ID type.
+* Define a Process Manager state structure as a protobuf message.
 * Generate Java code for the ID and state types.
-* Create a new Aggregate class derived from [org.spine3.server.aggregate.Aggregate](https://github.com/SpineEventEngine/core-java/blob/master/server/src/main/java/org/spine3/server/aggregate/Aggregate.java) passing the ID and state type parameters.
+* Create a new Process Manager class derived from [org.spine3.server.procman.ProcessManager](https://github.com/SpineEventEngine/core-java/blob/037ac4d9e7133a95c75d927e5b649ab4f6f0f7f2/server/src/main/java/org/spine3/server/procman/ProcessManager.java) passing the ID and state type parameters.
 
 #### Constructor 
 
