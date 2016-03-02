@@ -36,7 +36,7 @@ public RegistrationProcessManager(ProcessManagerId id) {
 }
 ```
 ### Event Handlers
-A Process Manager listens to domain events and generates commands based of them to determine the next processing step. To define an [Event Handler](./event-handler.md) use a method with `@Subscribe` annotation.
+A Process Manager handles domain events. In [Event Handler](./event-handler.md), it usually sends commands to Aggregates based on conditions like current process state.
 
 ```java
 @Subscribe
