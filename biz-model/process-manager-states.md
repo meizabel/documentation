@@ -8,7 +8,7 @@ An identifier type should be already set by the time of creating a process manag
 
 A protobuf definition of the state typically resides in the protobuf package of a process manager.
 
-The Process Manager State may consist of the [Process Manager ID](./identifiers.md), enumeration constant describing the current process state and any additional info needed (for example, Aggregate IDs):
+The Process Manager State usually consist of the [Process Manager ID](./identifiers.md), enumeration constant describing the current process state and some additional info needed (for example, Aggregate IDs):
 
 ```protobuf
 message RegistrationProcess {
