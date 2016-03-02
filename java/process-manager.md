@@ -31,7 +31,7 @@ public RegistrationProcessManager(ProcessManagerId id) {
 }
 ```
 ### Event Handlers
-A Process Manager subscribes to domain events and generates commands based of them.
+A Process Manager subscribes to domain events and generates commands based of them to determine next processing step. To define an Event Handler us a method with `@Subscribe` annotation.
 ```java
 @Subscribe
 public void on(PaymentCompleted event, EventContext context) throws IllegalProcessStateFailure {
@@ -44,9 +44,11 @@ public void on(PaymentCompleted event, EventContext context) throws IllegalProce
     }
 }
 ```
+Based on processed events a Process Manager changes its own state. If a Process Manager is in a state that is different from what is required in the handled event, it will through a [business failure](../biz-model/failures.md). 
+
 ### Command Handlers
 
-Process Managers can also [handle commands](./command-handler.md), for example, to stop or restart the process. Handling commands is more rare case than handling events. Just define Command Handler - a method annotated with @Assign and accept a command message and a command context as parameters:
+Process Managers can also [handle commands](./command-handler.md), for example, to stop or restart the process. Handling commands is more rare case than handling events. Just define Command Handler — a method annotated with `@Assign` and accept a command message and a command context as parameters:
 
 ```java
 @Assign
