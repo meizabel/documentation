@@ -26,13 +26,15 @@ A Process Manager must have a public constructor initializing a Process Manager 
 
 ```java
 public RegistrationProcessManager(ProcessManagerId id) {
-        super(id);
-        this.commandSender = new CommandSender();
-    }
+    super(id);
+    this.commandSender = new CommandSender()
+}
 ```
 ### Command Handlers
 
 Process Managers can also [handle commands](./command-handler.md), for example, to stop or restart the process. Handling commands is more rare case than handling events. Just define Command Handler - a method annotated with @Assign and accept a command message and a command context as parameters:
+
+```java
 @Assign
 public CommandRouted handle(StopRegistrationProcess stopCmd, CommandContext context) {
     final RegistrationProcess.State state = getState().getProcessState();
@@ -48,5 +50,6 @@ public CommandRouted handle(StopRegistrationProcess stopCmd, CommandContext cont
         throw newIllegalProcessStateFailure();
     }
 }
+```
 Use a Command Router to create and post command(s) in response to a command received by the Process Manager. 
 The routed commands are created on behalf of the actor of the original command. That is, the actor and zoneOffset fields of created CommandContext instances will be the same as in the incoming command.
