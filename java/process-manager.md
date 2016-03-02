@@ -8,4 +8,5 @@ Event and Command Handlers are invoked by the [ProcessManagerRepository](./repos
 
 For more information on Process Managers (and the important difference between Process Manager and Saga), please see:  
 [Clarifying the Saga pattern](http://kellabyte.com/2012/05/30/clarifying-the-saga-pattern/)  
-[Are Sagas and Workflows Same Thing](https://dzone.com/articles/are-sagas-and-workflows-same-t)
+[Are Sagas and Workflows Same Thing?](https://dzone.com/articles/are-sagas-and-workflows-same-t)
+
