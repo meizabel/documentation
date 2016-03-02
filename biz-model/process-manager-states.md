@@ -10,3 +10,26 @@ The Process Manager State consists of the: [Identifier](./identifiers.md), const
 An identifier type should be already set by the time of creating a process manager state. We recommend to have [typed](../motivation/strongly-typed.md) identifiers.
 
 A `Message`-based ID, typically, would reside in the protobuf package of a process manager.
+
+```protobuf
+message RegistrationProcess {
+
+    ProcessManagerId id = 1;
+
+    State process_state = 2;
+
+    OrderId order_id = 3;
+
+    enum State {
+        NOT_STARTED = 0;
+        AWAITING_RESERVATION_CONFIRMATION = 1;
+        RESERVATION_CONFIRMED = 2;
+        PAYMENT_RECEIVED = 3;
+    }
+}
+
+message ProcessManagerId {
+    // The UUID-based value of the ID.
+    string uuid = 1;
+}
+```
