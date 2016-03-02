@@ -17,8 +17,11 @@ Below you can see a sample of the `Order` aggregate state definition:
 ```protobuf
 message Order {
     sample.OrderId id = 1;
+    
     sample.ConferenceId conference_id = 2;
+    
     repeated sample.OrderLine line = 3;
+    
     bool is_confirmed = 4;
 }
 ```
