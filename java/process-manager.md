@@ -31,7 +31,8 @@ public RegistrationProcessManager(ProcessManagerId id) {
 }
 ```
 ### Event Handlers
-A Process Manager subscribes to domain events and generates commands based of them to determine next processing step. To define an Event Handler us a method with `@Subscribe` annotation.
+A Process Manager subscribes to domain events and generates commands based of them. To define an [Event Handler](./event-handler.md) us a method with `@Subscribe` annotation.
+
 ```java
 @Subscribe
 public void on(PaymentCompleted event, EventContext context) throws IllegalProcessStateFailure {
