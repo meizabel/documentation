@@ -1,6 +1,5 @@
 # Process Manager State
 
-# Defining Aggregate State
 
 An **Aggregate** is defined as [Java class](../java/aggregate.md). The aggregate handles commands. In response to a command the aggregate modifies its state and produces one or more events. These events are used later to restore the state of the aggregate.
 
