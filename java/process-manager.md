@@ -1,6 +1,6 @@
 # Process Manager
 
-Process Manager coordinates and routes messages between aggregates within a given Bounded Context (BC). It can listen to events from same or other BCs.
+Process Manager coordinates and routes messages between aggregates within a given Bounded Context (BC). It is A central processing unit which maintains the state of the business process and determines the next processing step based on intermediate results.
 
 “Process Manager” pattern was first defined and brought to the common vocabulary by Kyle Brown and Bobby Woolf under the guidance of Martin Fowler in the book [“Enterprise Integration Patterns”](http://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
 
