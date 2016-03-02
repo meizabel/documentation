@@ -6,9 +6,9 @@ Event and Command Handlers are invoked by the [ProcessManagerRepository](./repos
 
 “Process Manager” pattern was first defined and brought to the common vocabulary by Kyle Brown and Bobby Woolf under the guidance of Martin Fowler in the book [“Enterprise Integration Patterns”](http://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
 
-For more information on Process Managers (and the important difference between Process Manager and Saga), please see:  
-[Clarifying the Saga pattern](http://kellabyte.com/2012/05/30/clarifying-the-saga-pattern/)  
-[Are Sagas and Workflows Same Thing?](https://dzone.com/articles/are-sagas-and-workflows-same-t)
+For more information on Process Managers (and the important difference between Process Manager and Saga), please see:
+* [Clarifying the Saga pattern](http://kellabyte.com/2012/05/30/clarifying-the-saga-pattern/)  
+* [Are Sagas and Workflows Same Thing?](https://dzone.com/articles/are-sagas-and-workflows-same-t)
 
 ### How to Define a Process Manager
 
