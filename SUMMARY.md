@@ -28,7 +28,7 @@
    * [Process Manager](java/process-manager.md)
    * [Command Dispatcher](java/command-dispatcher.md)
    * [Event Bus](java/event-bus.md)
-   * Comman Bus
+   * [Comman Bus](java/comman-bus.md)
    * [Repository](java/repository.md)
 * [Repositories and Data Storages](data-storage/index.md)
    * [Configuring Local Datastore Environment](data-storage/configuring-local-datastore-environment.md)
