@@ -4,7 +4,7 @@ Event Handler is a method that reacts on a domain event after it is posted to th
 
 ``````java
 @Subscribe
-public void on(MyEvent event) {
+public void on(MyEvent event, EventContext context) {
     // do something
 }
 ``````
