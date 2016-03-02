@@ -1,12 +1,11 @@
 # Process Manager State
 
-A **Process Manager** is defined as [Java class](../java/process-manager.md). The aggregate handles commands. In response to a command the aggregate modifies its state and produces one or more events. These events are used later to restore the state of the aggregate.
+A **Process Manager** is defined as [Java class](../java/process-manager.md). It serves as a centralized processing unit that maintains the state sequence and defines the next processing step based on intermediate results.
 
-An **Aggregate State** is a data structure and is defined as a protobuf message.
-The aggregate state as a *typed* thing.
+A **Process Manager State** is a data structure and is defined as a protobuf message.
+The process manager state is *typed*.
 
-
-An Aggregate State consists of the: [Identifier](./identifiers.md) and aggregate components (Value Objects and Entities).
+The Process Manager State consists of the: [Identifier](./identifiers.md), constants describing its states and additional info it may need for processing steps, like Aggregate IDs etc.).
 
 An identifier type should be already set by the time of creating an aggregate state. We recommend to have [typed](../motivation/strongly-typed.md) identifiers. For example, if you have an `Order` aggregate, there should be an `OrderId` defined as a protobuf message.
 
