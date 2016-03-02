@@ -12,7 +12,7 @@ For more information on Process Managers (and the important difference between P
 
 ### How to Define a Process Manager
 
-In Spine, a Process Manager consists from its [state](../biz-model/process-manager-states.md) defined as a protobuf message and a Java class which manages this state. 
+A Process Manager is defined as a Java class which encapsulates and manages its [state](../biz-model/process-manager-states.md) which is defined as a protobuf message.  
 The main steps to define a Process Manager are:
 
 * Select a type for identifiers of the process managers. If you select to use a typed identifier (which is recommended), you need to define a protobuf message for the ID type.
