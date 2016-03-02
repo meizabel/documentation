@@ -20,7 +20,7 @@ An Aggregate must have a public constructor initializing an Aggregate ID. It mus
 
 ```java
 public OrderAggregate(OrderId id) {
-        super(id);
+    super(id);
 }
 ```
 ### Command Handlers
