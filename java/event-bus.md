@@ -11,8 +11,7 @@ To receive events a handler object should:
  **Note:** Since Protobuf messages are final classes, a handler method cannot accept just `Message` as the first parameter. It must be an exact type of the event that needs to be handled.
  
  ### Posting Events
- * <p>Events are posted to an EventBus using {@link #post(Event)} method. Normally this
- * is done by an {@link AggregateRepository} in the process of handling a command, or by a {@link ProcessManager}.
+ Events are posted to an EventBus using `#post(Event)` method. Normally this is done by an [AggregateRepository](./repository.md) in the process of handling a command, or by a {@link ProcessManager}.
  *
  * <p>The passed {@link Event} is stored in the {@link EventStore} associated with the {@code EventBus}
  * <strong>before</strong> it is passed to handlers.
