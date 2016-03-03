@@ -14,28 +14,12 @@ To receive events a handler object should:
 Events are posted to an EventBus using `#post(Event)` method. Normally this is done by an [Aggregate Repository](./repository.md) in the process of handling a command, or by a [Process Manager](./process-manager.md).
  
  The passed [Event](../biz-model/event.md) is stored in the [Event Store](./event-store.md) associated with the Event Bus **before**  it is passed to handlers.
- *
- * <p>The execution of handler methods is performed by an {@link Executor} associated with the instance of
- * the {@code EventBus}.
- *
- * <p>If a handler method throws an exception (which in general should be avoided), the exception is logged.
- * No other processing occurs.
- *
- * <p>If there is no handler for the posted event, the fact is logged as warning, with no further processing.
- *
+ 
+The execution of handler methods is performed by an `Executor` associated with the instance of Event Bus.
 
+If a handler method throws an exception (which in general should be avoided), the exception is logged.
+If there is no handler for the posted event, the fact is logged as warning, with no further processing.
 
-
-
-
-
-
-
-
-
-
-
-
-
+## Catch-up Subscription
 
 It also allows a subscriber to catch-up from a given timestamp on a certain event.
