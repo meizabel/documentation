@@ -13,7 +13,7 @@ To receive events a handler object should:
 ### Posting Events
 Events are posted to an EventBus using `#post(Event)` method. Normally this is done by an [Aggregate Repository](./repository.md) in the process of handling a command, or by a [Process Manager](./process-manager.md).
  
- The passed [Event] is stored in the [EventStore](./event-store.md) associated with the Event Bus.
+ The passed [Event] is stored in the [Event Store](./event-store.md) associated with the Event Bus.
  **before**  it is passed to handlers.
  *
  * <p>The execution of handler methods is performed by an {@link Executor} associated with the instance of
