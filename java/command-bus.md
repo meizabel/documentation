@@ -4,6 +4,6 @@ A Command Bus routs the incoming commands to the corresponding handler.  Unlike 
 
 The command can be posted if it has either [dispatcher](./command-dispatcher.md) or handler registered with the command bus.
 
-If the passed dispatcher deals with commands for which another dispatcher already registered the dispatch entries for such commands will not be unregistered, and warning will be logged.
+**Note:** If the passed dispatcher deals with commands for which another dispatcher already registered the dispatch entries for such commands will not be unregistered, and warning will be logged.
 
 `TODO:Code sample` 
