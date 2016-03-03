@@ -23,3 +23,5 @@ If there is no handler for the posted event, the fact is logged as warning, with
 ## Catch-up Subscription
 
 An Event Bus also allows a subscriber to catch-up from a given timestamp on a certain event.
+
+`TODO: code sample`
