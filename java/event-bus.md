@@ -1,3 +1,43 @@
 # Event Bus
 
-Event Bus delivers events to their subscribers. It also allows a subscriber to catch-up from a given timestamp on a certain event.
+An Event Bus dispatches incoming events to handlers, and provides ways for registering those handlers.
+
+### Registering Events
+To receive events a handler object should:
+ * Expose a public method that accepts the type of the event as the first parameter and EventContext as the second parameter;
+ * Mark the method with `@Subscribe` annotation;
+ * Register with an instance of EventBus using `#subscribe(EventHandler)`.
+ 
+ **Note:** Since Protobuf messages are final classes, a handler method cannot accept just `Message` as the first parameter. It must be an exact type of the event that needs to be handled.
+ 
+ ### Posting Events
+ * <p>Events are posted to an EventBus using {@link #post(Event)} method. Normally this
+ * is done by an {@link AggregateRepository} in the process of handling a command, or by a {@link ProcessManager}.
+ *
+ * <p>The passed {@link Event} is stored in the {@link EventStore} associated with the {@code EventBus}
+ * <strong>before</strong> it is passed to handlers.
+ *
+ * <p>The execution of handler methods is performed by an {@link Executor} associated with the instance of
+ * the {@code EventBus}.
+ *
+ * <p>If a handler method throws an exception (which in general should be avoided), the exception is logged.
+ * No other processing occurs.
+ *
+ * <p>If there is no handler for the posted event, the fact is logged as warning, with no further processing.
+ *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+It also allows a subscriber to catch-up from a given timestamp on a certain event.
