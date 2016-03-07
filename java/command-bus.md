@@ -13,7 +13,6 @@ The command can be posted if it has **either** [dispatcher](./command-dispatcher
 
 **Note:** If the passed dispatcher deals with commands, for which another dispatcher is already registered, the dispatch entries for such commands will not be unregistered, and warning will be logged.
 
-
 ``````java
 // Initialize Command Bus.
 InMemoryStorageFactory storageFactory = InMemoryStorageFactory.getInstance();
