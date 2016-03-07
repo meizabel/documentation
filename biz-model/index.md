@@ -2,10 +2,10 @@
 
 Domain Modeling is an iterative process, and the model itself will constantly evolve and require refactoring. 
 
-### Persistence Ignorance
+### Domain Model is not a Persistence Model
 The Domain Model models real-life problems and solutions, it models **behavior**. That’s the core of an application and should  mimic the real situations the best it can.
 
-You need to identify what are the items (objects) you need to accomplish the desired functionalities of your application. You need to identify the relationships among different objects and how they interact among themselves. You need to find if the business goal of your application is achievable using your domain model. 
+You need to identify the items (objects) that would implement the desired functionalities of your application. You need to identify the relationships among different objects and how they interact among themselves. You need to find if the business goal of your application is achievable using your domain model. 
 
 You do not need to know how and where the data of your domain will persist while you do the model of the domain. So, Domain Model **knows nothing** about the database.
 

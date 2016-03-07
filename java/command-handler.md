@@ -33,6 +33,7 @@ A command handler method can throw [business failures](../biz-model/failures.md)
 ## Registering Command Handlers
 
 `TODO: automatic registration of aggregate handlers by registering the corresponding repository.`
+
 `TODO: registering general command handlers with the engine.`
 
 
