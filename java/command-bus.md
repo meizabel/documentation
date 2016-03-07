@@ -12,7 +12,7 @@ InMemoryStorageFactory storageFactory = InMemoryStorageFactory.getInstance();
 CommandStorage commandStorage = storageFactory.createCommandStorage();
 CommandBus commandBus = CommandBus.create(new CommandStore(commandStorage));
 
-// Register a command handler (see Command Handler section on how to define it).
+// Register a command handler (see `Command Handler` section on how to define it).
 commandBus.register(new MyCommandHandler());
 
 // Post a command.
