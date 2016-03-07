@@ -31,13 +31,13 @@ EventStore eventStore = EventStore.newBuilder()
         .build();
 EventBus eventBus = EventBus.newInstance(eventStore);
 
-// Register event handlers (see Event Handler section on how to define them).
+// Register event handlers (see `Event Handler` section on how to define them).
 eventBus.subscribe(new MyEventSubscriber());
 
-// Post a command.
-DoSmth commandMessage = DoSmth.newBuilder().setSmth(smth).build();
-Command command = Commands.create(commandMessage, commandContext);
-commandBus.post(command);
+// Post an event.
+MyEvent eventMessage = MyEvent.newBuilder().setSmth(smth).build();
+Event event = Events.createEvent(eventMessage, eventContext);
+eventBus.post(event);
 
 ``````
 
