@@ -6,12 +6,12 @@ An Event Bus dispatches incoming events to handlers, and provides ways for regis
 To receive events a handler object should:
  * Expose a public method that accepts the type of the event as the first parameter and EventContext as the second parameter;
  * Mark the method with `@Subscribe` annotation;
- * Register with an instance of EventBus using `subscribe(EventHandler)` method.
+ * Register with an instance of EventBus using `EventBus.subscribe(EventHandler)` method.
  
  **Note:** Since Protobuf messages are final classes, a handler method cannot accept just `Message` as the first parameter. It must be an exact type of the event that needs to be handled.
  
 ### Posting Events
-Events are posted to an EventBus using `post(Event)` method. Normally this is done by an [Aggregate Repository](./repository.md) in the process of handling a command, or by a [Process Manager Repository](./repository.md).
+Events are posted to an EventBus using `EventBus.post(Event)` method. Normally this is done by an [Aggregate Repository](./repository.md) in the process of handling a command, or by a [Process Manager Repository](./repository.md).
 
 The passed [Event](../biz-model/event.md) is stored in the [Event Store](./event-store.md) associated with the Event Bus **before**  it is passed to handlers.
 
