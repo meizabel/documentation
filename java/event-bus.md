@@ -20,6 +20,7 @@ The execution of handler methods is performed by an `Executor` associated with t
 If a handler method throws an exception (which in general should be avoided), the exception is logged.
 If there is no handler for the posted event, the fact is logged as warning, with no further processing.
 
+``
 ## Catch-up Subscription
 
 An Event Bus also allows a subscriber to catch-up from a given timestamp on a certain event.
