@@ -16,7 +16,7 @@ There are four fundamental principles Spine is based on:
 * Classes must be [immutable](../motivation/immutability.md) unless there is a
 good reason not to do so.
 
-That’s it! Now you know what Spine is  all about. 
+To get in depth understanding of these principles read the articles in this chapter.
 
 ---
-When you are ready to dig into details, check  Architecture and Domain Model [Concepts](../concepts.md) lying in the Spine’s foundation.
+When you are ready to dig into further details, check  Architecture and Domain Model [Concepts](../concepts.md) to find out what is lying in the Spine’s foundation.
