@@ -1,6 +1,6 @@
 # Event Bus
 
-An Event Bus dispatches incoming events to [handlers](./event), and provides ways for registering those handlers. One event can be published to more than one subscriber.
+An Event Bus dispatches incoming events to [handlers](./event-handler.md), and provides ways for registering those handlers. One event can be published to more than one subscriber.
 
 ### Registering Events
 To receive events a handler object should:
