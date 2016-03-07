@@ -31,6 +31,7 @@
    * [Event Bus](java/event-bus.md)
    * [Repository](java/repository.md)
    * [Event Store](java/event-store.md)
+   * Command Store
 * [Data Storage](data-storage/index.md)
    * [Configuring Local Datastore Environment](data-storage/configuring-local-datastore-environment.md)
 * [FAQ](faq.md)
