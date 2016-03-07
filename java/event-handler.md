@@ -1,6 +1,6 @@
 # Event Handler
 
-Event Handler is a method that reacts on a domain event after it is posted to the Event Bus. Unlike [event appliers](/java/aggregate.md), event handlers must be declared public:
+Event Handler is a method that reacts on a domain event after it is posted to the Event Bus. Unlike [Event Appliers](/java/aggregate.md), event handlers must be declared public:
 
 ``````java
 @Subscribe
