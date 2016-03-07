@@ -1,6 +1,7 @@
 # Command Dispatcher
 
-Command Dispatcher invokes a handler method for the received command. 
+Command Dispatcher delivers commands to their [handlers](./command-handler.md) invoking a corresponding handler method for the received command.  
+
 A dispatcher can deliver more than one class of commands.
 
 Unlike a [Command Handler](./command-handler.md) the dispatcher does not change the state of the business model, neither it produces events.
