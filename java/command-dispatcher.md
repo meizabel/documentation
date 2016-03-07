@@ -21,5 +21,4 @@ commandBus.register(new OrderAggregateRepository());
 DoSmth commandMessage = DoSmth.newBuilder().setSmth(smth).build();
 Command command = Commands.create(commandMessage, commandContext);
 commandBus.post(command);
-
-``````
+```
