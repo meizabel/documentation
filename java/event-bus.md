@@ -21,6 +21,26 @@ If a handler method throws an exception (which in general should be avoided), th
 
 If there is no handler for the posted event, the fact is logged as warning, with no further processing.
 
+``````java
+// Initialize Event Bus.
+InMemoryStorageFactory storageFactory = InMemoryStorageFactory.getInstance();
+EventStore eventStore = EventStore.newBuilder()
+        .setStreamExecutor(MoreExecutors.directExecutor())
+        .setStorage(storageFactory.createEventStorage())
+        .setLogger(EventStore.log())
+        .build();
+EventBus eventBus = EventBus.newInstance(eventStore);
+
+// Register event handlers (see Event Handler section on how to define them).
+eventBus.subscribe(new MyEventSubscriber());
+
+// Post a command.
+DoSmth commandMessage = DoSmth.newBuilder().setSmth(smth).build();
+Command command = Commands.create(commandMessage, commandContext);
+commandBus.post(command);
+
+``````
+
 ## Catch-up Subscription
 
 An Event Bus also allows a subscriber to catch-up from a given timestamp on a certain event.
