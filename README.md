@@ -8,13 +8,13 @@ Spine aims to free developers from creating boilerplate code as much as possible
 
 ### Why Spine?
 
-*  The framework makes** the domain model language [Ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html)** not only in people interactions, but **in computer communications, too**. The model is defined and maintained in protobuf. Most of the domain model code is automatically generated for all the programming languages of your project.
+*  We aim to make **the domain model language [Ubiquitous](http://martinfowler.com/bliki/UbiquitousLanguage.html)** not only in people interactions, but **in computer communications, too**. The model is defined and maintained in protobuf. Most of the domain model code is automatically generated for all the programming languages of your project.
 
-*  **The domain model is strongly typed** and **open for evolution**. Unlike some CQRS/ES frameworks which treat commands and events as Json objects, Spine promotes strong typing of all parts of a business model. The model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
+*  We want **the domain model to be strongly typed** and **open for evolution**. Unlike some CQRS/ES frameworks which treat commands and events as Json objects, Spine promotes strong typing of all parts of a business model. The model [can be extended](https://developers.google.com/protocol-buffers/docs/proto3#updating) without breaking binary compatibility with client applications.
 
-*  **Gives the choice of storage and deployment platforms.** The framework promotes writing code which does not depend on storage media or deployment platform. For example, you can start with JDBC-based storage and later switch to Google Cloud Platform Datastore by changing one line of the code. `TODO: link to the example.`
+*  ** We give the choice of storage and deployment platforms.** The framework promotes writing code which does not depend on storage media or deployment platform. For example, you can start with JDBC-based storage and later switch to Google Cloud Platform Datastore by changing one line of the code. `TODO: link to the example.`
 
-*  **Open Source.** The Permissive [Apache  License](https://github.com/SpineEventEngine/core-java/blob/master/LICENSE) allows using the framework in closed-source projects. You are welcome to [contribute](/contribute/index.html) to the framework development.
+*  We build Spine as an **Open Source** framework. The Permissive [Apache  License](https://github.com/SpineEventEngine/core-java/blob/master/LICENSE) allows using the framework in closed-source projects. You are welcome to [contribute](/contribute/index.html) to the framework development.
 
 ### Get Started
 
