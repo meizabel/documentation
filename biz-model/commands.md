@@ -33,6 +33,8 @@ There should be **one and only one** handler associated with the type of the com
 
 Each command has some attributes that are *required* from the business logic stand point and  are not obligatory from the [protocol](https://developers.google.com/protocol-buffers/docs/proto#customoptions) stand point.
 
+This is validation with custom proto options. give access to  validation.proto
+
 Spine  supports an automatic command validation on a `Message` level. In case you need more sophisticated validation, it can be implemented manually for the objects that handle a command — [Process Manager](../java/process-manager.md) or [Aggregate](../java/aggregate.md) and so on.
 ```protobuf
 message MyCommand {
