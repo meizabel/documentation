@@ -30,21 +30,19 @@ There should be **one and only one** handler associated with the type of the com
 
 
 # Command Validation
-Spine supports an automatic command validation on a `Message` level. The validation uses custom [proto](https://github.com/SpineEventEngine/core-java/blob/5ae42af2a4035eab27dc92245d1b09d891f7cb5f/client/src/main/proto/spine/validation.proto) options. 
+Spine supports an automatic command validation on a `Message` level. The validation uses custom [proto](https://github.com/SpineEventEngine/core-java/blob/5ae42af2a4035eab27dc92245d1b09d891f7cb5f/client/src/main/proto/spine/validation.proto) options. You can find a detailed overview of the custom option in the [Proto2 Language Guide]( https://developers.google.com/protocol-buffers/docs/proto#customoptions).
 
 In case you need more sophisticated validation, it can be implemented manually for the objects that handle a command — [Process Manager](../java/process-manager.md) or [Aggregate](../java/aggregate.md) and so on.
 
-To validate a command, define it in the `commands.proto` file. Basically, the file could have any name ending with “commands”(e.g. ordercommand.proto). 
+To validate a command, define it in the `commands.proto` file. Basically, the file could have any name ending with “commands” (e.g. ordercommand.proto). 
 
-With that, commands being posted to the Command Bus will be validated in accordance with custom options described in `Commandvalidation.proto`. 
-More about validated attributes you can find [here](https://github.com/SpineEventEngine/core-java/wiki/Proposal-for-validation-attributes). 
+When posted to the Command Bus commands will be validated according to custom options described in `Commandvalidation.proto`. 
+Read more about validated attributes [here](https://github.com/SpineEventEngine/core-java/wiki/Proposal-for-validation-attributes). 
 
 на прото ленгвиж гайд тихочнечко. если не знают что такое есть.   
 
 
 валидация эта может использоваться для ивентов и чего угодно. но пока только для команд в команд бас. 
-
-Each command has some attributes that are *required* from the business logic stand point and  are not obligatory from the [protocol](https://developers.google.com/protocol-buffers/docs/proto#customoptions) stand point.
 
 ```protobuf
 message MyCommand {
