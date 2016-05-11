@@ -30,12 +30,25 @@ There should be **one and only one** handler associated with the type of the com
 
 
 # Command Validation
+Spine  supports an automatic command validation on a `Message` level. The validation is done with custom [proto](https://github.com/SpineEventEngine/core-java/blob/5ae42af2a4035eab27dc92245d1b09d891f7cb5f/client/src/main/proto/spine/validation.proto) options. 
+
+In case you need more sophisticated validation, it can be implemented manually for the objects that handle a command — [Process Manager](../java/process-manager.md) or [Aggregate](../java/aggregate.md) and so on.
+
+To validate a command
+чтоб валидировались команды (мсг). команды нужно дефайеить в файле командс прото. кот имя заканичвается на командс.
+(командс. прото. ордеркомандс. прото)
+
+и тогда при постинге в команд бас , команды будут валидировать соответ. кастом опшинам описанным в с- валидейшн. прото. тут на наш валдиейшн прото и на вики. 
+в командах первый филд не обязательном помечать реквайрд так как он будет автоматически проверяться не смотря ни начто. 
+
+на прото ленгвиж гайд тихочнечко. если не знают что такое есть.   
+
+примеры из командс прото взять или из тестовым. 
+
+валидация эта может использоваться для ивентов и чего угодно. но пока только для команд в команд бас. 
 
 Each command has some attributes that are *required* from the business logic stand point and  are not obligatory from the [protocol](https://developers.google.com/protocol-buffers/docs/proto#customoptions) stand point.
 
-This is validation with custom proto options. give access to  validation.proto
-
-Spine  supports an automatic command validation on a `Message` level. In case you need more sophisticated validation, it can be implemented manually for the objects that handle a command — [Process Manager](../java/process-manager.md) or [Aggregate](../java/aggregate.md) and so on.
 ```protobuf
 message MyCommand {
     // an ID in commands is checked anyway
