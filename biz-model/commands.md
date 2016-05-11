@@ -34,10 +34,9 @@ Spine  supports an automatic command validation on a `Message` level. The valida
 
 In case you need more sophisticated validation, it can be implemented manually for the objects that handle a command — [Process Manager](../java/process-manager.md) or [Aggregate](../java/aggregate.md) and so on.
 
-To validate a command
-чтоб валидировались команды (мсг). команды нужно дефайеить в файле командс прото. кот имя заканичвается на командс.
-(командс. прото. ордеркомандс. прото)
+To validate a command it has to be defined in commands.proto  file. Basically it could be any name ending with “commands” (e.g. ordercommand.proto). 
 
+With that commands will be validated in accordance with custom optios described in c-validation.proto
 и тогда при постинге в команд бас , команды будут валидировать соответ. кастом опшинам описанным в с- валидейшн. прото. тут на наш валдиейшн прото и на вики. 
 в командах первый филд не обязательном помечать реквайрд так как он будет автоматически проверяться не смотря ни начто. 
 
