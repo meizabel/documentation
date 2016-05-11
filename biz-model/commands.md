@@ -34,7 +34,7 @@ Spine supports an automatic command validation on a `Message` level. The validat
 
 In case you need a more sophisticated validation, it can be implemented manually for the objects that handle a command — [Process Manager](../java/process-manager.md) or [Aggregate](../java/aggregate.md) and so on.
 
-To validate a command, define it in the `commands.proto` file. The file could have any name ending with “commands” (e.g. ordercommands.proto). 
+To validate a command, define it in the `commands.proto` file. The file can have any name ending with “commands” (e.g. ordercommands.proto). 
 
 When posted to the Command Bus, the command is validated according to the custom options described in `CommandValidation.proto`. 
 Read more about the attributes validated in Spine [here](https://github.com/SpineEventEngine/core-java/wiki/Proposal-for-validation-attributes). Generally, this validation can be used for any kind of entities or events. It works for commands in Command Bus at this point.
