@@ -36,7 +36,8 @@ In case you need a more sophisticated validation, it can be implemented manually
 
 To validate a command, define it in the `commands.proto` file. The file can have any name ending with “commands” (e.g. ordercommands.proto). 
 
-When posted to the Command Bus, the command is validated according to the custom options described in `CommandValidation.proto`. 
+When posted to the Command Bus, the command is validated according to the custom options described in `CommandValidation.proto`.
+
 Read more about the attributes validated in Spine [here](https://github.com/SpineEventEngine/core-java/wiki/Proposal-for-validation-attributes). Generally, this validation can be used for any kind of entities or events. It works for commands in Command Bus at this point.
 
 
@@ -52,7 +53,7 @@ message MyCommand {
 ```
 **Note**, you do not need to mark the first field in a command as required as it will be validated anyway.
 
-If the command is not correct, you will get a response with the wrong fields enumeration in a form of the constraint violations list. You can chek the list in the [validation.proto](https://github.com/SpineEventEngine/core-java/blob/5ae42af2a4035eab27dc92245d1b09d891f7cb5f/client/src/main/proto/spine/validation.proto).
+If the command is not correct, you will get a response with the constraint violations list enumerating incorrect fields. You can check the list in the [validation.proto](https://github.com/SpineEventEngine/core-java/blob/5ae42af2a4035eab27dc92245d1b09d891f7cb5f/client/src/main/proto/spine/validation.proto).
 
 
 ## Command Validator
