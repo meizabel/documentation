@@ -52,5 +52,9 @@ message MyCommand {
 ```
 **Note**, you do not need to mark the first field in a command as required as it will be validated anyway.
 
+If the command is not correct, you will get a response with the wrong fields enumeration in a form of the constraint violations list. You can chek the list in the [validation.proto](https://github.com/SpineEventEngine/core-java/blob/5ae42af2a4035eab27dc92245d1b09d891f7cb5f/client/src/main/proto/spine/validation.proto).
+
+
+
 ## Command Validator
 
