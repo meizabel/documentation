@@ -17,6 +17,7 @@ public MyEvent handle(MyCommand command, CommandContext context) {
 }
 ```
 Command handler can return an event or list of events which are automatically posted to Event Bus then.
+
 To be dispatched to the aggregate root, the command must have an attribute with an ID of the aggregate. See [Commands](../biz-model/commands.md) section for details.
 
 **Note:** the annotation [@Assign](https://github.com/SpineEventEngine/core-java/blob/dc073660ee72af118f036fcb2768e511223908d7/server/src/main/java/org/spine3/server/Assign.java) tells that the method participates in automatic dispatching of commands. 

@@ -30,12 +30,17 @@ There should be **one and only one** handler associated with the type of the com
 
 
 # Command Validation
+Spine supports an automatic command validation on a `Message` level. The validation uses custom [proto](https://github.com/SpineEventEngine/core-java/blob/5ae42af2a4035eab27dc92245d1b09d891f7cb5f/client/src/main/proto/spine/validation.proto) options. You can find a detailed overview of the custom options in the [Proto2 Language Guide]( https://developers.google.com/protocol-buffers/docs/proto#customoptions).
 
-Each command has some attributes that are *required* from the business logic stand point and  are not obligatory from the [protocol](https://developers.google.com/protocol-buffers/docs/proto#customoptions) stand point.
+In case you need a more sophisticated validation, it can be implemented manually for the objects that handle a command — [Process Manager](../java/process-manager.md) or [Aggregate](../java/aggregate.md) and so on.
 
-This is validation with custom proto options. give access to  validation.proto
+To validate a command, define it in the `commands.proto` file. The file can have any name ending with “commands” (e.g. ordercommands.proto). 
 
-Spine  supports an automatic command validation on a `Message` level. In case you need more sophisticated validation, it can be implemented manually for the objects that handle a command — [Process Manager](../java/process-manager.md) or [Aggregate](../java/aggregate.md) and so on.
+When posted to the Command Bus, the command is validated according to the custom options described in `CommandValidation.proto`.
+
+Read more about the attributes validated in Spine [here](https://github.com/SpineEventEngine/core-java/wiki/Proposal-for-validation-attributes). Generally, this validation can be used for any kind of entities or events. It works for commands in Command Bus at this point.
+
+
 ```protobuf
 message MyCommand {
     // an ID in commands is checked anyway
@@ -46,5 +51,10 @@ message MyCommand {
     google.protobuf.Timestamp time = 3 [(when).in = FUTURE];
 }
 ```
+**Note**, you do not need to mark the first field in a command as required as it will be validated anyway.
+
+If the command is not correct, you will get a response with the constraint violations list enumerating incorrect fields. You can find the full the list in the [validation.proto](https://github.com/SpineEventEngine/core-java/blob/5ae42af2a4035eab27dc92245d1b09d891f7cb5f/client/src/main/proto/spine/validation.proto).
+
+
 ## Command Validator
 
