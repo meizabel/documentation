@@ -3,7 +3,7 @@
  
 ### Why framework is called Spine?
  We want to be a framework that provides an infrastructure and connects so to say “service” parts of applications with their “brains” — business logic. 
- Find out how following [leading industry trends](/prior-art.html) we were [inspired](/docs/guides/motivation.html) to create Spine. 
+ Find out how following [leading industry trends](/prior-art.md) we were [inspired](/docs/guides/motivation.html) to create Spine. 
 
 ### Why Java 7?
 **The code of the framework is based on Java 7. Why not on Java 8, with Java 9 around the corner?**
