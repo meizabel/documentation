@@ -13,7 +13,7 @@ Below you can find a typical Spine Event Engine application architecture. The co
 
 ## Domain Model Concepts
 
-**Command** are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an error or failure. In Spine [command](../biz-model/commands.md) is defined as a protobuf message.
+**Command** are messages that instruct a specific entity to perform a certain action. Unlike an event, a command is not a statement of fact; it is only a request, and thus may be refused. A typical way to convey refusal is to throw an error or failure. In Spine [command](/biz-model/commands.md) is defined as a protobuf message.
 
 **Event** is something that happened in the past.
 All changes to an application state are captured as a sequence of events. Events is the main “database” of the application. In Spine [events](../biz-model/event.md) are defined as protobuf messages as well.
