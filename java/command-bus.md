@@ -5,7 +5,7 @@ A Command Bus routes incoming commands to corresponding handlers. Unlike a [Comm
 ### Posting Commands
 Commands are posted to the Command Bus using `CommandBus.post(Command)` method.
 
-The passed [Command](../biz-model/command.md) is stored in the [Command Store](./command-store.md) associated with the Command Bus **before** it is passed to handlers.
+The passed [Command](/biz-model/command.md) is stored in the [Command Store](./command-store.md) associated with the Command Bus **before** it is passed to handlers.
 
 If there is no handler for the posted command, an exception is thrown.
 
