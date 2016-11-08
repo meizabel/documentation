@@ -30,7 +30,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 ** Process Manager** is an independent component that reacts to domain events in a cross-aggregate, eventually consistent manner. It serves as a centralized processing unit that maintains the state sequence and defines the next processing step based on intermediate results. A [process manager](/java/process-manager.md) can be both Command Handler and Event Handler. 
 
-**Projection** is an Event Handler, which transforms multiple events data into a structural representation. [Projections](../biz-model/projections.md) are main building blocks of Query side of the application.
+**Projection** is an Event Handler, which transforms multiple events data into a structural representation. [Projections](/biz-model/projections.md) are main building blocks of Query side of the application.
 
 **Entity Fragment** — a message with the partial state of an entity. It returns a fragment of the entire state filtered using `FieldMasks` provided in a query.
 
@@ -57,4 +57,4 @@ All changes to an application state are captured as a sequence of events. Events
 
 ___
 
-Detailed overview of each concept and its implementation in Spine you can find in  [Creating Business Model](../biz-model/index.md) and [Java](../java/index.md) chapters.
+Detailed overview of each concept and its implementation in Spine you can find in  [Creating Business Model](/biz-model/index.md) and [Java](/java/index.md) chapters.
