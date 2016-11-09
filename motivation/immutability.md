@@ -1,4 +1,4 @@
-# Bebefit of Immutability
+# Benefit of Immutability
 
 An immutable object is one whose externally visible state cannot change after it is instantiated. The string type in Java and C# is a familiar example; you never actually change an existing string value, you just create new string values based on old ones.
 
