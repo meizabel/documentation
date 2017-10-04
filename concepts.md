@@ -1,8 +1,8 @@
-  
+
 
 # Spine Event Engine Concepts
 
-This chapter introduces some key concepts Spine is based on. The framework provides implementation for most important building blocks of a CQRS/ES application. In terminology we heavily lean on [Domain-Driven Design](https://www.wikiwand.com/en/Domain-driven_design) (DDD) and the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans, and on terms standard to CQRS/ES  on [“Enterprise Integration Patterns”](http://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20) by Gregor Hohpe and Bobby Woolf. 
+This chapter introduces some key concepts Spine is based on. The framework provides implementation for most important building blocks of a CQRS/ES application. In terminology we heavily lean on [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) (DDD) and the [“Big Blue Book”](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans, and on terms standard to CQRS/ES  on [“Enterprise Integration Patterns”](http://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20) by Gregor Hohpe and Bobby Woolf. 
 
 Below you can find a typical Spine Event Engine application architecture. The concepts behind these building blocks are described in the sections below.
 
@@ -28,7 +28,7 @@ All changes to an application state are captured as a sequence of events. Events
 
 ** Event Handler** is an object that is subscribed to receive events.
 
-** Process Manager** is an independent component that reacts to domain events in a cross-aggregate, eventually consistent manner. It serves as a centralized processing unit that maintains the state sequence and defines the next processing step based on intermediate results. A [process manager](/java/process-manager.md) can be both Command Handler and Event Handler. 
+** Process Manager** is an independent component that reacts to domain events in a cross-aggregate, eventually consistent manner. It serves as a centralized processing unit that maintains the state sequence and defines the next processing step based on intermediate results. A [process manager](/java/process-manager.md) can be both Command Handler and Event Handler.
 
 **Projection** is an Event Handler, which transforms multiple events data into a structural representation. [Projections](/biz-model/projections.md) are main building blocks of Query side of the application.
 
